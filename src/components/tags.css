@@ -1,0 +1,41 @@
+@utility tag-paper {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  color: var(--color-primary-inverse);
+  background-color: var(--color-muted);
+  border: 2px solid transparent;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+@utility tag-paper-primary {
+  background-color: var(--color-primary);
+}
+
+@utility tag-paper-secondary {
+  background-color: var(--color-secondary);
+}
+
+@utility tag-paper-success {
+  background-color: var(--color-success);
+}
+
+@utility tag-paper-warning {
+  background-color: var(--color-warning);
+}
+
+@utility tag-paper-danger {
+  background-color: var(--color-danger);
+}
+
+@utility tag-paper-muted {
+  background-color: var(--color-muted);
+}

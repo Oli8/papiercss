@@ -1,0 +1,23 @@
+@utility shadow-paper-lift {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: var(--shadow-paper-hover);
+}
+
+@utility child-shadows-paper {
+  & > * {
+    box-shadow: var(--shadow-paper);
+    transition: all 235ms ease;
+  }
+}
+
+@utility child-shadows-paper-hover {
+  & > * {
+    box-shadow: var(--shadow-paper);
+    transition: all 235ms ease;
+  }
+
+  & > *:hover {
+    transform: translate3d(0, 2px, 0);
+    box-shadow: var(--shadow-paper-hover);
+  }
+}

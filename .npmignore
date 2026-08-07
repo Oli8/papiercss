@@ -1,9 +1,10 @@
-/.github
+/github
 /build
 /docs
 /img
 /node_modules
 /public
+/demo
 .browserslistrc
 .editorconfig
 .stylelintrc.json

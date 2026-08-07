@@ -1,50 +1,56 @@
 {
-  "name": "papercss",
-  "version": "1.9.2",
-  "description": "The less formal CSS framework.",
-  "main": "dist/paper.css",
+  "name": "papiercss",
+  "version": "0.1.0",
+  "description": "The less formal CSS framework - with Tailwind",
+  "type": "module",
+  "main": "./src/index.css",
+  "style": "./src/index.css",
+  "exports": {
+    ".": "./src/index.css",
+    "./theme": "./src/theme.css",
+    "./theme.css": "./src/theme.css",
+    "./fonts": "./src/fonts.css",
+    "./fonts.css": "./src/fonts.css",
+    "./utilities": "./src/utilities/index.css",
+    "./utilities.css": "./src/utilities/index.css",
+    "./components": "./src/components/index.css",
+    "./components.css": "./src/components/index.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE.md"
+  ],
   "scripts": {
-    "build": "npm run css:build && npm run hugo:build",
-    "css:build": "node ./build/build.js",
-    "dev": "concurrently --kill-others \"npm run dev:hot-reload\" \"npm run hugo:serve\"",
-    "dev:hot-reload": "node ./build/hot-reload.js",
-    "hugo:build": "hugo -D --source=docs",
-    "hugo:serve": "hugo server --source=docs --disableFastRender",
-    "lint": "npm run stylelint",
-    "start": "npm run hugo:serve",
-    "stylelint": "stylelint src/**/*.scss"
+    "build": "npm run demo:build",
+    "demo:build": "tailwindcss -i ./demo/style.css -o ./demo/dist.css",
+    "demo:watch": "tailwindcss -i ./demo/style.css -o ./demo/dist.css --watch",
+    "demo": "npx --yes serve demo -p 5173",
+    "dev": "npm run demo:watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/papercss/papercss.git"
+    "url": "git+https://github.com/Oli8/papiercss.git"
   },
-  "author": "Rhyne Vlaservich <rhyneav@gmail.com>",
+  "author": "Oli8",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/papercss/papercss/issues"
+    "url": "https://github.com/Oli8/papiercss/issues"
   },
   "homepage": "https://www.getpapercss.com",
-  "dependencies": {},
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "chai": "^4.1.2",
-    "chalk": "^4.1.0",
-    "chokidar": "^3.4.2",
-    "concurrently": "^5.3.0",
-    "cssnano": "^4.1.10",
-    "hugo-bin": "^0.62.3",
-    "postcss": "^7.0.32",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^3.0.2",
-    "sass": "^1.26.10",
-    "stylelint": "^13.7.2",
-    "stylelint-config-sass-guidelines": "^7.1.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0",
-    "write": "^2.0.0"
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
   },
-  "pre-commit": [
-    "stylelint"
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "tailwind",
+    "paper",
+    "design"
   ]
 }

@@ -1,0 +1,41 @@
+@utility progress-paper {
+  width: 100%;
+  height: 1.2rem;
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-bottom-left-radius: 20px 115px;
+  border-bottom-right-radius: 15px 105px;
+  border-top-left-radius: 250px 15px;
+  border-top-right-radius: 25px 80px;
+  box-shadow: var(--shadow-paper-hover);
+}
+
+@utility progress-paper-bar {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 100%;
+  width: 0%;
+  font-size: 0.6rem;
+  line-height: 1;
+  text-align: center;
+  background-color: var(--color-primary-light);
+  border-right: 2px solid var(--color-primary);
+  border-bottom-left-radius: 20px 115px;
+  border-bottom-right-radius: 15px 105px;
+  border-top-left-radius: 250px 15px;
+  border-top-right-radius: 25px 80px;
+  transition: all 235ms ease-in-out;
+}
+
+@utility progress-paper-striped {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--color-primary-light),
+    var(--color-primary-light) 0.25rem,
+    color-mix(in srgb, var(--color-primary-light) 90%, black) 0.25rem,
+    color-mix(in srgb, var(--color-primary-light) 90%, black) 0.5rem
+  );
+}

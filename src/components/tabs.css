@@ -1,0 +1,63 @@
+@utility tabs-paper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & .tabs-paper-content {
+    display: none;
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 0.75rem 0 0;
+  }
+
+  & input {
+    display: none;
+  }
+
+  & input:checked + label {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-secondary);
+  }
+
+  & input[id$="tab1"]:checked ~ [id$="content1"],
+  & input[id$="tab2"]:checked ~ [id$="content2"],
+  & input[id$="tab3"]:checked ~ [id$="content3"],
+  & input[id$="tab4"]:checked ~ [id$="content4"],
+  & input[id$="tab5"]:checked ~ [id$="content5"] {
+    display: block;
+  }
+
+  & label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-primary-light);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-muted);
+    }
+  }
+}
+
+@utility tabs-paper-start {
+  justify-content: flex-start;
+}
+
+@utility tabs-paper-center {
+  justify-content: center;
+}
+
+@utility tabs-paper-end {
+  justify-content: flex-end;
+}
+
+@utility tabs-paper-between {
+  justify-content: space-between;
+}
+
+@utility tabs-paper-around {
+  justify-content: space-around;
+}

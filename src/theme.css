@@ -1,0 +1,173 @@
+/*
+  PaperCSS theme tokens (Tailwind v4).
+  Override any --paper-* variable (or @theme colors) to customize.
+*/
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --paper-primary: #41403e;
+  --paper-secondary: #0b74d5;
+  --paper-success: #86a361;
+  --paper-warning: #ddcd45;
+  --paper-danger: #a7342d;
+  --paper-muted: #868e96;
+
+  --paper-primary-light: color-mix(in srgb, var(--paper-primary) 45%, white);
+  --paper-secondary-light: color-mix(in srgb, var(--paper-secondary) 52%, white);
+  --paper-success-light: color-mix(in srgb, var(--paper-success) 68%, white);
+  --paper-warning-light: color-mix(in srgb, var(--paper-warning) 70%, white);
+  --paper-danger-light: color-mix(in srgb, var(--paper-danger) 55%, white);
+  --paper-muted-light: color-mix(in srgb, var(--paper-muted) 65%, white);
+
+  --paper-primary-dark: color-mix(in srgb, var(--paper-primary) 50%, black);
+  --paper-secondary-dark: color-mix(in srgb, var(--paper-secondary) 50%, black);
+  --paper-success-dark: color-mix(in srgb, var(--paper-success) 70%, black);
+  --paper-warning-dark: color-mix(in srgb, var(--paper-warning) 70%, black);
+  --paper-danger-dark: color-mix(in srgb, var(--paper-danger) 55%, black);
+  --paper-muted-dark: color-mix(in srgb, var(--paper-muted) 65%, black);
+
+  --paper-primary-light-10: color-mix(in srgb, var(--paper-primary) 90%, white);
+  --paper-secondary-light-10: color-mix(in srgb, var(--paper-secondary) 90%, white);
+  --paper-success-light-10: color-mix(in srgb, var(--paper-success) 90%, white);
+  --paper-warning-light-10: color-mix(in srgb, var(--paper-warning) 90%, white);
+  --paper-danger-light-10: color-mix(in srgb, var(--paper-danger) 90%, white);
+  --paper-muted-light-10: color-mix(in srgb, var(--paper-muted) 90%, white);
+
+  --paper-primary-dark-10: color-mix(in srgb, var(--paper-primary) 90%, black);
+  --paper-secondary-dark-10: color-mix(in srgb, var(--paper-secondary) 90%, black);
+  --paper-success-dark-10: color-mix(in srgb, var(--paper-success) 77%, black);
+  --paper-warning-dark-10: color-mix(in srgb, var(--paper-warning) 70%, black);
+  --paper-danger-dark-10: color-mix(in srgb, var(--paper-danger) 90%, black);
+  --paper-muted-dark-10: color-mix(in srgb, var(--paper-muted) 90%, black);
+
+  --paper-primary-shaded-50: color-mix(in srgb, var(--paper-primary) 50%, white);
+  --paper-primary-shaded-70: color-mix(in srgb, var(--paper-primary) 30%, white);
+
+  /* *-text: dark foreground for use on *-light fills (buttons, alerts, …) */
+  --paper-primary-text: color-mix(in srgb, var(--paper-primary) 28%, black);
+  --paper-secondary-text: color-mix(in srgb, var(--paper-secondary) 28%, black);
+  --paper-success-text: color-mix(in srgb, var(--paper-success) 32%, black);
+  --paper-warning-text: color-mix(in srgb, var(--paper-warning) 28%, black);
+  --paper-danger-text: color-mix(in srgb, var(--paper-danger) 28%, black);
+  --paper-muted-text: color-mix(in srgb, var(--paper-muted) 28%, black);
+
+  --paper-white: #fff;
+  --paper-black: #000;
+  --paper-main-background: #fff;
+  --paper-main-background-light: color-mix(in srgb, var(--paper-main-background) 50%, white);
+  --paper-white-dark: rgb(0 0 0 / 0.03);
+  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, white);
+  --paper-light-dark: rgb(0 0 0 / 0.7);
+  --paper-primary-inverse: #fff;
+
+  --paper-shadow-color: hsl(0 0% 0% / 0.2);
+  --paper-shadow-color-hover: hsl(0 0% 0% / 0.3);
+}
+
+.dark {
+  color-scheme: dark;
+  --paper-primary: #fff;
+  --paper-secondary: #5595ce;
+  --paper-success: #70c272;
+  --paper-warning: #d4c252;
+  --paper-danger: #df4c57;
+  --paper-muted: #868e96;
+
+  --paper-primary-light: color-mix(in srgb, var(--paper-primary) 95%, black);
+  --paper-secondary-light: color-mix(in srgb, var(--paper-secondary) 95%, white);
+  --paper-success-light: color-mix(in srgb, var(--paper-success) 95%, white);
+  --paper-warning-light: color-mix(in srgb, var(--paper-warning) 95%, white);
+  --paper-danger-light: color-mix(in srgb, var(--paper-danger) 78%, white);
+  --paper-muted-light: color-mix(in srgb, var(--paper-muted) 95%, white);
+
+  --paper-primary-dark: color-mix(in srgb, var(--paper-primary) 50%, black);
+  --paper-secondary-dark: color-mix(in srgb, var(--paper-secondary) 70%, black);
+  --paper-success-dark: color-mix(in srgb, var(--paper-success) 65%, black);
+  --paper-warning-dark: color-mix(in srgb, var(--paper-warning) 70%, black);
+  --paper-danger-dark: color-mix(in srgb, var(--paper-danger) 70%, black);
+  --paper-muted-dark: color-mix(in srgb, var(--paper-muted) 65%, black);
+
+  --paper-primary-shaded-50: color-mix(in srgb, #41403e 95%, black);
+  --paper-primary-shaded-70: color-mix(in srgb, #41403e 93%, black);
+
+  /* *-text: dark foreground for use on *-light fills */
+  --paper-primary-text: color-mix(in srgb, var(--paper-primary) 28%, black);
+  --paper-secondary-text: color-mix(in srgb, var(--paper-secondary) 28%, black);
+  --paper-success-text: color-mix(in srgb, var(--paper-success) 28%, black);
+  --paper-warning-text: color-mix(in srgb, var(--paper-warning) 28%, black);
+  --paper-danger-text: color-mix(in srgb, var(--paper-danger) 18%, black);
+  --paper-muted-text: color-mix(in srgb, var(--paper-muted) 28%, black);
+
+  --paper-white: #fff;
+  --paper-black: #000;
+  --paper-main-background: #41403e;
+  --paper-main-background-light: color-mix(in srgb, var(--paper-main-background) 50%, white);
+  --paper-white-dark: rgb(255 255 255 / 0.03);
+  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, black);
+  --paper-light-dark: rgb(255 255 255 / 0.7);
+  --paper-primary-inverse: #41403e;
+}
+
+@theme {
+  --font-paper: "Neucha", cursive, sans-serif;
+  --font-paper-heading: "Patrick Hand SC", cursive, sans-serif;
+
+  --color-primary: var(--paper-primary);
+  --color-secondary: var(--paper-secondary);
+  --color-success: var(--paper-success);
+  --color-warning: var(--paper-warning);
+  --color-danger: var(--paper-danger);
+  --color-muted: var(--paper-muted);
+
+  --color-primary-light: var(--paper-primary-light);
+  --color-secondary-light: var(--paper-secondary-light);
+  --color-success-light: var(--paper-success-light);
+  --color-warning-light: var(--paper-warning-light);
+  --color-danger-light: var(--paper-danger-light);
+  --color-muted-light: var(--paper-muted-light);
+
+  --color-primary-dark: var(--paper-primary-dark);
+  --color-secondary-dark: var(--paper-secondary-dark);
+  --color-success-dark: var(--paper-success-dark);
+  --color-warning-dark: var(--paper-warning-dark);
+  --color-danger-dark: var(--paper-danger-dark);
+  --color-muted-dark: var(--paper-muted-dark);
+
+  --color-primary-light-10: var(--paper-primary-light-10);
+  --color-secondary-light-10: var(--paper-secondary-light-10);
+  --color-success-light-10: var(--paper-success-light-10);
+  --color-warning-light-10: var(--paper-warning-light-10);
+  --color-danger-light-10: var(--paper-danger-light-10);
+  --color-muted-light-10: var(--paper-muted-light-10);
+
+  --color-primary-dark-10: var(--paper-primary-dark-10);
+  --color-secondary-dark-10: var(--paper-secondary-dark-10);
+  --color-success-dark-10: var(--paper-success-dark-10);
+  --color-warning-dark-10: var(--paper-warning-dark-10);
+  --color-danger-dark-10: var(--paper-danger-dark-10);
+  --color-muted-dark-10: var(--paper-muted-dark-10);
+
+  --color-primary-shaded-50: var(--paper-primary-shaded-50);
+  --color-primary-shaded-70: var(--paper-primary-shaded-70);
+
+  --color-primary-text: var(--paper-primary-text);
+  --color-secondary-text: var(--paper-secondary-text);
+  --color-success-text: var(--paper-success-text);
+  --color-warning-text: var(--paper-warning-text);
+  --color-danger-text: var(--paper-danger-text);
+  --color-muted-text: var(--paper-muted-text);
+
+  --color-main-background: var(--paper-main-background);
+  --color-main-background-light: var(--paper-main-background-light);
+  --color-white-dark: var(--paper-white-dark);
+  --color-white-dark-light-80: var(--paper-white-dark-light-80);
+  --color-light-dark: var(--paper-light-dark);
+  --color-primary-inverse: var(--paper-primary-inverse);
+
+  --shadow-paper: 15px 28px 25px -18px var(--paper-shadow-color);
+  --shadow-paper-sm: 10px 19px 17px -13px var(--paper-shadow-color);
+  --shadow-paper-lg: 20px 38px 34px -26px var(--paper-shadow-color);
+  --shadow-paper-hover: 2px 8px 8px -5px var(--paper-shadow-color-hover);
+}

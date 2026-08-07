@@ -4,7 +4,13 @@ npm-debug.log
 .DS_Store
 /public
 .vscode
+pnpm-lock.yaml
+package-lock.json
 
-# Ignore compiled CSS
+# Demo build output
+/demo/dist.css
+
+# Legacy compiled CSS
 /docs/static/assets/paper.css
 /docs/static/assets/paper.min.css
+/dist

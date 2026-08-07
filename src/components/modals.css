@@ -1,0 +1,81 @@
+@utility modal-paper {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex: 1 1 auto;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(0 0 0 / 0.6);
+  text-align: left;
+  word-wrap: break-word;
+  transition: opacity 235ms ease-in-out;
+}
+
+@utility modal-paper-bg {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+@utility modal-paper-body {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  padding: 1.25rem;
+  color: var(--color-primary);
+  background: var(--color-main-background);
+  border: 2px solid var(--color-muted-light);
+  backface-visibility: hidden;
+  transition: all 235ms ease-in-out;
+
+  @media (max-width: 768px) {
+    box-sizing: border-box;
+    width: 90%;
+  }
+}
+
+@utility modal-paper-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-primary-light);
+  background: none;
+  border: none;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary);
+  }
+}
+
+@utility modal-paper-open {
+  opacity: 1;
+  visibility: visible;
+
+  & .modal-paper-body {
+    top: 50%;
+  }
+}
+
+/* Checkbox/radio driven open state (legacy pattern) */
+.modal-paper-state {
+  display: none;
+
+  &:checked + .modal-paper {
+    opacity: 1;
+    visibility: visible;
+
+    & .modal-paper-body {
+      top: 50%;
+    }
+  }
+}

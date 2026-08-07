@@ -1,0 +1,53 @@
+@utility card-paper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  backface-visibility: hidden;
+  will-change: transform;
+  word-wrap: break-word;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-muted-light);
+  box-shadow: var(--shadow-paper);
+  background-color: var(--color-main-background);
+  color: var(--color-primary);
+  transition: all 235ms ease;
+
+  &:hover {
+    transform: translate3d(0, 2px, 0);
+    box-shadow: var(--shadow-paper-hover);
+  }
+}
+
+@utility card-paper-header {
+  background-color: var(--color-white-dark);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: var(--color-muted-light);
+  padding: 0.75rem 1.25rem;
+}
+
+@utility card-paper-footer {
+  background-color: var(--color-white-dark);
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-color: var(--color-muted-light);
+  padding: 0.75rem 1.25rem;
+}
+
+@utility card-paper-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+@utility card-paper-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-paper-heading);
+}
+
+@utility card-paper-subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary);
+}

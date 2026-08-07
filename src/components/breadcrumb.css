@@ -1,0 +1,29 @@
+@utility breadcrumb-paper {
+  list-style: none;
+  padding: 10px 16px;
+  font-family: var(--font-paper);
+
+  & li {
+    display: inline;
+    font-size: 20px;
+  }
+
+  & li::before {
+    content: "";
+  }
+
+  & li + li::before {
+    content: "/\00a0";
+    padding: 8px;
+  }
+
+  & a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    background-image: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

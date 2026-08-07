@@ -1,0 +1,20 @@
+/* Scribble underline link style (opt-in) */
+
+@utility link-paper {
+  color: var(--color-secondary);
+  text-decoration: none;
+  background-image:
+    linear-gradient(5deg, transparent 65%, var(--color-secondary) 80%, transparent 90%),
+    linear-gradient(165deg, transparent 5%, var(--color-secondary) 15%, transparent 25%),
+    linear-gradient(165deg, transparent 45%, var(--color-secondary) 55%, transparent 65%),
+    linear-gradient(15deg, transparent 25%, var(--color-secondary) 35%, transparent 50%);
+  background-position: 0 90%;
+  background-repeat: repeat-x;
+  background-size: 4px 3px;
+}
+
+@utility link-paper-plain {
+  color: var(--color-primary);
+  text-decoration: none;
+  background-image: none;
+}

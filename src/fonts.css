@@ -1,0 +1,4 @@
+/* Optional: import this BEFORE tailwindcss so the @import stays valid.
+   Or load fonts via <link> in HTML instead.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Patrick+Hand+SC&display=swap");

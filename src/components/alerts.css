@@ -1,0 +1,68 @@
+@utility alert-paper {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--color-primary);
+  background-color: var(--color-main-background);
+}
+
+@utility alert-paper-dismissible {
+  display: flex;
+  justify-content: space-between;
+  max-height: 48rem;
+  overflow: hidden;
+  transition: all 235ms ease-in-out;
+}
+
+@utility alert-paper-primary {
+  color: var(--color-primary-text);
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+
+@utility alert-paper-secondary {
+  color: var(--color-secondary-text);
+  background-color: var(--color-secondary-light);
+  border-color: var(--color-secondary);
+}
+
+@utility alert-paper-success {
+  color: var(--color-success-text);
+  background-color: var(--color-success-light);
+  border-color: var(--color-success-dark);
+}
+
+@utility alert-paper-warning {
+  color: var(--color-warning-text);
+  background-color: var(--color-warning-light);
+  border-color: var(--color-warning-dark);
+}
+
+@utility alert-paper-danger {
+  color: var(--color-danger-text);
+  background-color: var(--color-danger-light);
+  border-color: var(--color-danger);
+}
+
+@utility alert-paper-muted {
+  color: var(--color-muted-text);
+  background-color: var(--color-muted-light);
+  border-color: var(--color-muted);
+}
+
+@utility alert-paper-close {
+  cursor: pointer;
+  margin-left: 0.75rem;
+  transition: all 235ms ease-in-out;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+}
