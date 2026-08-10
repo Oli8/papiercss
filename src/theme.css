@@ -62,6 +62,10 @@
   --paper-light-dark: rgb(0 0 0 / 0.7);
   --paper-primary-inverse: #fff;
 
+  /* Tags: keep light text + stable primary chip bg across themes */
+  --paper-tag-text: var(--paper-white);
+  --paper-tag-primary-bg: var(--paper-primary);
+
   --paper-shadow-color: hsl(0 0% 0% / 0.2);
   --paper-shadow-color-hover: hsl(0 0% 0% / 0.3);
 }
@@ -108,6 +112,10 @@
   --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, black);
   --paper-light-dark: rgb(255 255 255 / 0.7);
   --paper-primary-inverse: #41403e;
+
+  /* primary flips to white in dark — keep tag chip on the ink color */
+  --paper-tag-text: var(--paper-white);
+  --paper-tag-primary-bg: var(--paper-primary-inverse);
 }
 
 @theme {
@@ -165,6 +173,8 @@
   --color-white-dark-light-80: var(--paper-white-dark-light-80);
   --color-light-dark: var(--paper-light-dark);
   --color-primary-inverse: var(--paper-primary-inverse);
+  --color-tag-text: var(--paper-tag-text);
+  --color-tag-primary-bg: var(--paper-tag-primary-bg);
 
   --shadow-paper: 15px 28px 25px -18px var(--paper-shadow-color);
   --shadow-paper-sm: 10px 19px 17px -13px var(--paper-shadow-color);
