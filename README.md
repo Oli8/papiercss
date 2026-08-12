@@ -91,7 +91,7 @@ Example:
 | `tag-paper`, `tag-paper-primary`, … | tags |
 | `input-paper`, `select-paper`, `textarea-paper` | form controls |
 | `paper-check`, `paper-radio` | checkbox / radio |
-| `paper-switch`, `paper-switch-2`, `range-paper` | switches / range slider |
+| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper` | switches / range slider |
 | `progress-paper`, `progress-paper-bar` | progress |
 | `collapsible-paper` | accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
