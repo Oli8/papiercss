@@ -203,7 +203,7 @@
   }
 
   & input:checked + .paper-switch-slider {
-    background-color: var(--color-success-light);
+    background-color: var(--color-success-soft);
   }
 
   & input:checked + .paper-switch-slider::before {
@@ -276,7 +276,7 @@
   }
 
   & input:checked + .paper-switch-slider {
-    background-color: var(--color-success-light);
+    background-color: var(--color-success-soft);
   }
 
   & input:checked + .paper-switch-slider::before {

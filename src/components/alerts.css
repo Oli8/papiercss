@@ -22,39 +22,39 @@
 }
 
 @utility alert-paper-primary {
-  color: var(--color-primary-text);
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
+  color: var(--color-primary-soft-fg);
+  background-color: var(--color-primary-soft);
+  border-color: var(--color-primary-soft-border);
 }
 
 @utility alert-paper-secondary {
-  color: var(--color-secondary-text);
-  background-color: var(--color-secondary-light);
-  border-color: var(--color-secondary);
+  color: var(--color-secondary-soft-fg);
+  background-color: var(--color-secondary-soft);
+  border-color: var(--color-secondary-soft-border);
 }
 
 @utility alert-paper-success {
-  color: var(--color-success-text);
-  background-color: var(--color-success-light);
-  border-color: var(--color-success-dark);
+  color: var(--color-success-soft-fg);
+  background-color: var(--color-success-soft);
+  border-color: var(--color-success-soft-border);
 }
 
 @utility alert-paper-warning {
-  color: var(--color-warning-text);
-  background-color: var(--color-warning-light);
-  border-color: var(--color-warning-dark);
+  color: var(--color-warning-soft-fg);
+  background-color: var(--color-warning-soft);
+  border-color: var(--color-warning-soft-border);
 }
 
 @utility alert-paper-danger {
-  color: var(--color-danger-text);
-  background-color: var(--color-danger-light);
-  border-color: var(--color-danger);
+  color: var(--color-danger-soft-fg);
+  background-color: var(--color-danger-soft);
+  border-color: var(--color-danger-soft-border);
 }
 
 @utility alert-paper-muted {
-  color: var(--color-muted-text);
-  background-color: var(--color-muted-light);
-  border-color: var(--color-muted);
+  color: var(--color-muted-soft-fg);
+  background-color: var(--color-muted-soft);
+  border-color: var(--color-muted-soft-border);
 }
 
 @utility alert-paper-close {

@@ -32,9 +32,23 @@ You can also skip `fonts.css` and load Neucha + Patrick Hand SC with a `<link>` 
 
 ## Theme
 
-Semantic colors are exposed as Tailwind color utilities:
+Semantic colors use Tailwind-style scales (`50`–`950`) plus a default alias:
 
-`bg-primary`, `text-secondary`, `border-danger`, `bg-success-light`, `text-warning-text`, …
+`bg-primary`, `text-secondary-600`, `border-danger`, `bg-success-100`, …
+
+Default aliases (light → dark):
+
+| Token | Light | Dark |
+| --- | --- | --- |
+| `primary` | 700 | 50 |
+| `secondary` | 800 | 500 |
+| `success` | 400 | 400 |
+| `warning` | 400 | 400 |
+| `danger` | 700 | 500 |
+| `muted` | 400 | 400 |
+
+Components typically use soft role tokens (`*-soft` fill + `*-soft-fg` text),
+remapped for dark mode so fills stay dark instead of pastel.
 
 Override tokens in your app:
 
@@ -52,8 +66,15 @@ Or override the underlying CSS variables (also switches dark mode cleanly):
 
 ```css
 :root {
-  --paper-primary: #2a2a2a;
-  --paper-secondary: #e85d04;
+  --paper-primary-700: #2a2a2a;
+  --paper-primary: var(--paper-primary-700);
+  --paper-secondary-800: #e85d04;
+  --paper-secondary: var(--paper-secondary-800);
+}
+
+.dark {
+  --paper-primary-50: #ffffff;
+  --paper-primary: var(--paper-primary-50);
 }
 ```
 

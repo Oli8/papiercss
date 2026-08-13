@@ -60,39 +60,39 @@
 }
 
 @utility btn-paper-primary {
-  color: var(--color-primary-text);
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
+  color: var(--color-primary-soft-fg);
+  background-color: var(--color-primary-soft);
+  border-color: var(--color-primary-soft-border);
 }
 
 @utility btn-paper-secondary {
-  color: var(--color-secondary-text);
-  background-color: var(--color-secondary-light);
-  border-color: var(--color-secondary);
+  color: var(--color-secondary-soft-fg);
+  background-color: var(--color-secondary-soft);
+  border-color: var(--color-secondary-soft-border);
 }
 
 @utility btn-paper-success {
-  color: var(--color-success-text);
-  background-color: var(--color-success-light);
-  border-color: var(--color-success-dark);
+  color: var(--color-success-soft-fg);
+  background-color: var(--color-success-soft);
+  border-color: var(--color-success-soft-border);
 }
 
 @utility btn-paper-warning {
-  color: var(--color-warning-text);
-  background-color: var(--color-warning-light);
-  border-color: var(--color-warning-dark);
+  color: var(--color-warning-soft-fg);
+  background-color: var(--color-warning-soft);
+  border-color: var(--color-warning-soft-border);
 }
 
 @utility btn-paper-danger {
-  color: var(--color-danger-text);
-  background-color: var(--color-danger-light);
-  border-color: var(--color-danger);
+  color: var(--color-danger-soft-fg);
+  background-color: var(--color-danger-soft);
+  border-color: var(--color-danger-soft-border);
 }
 
 @utility btn-paper-muted {
-  color: var(--color-muted-text);
-  background-color: var(--color-muted-light);
-  border-color: var(--color-muted);
+  color: var(--color-muted-soft-fg);
+  background-color: var(--color-muted-soft);
+  border-color: var(--color-muted-soft-border);
 }
 
 @utility btn-paper-primary-outline {
@@ -101,8 +101,8 @@
   border-color: var(--color-primary);
 
   &:hover {
-    color: var(--color-primary-text);
-    background-color: var(--color-primary-light);
+    color: var(--color-primary-soft-fg);
+    background-color: var(--color-primary-soft);
   }
 }
 
@@ -112,8 +112,8 @@
   border-color: var(--color-secondary);
 
   &:hover {
-    color: var(--color-secondary-text);
-    background-color: var(--color-secondary-light);
+    color: var(--color-secondary-soft-fg);
+    background-color: var(--color-secondary-soft);
   }
 }
 
@@ -123,8 +123,8 @@
   border-color: var(--color-success);
 
   &:hover {
-    color: var(--color-success-text);
-    background-color: var(--color-success-light);
+    color: var(--color-success-soft-fg);
+    background-color: var(--color-success-soft);
   }
 }
 
@@ -134,8 +134,8 @@
   border-color: var(--color-warning);
 
   &:hover {
-    color: var(--color-warning-text);
-    background-color: var(--color-warning-light);
+    color: var(--color-warning-soft-fg);
+    background-color: var(--color-warning-soft);
   }
 }
 
@@ -145,8 +145,8 @@
   border-color: var(--color-danger);
 
   &:hover {
-    color: var(--color-danger-text);
-    background-color: var(--color-danger-light);
+    color: var(--color-danger-soft-fg);
+    background-color: var(--color-danger-soft);
   }
 }
 
@@ -156,7 +156,7 @@
   border-color: var(--color-muted);
 
   &:hover {
-    color: var(--color-muted-text);
-    background-color: var(--color-muted-light);
+    color: var(--color-muted-soft-fg);
+    background-color: var(--color-muted-soft);
   }
 }

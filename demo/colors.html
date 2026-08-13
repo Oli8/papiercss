@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PapierCSS — Colors</title>
+    <link rel="stylesheet" href="./dist.css" />
+  </head>
+  <body class="text-paper-base bg-main-background min-h-screen">
+    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border px-4 py-2 mb-8">
+      <div class="font-paper-heading text-2xl text-primary">
+        <a href="./index.html">PapierCSS</a>
+      </div>
+      <ul class="inline">
+        <li><a href="./index.html">Components</a></li>
+        <li><a href="./colors.html">Colors</a></li>
+        <li>
+          <button
+            type="button"
+            class="btn-paper btn-paper-sm"
+            onclick="document.documentElement.classList.toggle('dark')"
+          >
+            Dark
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="mx-auto max-w-4xl space-y-14 px-8 pb-24">
+      <header class="space-y-2">
+        <h1 class="font-paper-heading text-5xl text-primary">Colors</h1>
+        <p class="text-muted-600">
+          Tailwind-style 50–950 scales. Toggle dark to switch palettes.
+          Utils: <code class="text-secondary">bg-*</code>,
+          <code class="text-secondary">text-*</code>,
+          <code class="text-secondary">border-*</code>.
+        </p>
+      </header>
+
+      <section class="space-y-4">
+        <h2 class="font-paper-heading text-3xl text-primary border-b-2 border-muted-border pb-2">
+          Base aliases
+        </h2>
+        <p class="text-sm text-muted-600">
+          Each color has a default step via <code>--paper-primary</code>,
+          <code>--paper-secondary</code>, … on <code>:root</code> /
+          <code>.dark</code>.
+        </p>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+          <div class="space-y-1">
+            <div class="bg-primary border-paper border-primary h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">primary</p>
+            <p class="text-xs text-muted-600">700 / 50 dark</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-secondary border-paper border-secondary h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">secondary</p>
+            <p class="text-xs text-muted-600">800 / 500 dark</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-success border-paper border-success h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">success</p>
+            <p class="text-xs text-muted-600">400</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-warning border-paper border-warning h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">warning</p>
+            <p class="text-xs text-muted-600">400</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-danger border-paper border-danger h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">danger</p>
+            <p class="text-xs text-muted-600">700 / 500 dark</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-muted border-paper border-muted h-20 shadow-paper-sm"></div>
+            <p class="font-paper text-sm">muted</p>
+            <p class="text-xs text-muted-600">400</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-8">
+        <h2 class="font-paper-heading text-3xl text-primary border-b-2 border-muted-border pb-2">
+          Scales (50–950)
+        </h2>
+
+        <div class="space-y-3" data-scale="primary">
+          <h3 class="font-paper-heading text-2xl text-primary">primary</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-primary-50 h-12 border-paper border-primary-200"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-primary-100 h-12 border-paper border-primary-200"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-primary-200 h-12 border-paper border-primary-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-primary-300 h-12 border-paper border-primary-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-primary-400 h-12 border-paper border-primary-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-primary-500 h-12 border-paper border-primary-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-primary-600 h-12 border-paper border-primary-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-primary-700 h-12 border-paper border-primary-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-primary-800 h-12 border-paper border-primary-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-primary-900 h-12 border-paper border-primary-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-primary-950 h-12 border-paper border-primary-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-primary h-12 border-paper border-primary"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl text-secondary">secondary</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-secondary-50 h-12 border-paper border-secondary-200"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-secondary-100 h-12 border-paper border-secondary-200"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-secondary-200 h-12 border-paper border-secondary-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-secondary-300 h-12 border-paper border-secondary-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-secondary-400 h-12 border-paper border-secondary-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-secondary-500 h-12 border-paper border-secondary-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-secondary-600 h-12 border-paper border-secondary-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-secondary-700 h-12 border-paper border-secondary-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-secondary-800 h-12 border-paper border-secondary-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-secondary-900 h-12 border-paper border-secondary-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-secondary-950 h-12 border-paper border-secondary-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-secondary h-12 border-paper border-secondary"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl text-success-700">success</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-success-50 h-12 border-paper border-success-200"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-success-100 h-12 border-paper border-success-200"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-success-200 h-12 border-paper border-success-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-success-300 h-12 border-paper border-success-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-success-400 h-12 border-paper border-success-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-success-500 h-12 border-paper border-success-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-success-600 h-12 border-paper border-success-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-success-700 h-12 border-paper border-success-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-success-800 h-12 border-paper border-success-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-success-900 h-12 border-paper border-success-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-success-950 h-12 border-paper border-success-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-success h-12 border-paper border-success"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl text-warning-700">warning</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-warning-50 h-12 border-paper border-warning-200"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-warning-100 h-12 border-paper border-warning-200"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-warning-200 h-12 border-paper border-warning-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-warning-300 h-12 border-paper border-warning-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-warning-400 h-12 border-paper border-warning-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-warning-500 h-12 border-paper border-warning-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-warning-600 h-12 border-paper border-warning-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-warning-700 h-12 border-paper border-warning-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-warning-800 h-12 border-paper border-warning-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-warning-900 h-12 border-paper border-warning-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-warning-950 h-12 border-paper border-warning-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-warning h-12 border-paper border-warning"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl text-danger">danger</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-danger-50 h-12 border-paper border-danger-200"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-danger-100 h-12 border-paper border-danger-200"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-danger-200 h-12 border-paper border-danger-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-danger-300 h-12 border-paper border-danger-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-danger-400 h-12 border-paper border-danger-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-danger-500 h-12 border-paper border-danger-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-danger-600 h-12 border-paper border-danger-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-danger-700 h-12 border-paper border-danger-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-danger-800 h-12 border-paper border-danger-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-danger-900 h-12 border-paper border-danger-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-danger-950 h-12 border-paper border-danger-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-danger h-12 border-paper border-danger"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl text-muted-700">muted</h3>
+          <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-12">
+            <div class="space-y-1"><div class="bg-muted-50 h-12 border-paper border-muted-border"></div><p class="text-xs">50</p></div>
+            <div class="space-y-1"><div class="bg-muted-100 h-12 border-paper border-muted-border"></div><p class="text-xs">100</p></div>
+            <div class="space-y-1"><div class="bg-muted-200 h-12 border-paper border-muted-300"></div><p class="text-xs">200</p></div>
+            <div class="space-y-1"><div class="bg-muted-300 h-12 border-paper border-muted-400"></div><p class="text-xs">300</p></div>
+            <div class="space-y-1"><div class="bg-muted-400 h-12 border-paper border-muted-500"></div><p class="text-xs">400</p></div>
+            <div class="space-y-1"><div class="bg-muted-500 h-12 border-paper border-muted-600"></div><p class="text-xs">500</p></div>
+            <div class="space-y-1"><div class="bg-muted-600 h-12 border-paper border-muted-700"></div><p class="text-xs">600</p></div>
+            <div class="space-y-1"><div class="bg-muted-700 h-12 border-paper border-muted-800"></div><p class="text-xs">700</p></div>
+            <div class="space-y-1"><div class="bg-muted-800 h-12 border-paper border-muted-900"></div><p class="text-xs">800</p></div>
+            <div class="space-y-1"><div class="bg-muted-900 h-12 border-paper border-muted-950"></div><p class="text-xs">900</p></div>
+            <div class="space-y-1"><div class="bg-muted-950 h-12 border-paper border-muted-950"></div><p class="text-xs">950</p></div>
+            <div class="space-y-1"><div class="bg-muted h-12 border-paper border-muted"></div><p class="text-xs">alias</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="font-paper-heading text-3xl text-primary border-b-2 border-muted-border pb-2">
+          Surfaces & helpers
+        </h2>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+          <div class="space-y-1">
+            <div class="bg-main-background h-16 border-paper border-primary"></div>
+            <p class="text-sm">main-background</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-main-background-light h-16 border-paper border-primary"></div>
+            <p class="text-sm">main-background-light</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-primary-inverse h-16 border-paper border-primary"></div>
+            <p class="text-sm">primary-inverse</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-white-dark h-16 border-paper border-primary"></div>
+            <p class="text-sm">white-dark</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-white-dark-light-80 h-16 border-paper border-primary"></div>
+            <p class="text-sm">white-dark-light-80</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-light-dark h-16 border-paper border-primary"></div>
+            <p class="text-sm">light-dark</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-primary-bg text-tag-text flex h-16 items-center justify-center border-paper border-primary font-paper text-sm">
+              primary
+            </div>
+            <p class="text-sm">tag-primary-bg</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-secondary-bg text-tag-text flex h-16 items-center justify-center border-paper border-secondary font-paper text-sm">
+              secondary
+            </div>
+            <p class="text-sm">tag-secondary-bg</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-success-bg text-tag-text flex h-16 items-center justify-center border-paper border-success font-paper text-sm">
+              success
+            </div>
+            <p class="text-sm">tag-success-bg</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-warning-bg text-tag-text flex h-16 items-center justify-center border-paper border-warning font-paper text-sm">
+              warning
+            </div>
+            <p class="text-sm">tag-warning-bg</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-danger-bg text-tag-text flex h-16 items-center justify-center border-paper border-danger font-paper text-sm">
+              danger
+            </div>
+            <p class="text-sm">tag-danger-bg</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-tag-muted-bg text-tag-text flex h-16 items-center justify-center border-paper border-muted font-paper text-sm">
+              muted
+            </div>
+            <p class="text-sm">tag-muted-bg</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="font-paper-heading text-3xl text-primary border-b-2 border-muted-border pb-2">
+          Component pattern
+        </h2>
+        <p class="text-sm text-muted-600">
+          Filled buttons / alerts: <code>bg-*-soft</code> +
+          <code>text-*-soft-fg</code> + <code>border-*-soft-border</code>
+          (dark remaps to darker fills).
+        </p>
+        <div class="space-y-3 font-paper">
+          <div class="bg-primary-soft text-primary-soft-fg border-paper border-primary-soft-border p-4">
+            bg-primary-soft / text-primary-soft-fg / border-primary-soft-border
+          </div>
+          <div class="bg-secondary-soft text-secondary-soft-fg border-paper border-secondary-soft-border p-4">
+            bg-secondary-soft / text-secondary-soft-fg / border-secondary-soft-border
+          </div>
+          <div class="bg-success-soft text-success-soft-fg border-paper border-success-soft-border p-4">
+            bg-success-soft / text-success-soft-fg / border-success-soft-border
+          </div>
+          <div class="bg-warning-soft text-warning-soft-fg border-paper border-warning-soft-border p-4">
+            bg-warning-soft / text-warning-soft-fg / border-warning-soft-border
+          </div>
+          <div class="bg-danger-soft text-danger-soft-fg border-paper border-danger-soft-border p-4">
+            bg-danger-soft / text-danger-soft-fg / border-danger-soft-border
+          </div>
+          <div class="bg-muted-soft text-muted-soft-fg border-paper border-muted-soft-border p-4">
+            bg-muted-soft / text-muted-soft-fg / border-muted-soft-border
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

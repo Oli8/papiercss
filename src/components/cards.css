@@ -7,7 +7,7 @@
   word-wrap: break-word;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--color-muted-light);
+  border-color: var(--color-muted-border);
   box-shadow: var(--shadow-paper);
   background-color: var(--color-main-background);
   color: var(--color-primary);
@@ -23,7 +23,7 @@
   background-color: var(--color-white-dark);
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-color: var(--color-muted-light);
+  border-color: var(--color-muted-border);
   padding: 0.75rem 1.25rem;
 }
 
@@ -31,7 +31,7 @@
   background-color: var(--color-white-dark);
   border-top-width: 2px;
   border-top-style: solid;
-  border-color: var(--color-muted-light);
+  border-color: var(--color-muted-border);
   padding: 0.75rem 1.25rem;
 }
 

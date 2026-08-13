@@ -14,10 +14,10 @@
 
 @utility article-paper-meta {
   font-size: 15px;
-  color: var(--color-muted-text);
+  color: var(--color-muted-600);
 
   & a {
-    color: var(--color-muted-text);
+    color: var(--color-muted-600);
     background-image: none;
 
     &:hover {

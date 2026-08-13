@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./dist.css" />
   </head>
   <body class="text-paper-base bg-main-background min-h-screen">
-    <nav class="nav-paper nav-paper-split border-b-2 border-muted-light px-4 py-2 mb-8">
+    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border px-4 py-2 mb-8">
       <div class="font-paper-heading text-2xl text-primary">
         <a href="/">PapierCSS</a>
       </div>
       <ul class="inline">
         <li><a href="#utilities">Utilities</a></li>
         <li><a href="#components">Components</a></li>
+        <li><a href="./colors.html">Colors</a></li>
         <li>
           <button
             type="button"
@@ -29,7 +30,7 @@
     <main class="mx-auto max-w-3xl space-y-14 px-8 pb-24">
       <header class="space-y-2">
         <h1 class="font-paper-heading text-5xl text-primary">PaperCSS demo</h1>
-        <p class="text-muted-text">
+        <p class="text-muted-600">
           Tailwind utilities + paper look. Opt-in classes only —
           <a class="link-paper" href="#components">scribble link</a>
           /
@@ -44,7 +45,7 @@
 
       <!-- ========== UTILITIES ========== -->
       <section id="utilities" class="space-y-10">
-        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-light pb-2">
+        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-border pb-2">
           Utilities
         </h2>
 
@@ -95,11 +96,11 @@
           <div class="flex flex-wrap gap-2 text-sm">
             <span class="bg-primary text-primary-inverse rounded-paper px-3 py-1">primary</span>
             <span class="bg-secondary text-white rounded-paper px-3 py-1">secondary</span>
-            <span class="bg-success-light text-success-text border-paper border-success px-3 py-1">success</span>
-            <span class="bg-warning-light text-warning-text border-paper border-warning px-3 py-1">warning</span>
-            <span class="bg-danger-light text-danger-text border-paper border-danger px-3 py-1">danger</span>
-            <span class="bg-muted-light text-muted-100 border-paper border-muted px-3 py-1">muted</span>
-            <span class="text-primary-text">text-primary-text</span>
+            <span class="bg-success-soft text-success-soft-fg border-paper border-success px-3 py-1">success</span>
+            <span class="bg-warning-soft text-warning-soft-fg border-paper border-warning px-3 py-1">warning</span>
+            <span class="bg-danger-soft text-danger-soft-fg border-paper border-danger px-3 py-1">danger</span>
+            <span class="bg-muted-soft text-muted-soft-fg border-paper border-muted px-3 py-1">muted</span>
+            <span class="text-primary-soft-fg">text-primary-soft-fg</span>
             <span class="text-secondary">text-secondary</span>
           </div>
         </div>
@@ -107,7 +108,7 @@
 
       <!-- ========== COMPONENTS ========== -->
       <section id="components" class="space-y-10">
-        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-light pb-2">
+        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-border pb-2">
           Components
         </h2>
 
@@ -187,7 +188,7 @@
               <p class="mb-4">Shadow + border paper style, composed with Tailwind spacing.</p>
               <button type="button" class="btn-paper btn-paper-sm btn-paper-primary">Action</button>
             </div>
-            <div class="card-paper-footer text-sm text-muted-text">Footer</div>
+            <div class="card-paper-footer text-sm text-muted-600">Footer</div>
           </div>
         </div>
 
@@ -276,7 +277,7 @@
             <label class="paper-switch-tile">
               <input id="tile2" type="checkbox" />
               <div class="paper-switch-tile-card">
-                <div class="paper-switch-tile-card-front bg-warning-light text-warning-text border-warning">
+                <div class="paper-switch-tile-card-front bg-warning-soft text-warning-soft-fg border-warning">
                   Off
                 </div>
                 <div class="paper-switch-tile-card-back bg-secondary text-tag-text border-secondary">
@@ -287,10 +288,10 @@
             <label class="paper-switch-tile">
               <input id="tile3" type="checkbox" checked />
               <div class="paper-switch-tile-card">
-                <div class="paper-switch-tile-card-front bg-danger-light text-danger-text border-danger">
+                <div class="paper-switch-tile-card-front bg-danger-soft text-danger-soft-fg border-danger">
                   Declined
                 </div>
-                <div class="paper-switch-tile-card-back bg-success-light text-success-text border-success">
+                <div class="paper-switch-tile-card-back bg-success-soft text-success-soft-fg border-success">
                   Accepted
                 </div>
               </div>
@@ -322,7 +323,7 @@
               value="42"
               oninput="document.getElementById('percentage-out').value = this.value + '%'"
             />
-            <output id="percentage-out" class="text-sm text-muted-text">42%</output>
+            <output id="percentage-out" class="text-sm text-muted-600">42%</output>
           </div>
         </div>
 
@@ -330,20 +331,20 @@
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Progress</h3>
           <div class="progress-paper">
-            <div class="progress-paper-bar w-1/2 text-primary-text">50%</div>
+            <div class="progress-paper-bar w-1/2 text-primary-soft-fg">50%</div>
           </div>
           <div class="progress-paper">
-            <div class="progress-paper-bar progress-paper-striped w-2/3 bg-secondary-light"></div>
+            <div class="progress-paper-bar progress-paper-striped w-2/3 bg-secondary-soft"></div>
           </div>
           <div class="progress-paper">
-            <div class="progress-paper-bar w-[90%] bg-success-light"></div>
+            <div class="progress-paper-bar w-[90%] bg-success-soft"></div>
           </div>
         </div>
 
         <!-- Accordion / Collapsible -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Collapsible</h3>
-          <div class="border-paper border-muted-light overflow-hidden">
+          <div class="border-paper border-muted-border overflow-hidden">
             <div class="collapsible-paper">
               <input id="col1" type="checkbox" />
               <label for="col1">First section</label>
@@ -374,7 +375,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Headers evenly (default)</h4>
-            <div class="tabs-paper border-paper border-muted-light p-3">
+            <div class="tabs-paper border-paper border-muted-border p-3">
               <input id="even-tab1" type="radio" name="tabs-even" checked />
               <label for="even-tab1">Tab one</label>
               <input id="even-tab2" type="radio" name="tabs-even" />
@@ -389,7 +390,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Headers start (left)</h4>
-            <div class="tabs-paper tabs-paper-start border-paper border-muted-light p-3">
+            <div class="tabs-paper tabs-paper-start border-paper border-muted-border p-3">
               <input id="start-tab1" type="radio" name="tabs-start" checked />
               <label for="start-tab1">Tab one</label>
               <input id="start-tab2" type="radio" name="tabs-start" />
@@ -404,7 +405,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Headers between</h4>
-            <div class="tabs-paper tabs-paper-between border-paper border-muted-light p-3">
+            <div class="tabs-paper tabs-paper-between border-paper border-muted-border p-3">
               <input id="between-tab1" type="radio" name="tabs-between" checked />
               <label for="between-tab1">Tab one</label>
               <input id="between-tab2" type="radio" name="tabs-between" />
@@ -419,7 +420,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Headers center</h4>
-            <div class="tabs-paper tabs-paper-center border-paper border-muted-light p-3">
+            <div class="tabs-paper tabs-paper-center border-paper border-muted-border p-3">
               <input id="center-tab1" type="radio" name="tabs-center" checked />
               <label for="center-tab1">Tab one</label>
               <input id="center-tab2" type="radio" name="tabs-center" />
@@ -434,7 +435,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Headers end (right)</h4>
-            <div class="tabs-paper tabs-paper-end border-paper border-muted-light p-3">
+            <div class="tabs-paper tabs-paper-end border-paper border-muted-border p-3">
               <input id="end-tab1" type="radio" name="tabs-end" checked />
               <label for="end-tab1">Tab one</label>
               <input id="end-tab2" type="radio" name="tabs-end" />
@@ -507,7 +508,7 @@
         <!-- Navbar (inline example; top nav already shown) -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Navbar</h3>
-          <nav class="nav-paper nav-paper-split border-paper border-muted-light px-3">
+          <nav class="nav-paper nav-paper-split border-paper border-muted-border px-3">
             <div class="font-paper-heading text-2xl">
               <a href="#">PapierCSS</a>
             </div>
@@ -522,7 +523,7 @@
         <!-- Breadcrumb already in header; show again labeled -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Breadcrumb</h3>
-          <ul class="breadcrumb-paper border-paper border-muted-light">
+          <ul class="breadcrumb-paper border-paper border-muted-border">
             <li><a href="#">Home</a></li>
             <li><a href="#">Components</a></li>
             <li>Breadcrumb</li>
@@ -532,7 +533,7 @@
         <!-- Article -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Article</h3>
-          <article class="article-paper border-paper border-muted-light p-6">
+          <article class="article-paper border-paper border-muted-border p-6">
             <h4 class="article-paper-title mt-0">Handwritten headlines</h4>
             <p class="article-paper-meta">
               By <a href="#">Author</a> · Aug 6, 2026
@@ -551,7 +552,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Default</h4>
-            <table class="table-paper border-paper border-muted-light">
+            <table class="table-paper border-paper border-muted-border">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -581,7 +582,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Hover</h4>
-            <table class="table-paper table-paper-hover border-paper border-muted-light">
+            <table class="table-paper table-paper-hover border-paper border-muted-border">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -611,7 +612,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Alternating</h4>
-            <table class="table-paper table-paper-alternating border-paper border-muted-light">
+            <table class="table-paper table-paper-alternating border-paper border-muted-border">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -676,7 +677,7 @@
 
           <div class="space-y-2">
             <h4 class="font-paper-heading text-xl">Hover + alternating</h4>
-            <table class="table-paper table-paper-hover table-paper-alternating border-paper border-muted-light">
+            <table class="table-paper table-paper-hover table-paper-alternating border-paper border-muted-border">
               <thead>
                 <tr>
                   <th>Name</th>

@@ -7,51 +7,90 @@
 
 :root {
   color-scheme: light;
-  --paper-primary: #41403e;
-  --paper-secondary: #0b74d5;
-  --paper-success: #86a361;
-  --paper-warning: #ddcd45;
-  --paper-danger: #a7342d;
-  --paper-muted: #868e96;
 
-  --paper-primary-light: color-mix(in srgb, var(--paper-primary) 45%, white);
-  --paper-secondary-light: color-mix(in srgb, var(--paper-secondary) 52%, white);
-  --paper-success-light: color-mix(in srgb, var(--paper-success) 68%, white);
-  --paper-warning-light: color-mix(in srgb, var(--paper-warning) 70%, white);
-  --paper-danger-light: color-mix(in srgb, var(--paper-danger) 55%, white);
-  --paper-muted-light: color-mix(in srgb, var(--paper-muted) 65%, white);
+  /* primary */
+  --paper-primary-50: #fafaf9;
+  --paper-primary-100: #f5f5f4;
+  --paper-primary-200: #e6e6e5;
+  --paper-primary-300: #d4d4d3;
+  --paper-primary-400: #a5a3a1;
+  --paper-primary-500: #747270;
+  --paper-primary-600: #545351;
+  --paper-primary-700: #41403e;
+  --paper-primary-800: #272626;
+  --paper-primary-900: #1a1a19;
+  --paper-primary-950: #0b0b0a;
+  --paper-primary: var(--paper-primary-700);
 
-  --paper-primary-dark: color-mix(in srgb, var(--paper-primary) 50%, black);
-  --paper-secondary-dark: color-mix(in srgb, var(--paper-secondary) 50%, black);
-  --paper-success-dark: color-mix(in srgb, var(--paper-success) 70%, black);
-  --paper-warning-dark: color-mix(in srgb, var(--paper-warning) 70%, black);
-  --paper-danger-dark: color-mix(in srgb, var(--paper-danger) 55%, black);
-  --paper-muted-dark: color-mix(in srgb, var(--paper-muted) 65%, black);
+  /* secondary */
+  --paper-secondary-50: #edfaff;
+  --paper-secondary-100: #d6f3ff;
+  --paper-secondary-200: #b6ebff;
+  --paper-secondary-300: #84e1ff;
+  --paper-secondary-400: #4bcfff;
+  --paper-secondary-500: #21b5ff;
+  --paper-secondary-600: #0a9dff;
+  --paper-secondary-700: #0386f2;
+  --paper-secondary-800: #0b74d5;
+  --paper-secondary-900: #0f5a99;
+  --paper-secondary-950: #0f375c;
+  --paper-secondary: var(--paper-secondary-800);
 
-  --paper-primary-light-10: color-mix(in srgb, var(--paper-primary) 90%, white);
-  --paper-secondary-light-10: color-mix(in srgb, var(--paper-secondary) 90%, white);
-  --paper-success-light-10: color-mix(in srgb, var(--paper-success) 90%, white);
-  --paper-warning-light-10: color-mix(in srgb, var(--paper-warning) 90%, white);
-  --paper-danger-light-10: color-mix(in srgb, var(--paper-danger) 90%, white);
-  --paper-muted-light-10: color-mix(in srgb, var(--paper-muted) 90%, white);
+  /* success */
+  --paper-success-50: #f3f6ef;
+  --paper-success-100: #e5ecdb;
+  --paper-success-200: #cedbbb;
+  --paper-success-300: #afc393;
+  --paper-success-400: #86a361;
+  --paper-success-500: #749052;
+  --paper-success-600: #59713f;
+  --paper-success-700: #465833;
+  --paper-success-800: #3a482c;
+  --paper-success-900: #333e29;
+  --paper-success-950: #192013;
+  --paper-success: var(--paper-success-400);
 
-  --paper-primary-dark-10: color-mix(in srgb, var(--paper-primary) 90%, black);
-  --paper-secondary-dark-10: color-mix(in srgb, var(--paper-secondary) 90%, black);
-  --paper-success-dark-10: color-mix(in srgb, var(--paper-success) 77%, black);
-  --paper-warning-dark-10: color-mix(in srgb, var(--paper-warning) 70%, black);
-  --paper-danger-dark-10: color-mix(in srgb, var(--paper-danger) 90%, black);
-  --paper-muted-dark-10: color-mix(in srgb, var(--paper-muted) 90%, black);
+  /* warning */
+  --paper-warning-50: #fbfaeb;
+  --paper-warning-100: #f6f5cc;
+  --paper-warning-200: #efeb9c;
+  --paper-warning-300: #e5db64;
+  --paper-warning-400: #ddcd45;
+  --paper-warning-500: #c8b326;
+  --paper-warning-600: #a98f1e;
+  --paper-warning-700: #866b1a;
+  --paper-warning-800: #6f561c;
+  --paper-warning-900: #5e491e;
+  --paper-warning-950: #36270d;
+  --paper-warning: var(--paper-warning-400);
 
-  --paper-primary-shaded-50: color-mix(in srgb, var(--paper-primary) 50%, white);
-  --paper-primary-shaded-70: color-mix(in srgb, var(--paper-primary) 30%, white);
+  /* danger */
+  --paper-danger-50: #fdf4f3;
+  --paper-danger-100: #fbe6e5;
+  --paper-danger-200: #f8d2d0;
+  --paper-danger-300: #f2b3af;
+  --paper-danger-400: #e98680;
+  --paper-danger-500: #dc5f57;
+  --paper-danger-600: #c8423a;
+  --paper-danger-700: #a7342d;
+  --paper-danger-800: #8b2f29;
+  --paper-danger-900: #742c28;
+  --paper-danger-950: #3f1310;
+  --paper-danger: var(--paper-danger-700);
 
-  /* *-text: dark foreground for use on *-light fills (buttons, alerts, …) */
-  --paper-primary-text: color-mix(in srgb, var(--paper-primary) 28%, black);
-  --paper-secondary-text: color-mix(in srgb, var(--paper-secondary) 28%, black);
-  --paper-success-text: color-mix(in srgb, var(--paper-success) 32%, black);
-  --paper-warning-text: color-mix(in srgb, var(--paper-warning) 28%, black);
-  --paper-danger-text: color-mix(in srgb, var(--paper-danger) 28%, black);
-  --paper-muted-text: color-mix(in srgb, var(--paper-muted) 28%, black);
+  /* muted */
+  --paper-muted-50: #f9fafb;
+  --paper-muted-100: #f3f4f6;
+  --paper-muted-200: #e6e8ea;
+  --paper-muted-300: #d3d6d9;
+  --paper-muted-400: #868e96;
+  --paper-muted-500: #6e757d;
+  --paper-muted-600: #4f585f;
+  --paper-muted-700: #3b444d;
+  --paper-muted-800: #232c33;
+  --paper-muted-900: #151b23;
+  --paper-muted-950: #050910;
+  --paper-muted: var(--paper-muted-400);
 
   --paper-white: #fff;
   --paper-black: #000;
@@ -62,9 +101,35 @@
   --paper-light-dark: rgb(0 0 0 / 0.7);
   --paper-primary-inverse: #fff;
 
-  /* Tags: keep light text + stable primary chip bg across themes */
+  /* Soft fills for buttons / alerts (remapped in .dark) */
+  --paper-primary-soft: var(--paper-primary-100);
+  --paper-primary-soft-fg: var(--paper-primary-800);
+  --paper-primary-soft-border: var(--paper-primary);
+  --paper-secondary-soft: var(--paper-secondary-100);
+  --paper-secondary-soft-fg: var(--paper-secondary-800);
+  --paper-secondary-soft-border: var(--paper-secondary);
+  --paper-success-soft: var(--paper-success-100);
+  --paper-success-soft-fg: var(--paper-success-800);
+  --paper-success-soft-border: var(--paper-success-600);
+  --paper-warning-soft: var(--paper-warning-100);
+  --paper-warning-soft-fg: var(--paper-warning-800);
+  --paper-warning-soft-border: var(--paper-warning-600);
+  --paper-danger-soft: var(--paper-danger-100);
+  --paper-danger-soft-fg: var(--paper-danger-800);
+  --paper-danger-soft-border: var(--paper-danger);
+  --paper-muted-soft: var(--paper-muted-100);
+  --paper-muted-soft-fg: var(--paper-muted-800);
+  --paper-muted-soft-border: var(--paper-muted);
+  --paper-muted-border: var(--paper-muted-200);
+
+  /* Tags: light text + saturated chip backgrounds */
   --paper-tag-text: var(--paper-white);
-  --paper-tag-primary-bg: var(--paper-primary);
+  --paper-tag-primary-bg: var(--paper-primary-700);
+  --paper-tag-secondary-bg: var(--paper-secondary-700);
+  --paper-tag-success-bg: var(--paper-success-600);
+  --paper-tag-warning-bg: var(--paper-warning-600);
+  --paper-tag-danger-bg: var(--paper-danger-700);
+  --paper-tag-muted-bg: var(--paper-muted-600);
 
   --paper-shadow-color: hsl(0 0% 0% / 0.2);
   --paper-shadow-color-hover: hsl(0 0% 0% / 0.3);
@@ -72,37 +137,93 @@
 
 .dark {
   color-scheme: dark;
-  --paper-primary: #fff;
-  --paper-secondary: #5595ce;
-  --paper-success: #70c272;
-  --paper-warning: #d4c252;
-  --paper-danger: #df4c57;
-  --paper-muted: #868e96;
 
-  --paper-primary-light: color-mix(in srgb, var(--paper-primary) 95%, black);
-  --paper-secondary-light: color-mix(in srgb, var(--paper-secondary) 95%, white);
-  --paper-success-light: color-mix(in srgb, var(--paper-success) 95%, white);
-  --paper-warning-light: color-mix(in srgb, var(--paper-warning) 95%, white);
-  --paper-danger-light: color-mix(in srgb, var(--paper-danger) 78%, white);
-  --paper-muted-light: color-mix(in srgb, var(--paper-muted) 95%, white);
+  /*
+    Dark primary: alias is white (50). Steps 100–950 reuse the light
+    stone scale so fills/borders stay usable (generator output was all #000).
+  */
+  --paper-primary-50: #ffffff;
+  --paper-primary-100: #f5f5f4;
+  --paper-primary-200: #e6e6e5;
+  --paper-primary-300: #d4d4d3;
+  --paper-primary-400: #a5a3a1;
+  --paper-primary-500: #747270;
+  --paper-primary-600: #545351;
+  --paper-primary-700: #41403e;
+  --paper-primary-800: #272626;
+  --paper-primary-900: #1a1a19;
+  --paper-primary-950: #0b0b0a;
+  --paper-primary: var(--paper-primary-50);
 
-  --paper-primary-dark: color-mix(in srgb, var(--paper-primary) 50%, black);
-  --paper-secondary-dark: color-mix(in srgb, var(--paper-secondary) 70%, black);
-  --paper-success-dark: color-mix(in srgb, var(--paper-success) 65%, black);
-  --paper-warning-dark: color-mix(in srgb, var(--paper-warning) 70%, black);
-  --paper-danger-dark: color-mix(in srgb, var(--paper-danger) 70%, black);
-  --paper-muted-dark: color-mix(in srgb, var(--paper-muted) 65%, black);
+  /* secondary */
+  --paper-secondary-50: #f2f8fc;
+  --paper-secondary-100: #e2eef7;
+  --paper-secondary-200: #cbe2f2;
+  --paper-secondary-300: #a8d0e8;
+  --paper-secondary-400: #7eb6dc;
+  --paper-secondary-500: #5595ce;
+  --paper-secondary-600: #4c83c4;
+  --paper-secondary-700: #4270b3;
+  --paper-secondary-800: #3b5c92;
+  --paper-secondary-900: #334e75;
+  --paper-secondary-950: #233148;
+  --paper-secondary: var(--paper-secondary-500);
 
-  --paper-primary-shaded-50: color-mix(in srgb, #41403e 95%, black);
-  --paper-primary-shaded-70: color-mix(in srgb, #41403e 93%, black);
+  /* success */
+  --paper-success-50: #f3faf3;
+  --paper-success-100: #e3f5e3;
+  --paper-success-200: #c8eac8;
+  --paper-success-300: #9cd99d;
+  --paper-success-400: #70c272;
+  --paper-success-500: #44a347;
+  --paper-success-600: #348536;
+  --paper-success-700: #2b6a2d;
+  --paper-success-800: #275429;
+  --paper-success-900: #214623;
+  --paper-success-950: #0e2510;
+  --paper-success: var(--paper-success-400);
 
-  /* *-text: dark foreground for use on *-light fills */
-  --paper-primary-text: color-mix(in srgb, var(--paper-primary) 28%, black);
-  --paper-secondary-text: color-mix(in srgb, var(--paper-secondary) 28%, black);
-  --paper-success-text: color-mix(in srgb, var(--paper-success) 28%, black);
-  --paper-warning-text: color-mix(in srgb, var(--paper-warning) 28%, black);
-  --paper-danger-text: color-mix(in srgb, var(--paper-danger) 18%, black);
-  --paper-muted-text: color-mix(in srgb, var(--paper-muted) 28%, black);
+  /* warning */
+  --paper-warning-50: #faf9ec;
+  --paper-warning-100: #f3f1cf;
+  --paper-warning-200: #e9e3a2;
+  --paper-warning-300: #ddd06c;
+  --paper-warning-400: #d4c252;
+  --paper-warning-500: #bda631;
+  --paper-warning-600: #a08527;
+  --paper-warning-700: #7f6521;
+  --paper-warning-800: #695222;
+  --paper-warning-900: #5a4622;
+  --paper-warning-950: #34250f;
+  --paper-warning: var(--paper-warning-400);
+
+  /* danger */
+  --paper-danger-50: #fdf3f3;
+  --paper-danger-100: #fce7e7;
+  --paper-danger-200: #f9d2d3;
+  --paper-danger-300: #f3aeb0;
+  --paper-danger-400: #ec8085;
+  --paper-danger-500: #df4c57;
+  --paper-danger-600: #cc3245;
+  --paper-danger-700: #ab2539;
+  --paper-danger-800: #902135;
+  --paper-danger-900: #7b2033;
+  --paper-danger-950: #440d17;
+  --paper-danger: var(--paper-danger-500);
+
+  /* muted */
+  --paper-muted-50: #f9fafb;
+  --paper-muted-100: #f3f4f6;
+  --paper-muted-200: #e6e8ea;
+  --paper-muted-300: #d3d6d9;
+  --paper-muted-400: #868e96;
+  --paper-muted-500: #6e757d;
+  --paper-muted-600: #4f585f;
+  --paper-muted-700: #3b444d;
+  --paper-muted-800: #232c33;
+  --paper-muted-900: #151b23;
+  --paper-muted-950: #050910;
+  --paper-muted: var(--paper-muted-400);
 
   --paper-white: #fff;
   --paper-black: #000;
@@ -111,61 +232,139 @@
   --paper-white-dark: rgb(255 255 255 / 0.03);
   --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, black);
   --paper-light-dark: rgb(255 255 255 / 0.7);
-  --paper-primary-inverse: #41403e;
+  --paper-primary-inverse: var(--paper-primary-700);
 
-  /* primary flips to white in dark — keep tag chip on the ink color */
+  /* Soft fills: darker surfaces + light foreground */
+  --paper-primary-soft: var(--paper-primary-900);
+  --paper-primary-soft-fg: var(--paper-primary-100);
+  --paper-primary-soft-border: var(--paper-primary-400);
+  --paper-secondary-soft: var(--paper-secondary-900);
+  --paper-secondary-soft-fg: var(--paper-secondary-100);
+  --paper-secondary-soft-border: var(--paper-secondary-400);
+  --paper-success-soft: var(--paper-success-900);
+  --paper-success-soft-fg: var(--paper-success-100);
+  --paper-success-soft-border: var(--paper-success-400);
+  --paper-warning-soft: var(--paper-warning-900);
+  --paper-warning-soft-fg: var(--paper-warning-100);
+  --paper-warning-soft-border: var(--paper-warning-400);
+  --paper-danger-soft: var(--paper-danger-900);
+  --paper-danger-soft-fg: var(--paper-danger-100);
+  --paper-danger-soft-border: var(--paper-danger-400);
+  --paper-muted-soft: var(--paper-muted-800);
+  --paper-muted-soft-fg: var(--paper-muted-100);
+  --paper-muted-soft-border: var(--paper-muted-400);
+  --paper-muted-border: var(--paper-muted-600);
+
   --paper-tag-text: var(--paper-white);
-  --paper-tag-primary-bg: var(--paper-primary-inverse);
+  --paper-tag-primary-bg: var(--paper-primary-700);
+  --paper-tag-secondary-bg: var(--paper-secondary-600);
+  --paper-tag-success-bg: var(--paper-success-600);
+  --paper-tag-warning-bg: var(--paper-warning-600);
+  --paper-tag-danger-bg: var(--paper-danger-600);
+  --paper-tag-muted-bg: var(--paper-muted-600);
 }
 
 @theme {
   --font-paper: "Neucha", cursive, sans-serif;
   --font-paper-heading: "Patrick Hand SC", cursive, sans-serif;
 
+  --color-primary-50: var(--paper-primary-50);
+  --color-primary-100: var(--paper-primary-100);
+  --color-primary-200: var(--paper-primary-200);
+  --color-primary-300: var(--paper-primary-300);
+  --color-primary-400: var(--paper-primary-400);
+  --color-primary-500: var(--paper-primary-500);
+  --color-primary-600: var(--paper-primary-600);
+  --color-primary-700: var(--paper-primary-700);
+  --color-primary-800: var(--paper-primary-800);
+  --color-primary-900: var(--paper-primary-900);
+  --color-primary-950: var(--paper-primary-950);
   --color-primary: var(--paper-primary);
+
+  --color-secondary-50: var(--paper-secondary-50);
+  --color-secondary-100: var(--paper-secondary-100);
+  --color-secondary-200: var(--paper-secondary-200);
+  --color-secondary-300: var(--paper-secondary-300);
+  --color-secondary-400: var(--paper-secondary-400);
+  --color-secondary-500: var(--paper-secondary-500);
+  --color-secondary-600: var(--paper-secondary-600);
+  --color-secondary-700: var(--paper-secondary-700);
+  --color-secondary-800: var(--paper-secondary-800);
+  --color-secondary-900: var(--paper-secondary-900);
+  --color-secondary-950: var(--paper-secondary-950);
   --color-secondary: var(--paper-secondary);
+
+  --color-success-50: var(--paper-success-50);
+  --color-success-100: var(--paper-success-100);
+  --color-success-200: var(--paper-success-200);
+  --color-success-300: var(--paper-success-300);
+  --color-success-400: var(--paper-success-400);
+  --color-success-500: var(--paper-success-500);
+  --color-success-600: var(--paper-success-600);
+  --color-success-700: var(--paper-success-700);
+  --color-success-800: var(--paper-success-800);
+  --color-success-900: var(--paper-success-900);
+  --color-success-950: var(--paper-success-950);
   --color-success: var(--paper-success);
+
+  --color-warning-50: var(--paper-warning-50);
+  --color-warning-100: var(--paper-warning-100);
+  --color-warning-200: var(--paper-warning-200);
+  --color-warning-300: var(--paper-warning-300);
+  --color-warning-400: var(--paper-warning-400);
+  --color-warning-500: var(--paper-warning-500);
+  --color-warning-600: var(--paper-warning-600);
+  --color-warning-700: var(--paper-warning-700);
+  --color-warning-800: var(--paper-warning-800);
+  --color-warning-900: var(--paper-warning-900);
+  --color-warning-950: var(--paper-warning-950);
   --color-warning: var(--paper-warning);
+
+  --color-danger-50: var(--paper-danger-50);
+  --color-danger-100: var(--paper-danger-100);
+  --color-danger-200: var(--paper-danger-200);
+  --color-danger-300: var(--paper-danger-300);
+  --color-danger-400: var(--paper-danger-400);
+  --color-danger-500: var(--paper-danger-500);
+  --color-danger-600: var(--paper-danger-600);
+  --color-danger-700: var(--paper-danger-700);
+  --color-danger-800: var(--paper-danger-800);
+  --color-danger-900: var(--paper-danger-900);
+  --color-danger-950: var(--paper-danger-950);
   --color-danger: var(--paper-danger);
+
+  --color-muted-50: var(--paper-muted-50);
+  --color-muted-100: var(--paper-muted-100);
+  --color-muted-200: var(--paper-muted-200);
+  --color-muted-300: var(--paper-muted-300);
+  --color-muted-400: var(--paper-muted-400);
+  --color-muted-500: var(--paper-muted-500);
+  --color-muted-600: var(--paper-muted-600);
+  --color-muted-700: var(--paper-muted-700);
+  --color-muted-800: var(--paper-muted-800);
+  --color-muted-900: var(--paper-muted-900);
+  --color-muted-950: var(--paper-muted-950);
   --color-muted: var(--paper-muted);
 
-  --color-primary-light: var(--paper-primary-light);
-  --color-secondary-light: var(--paper-secondary-light);
-  --color-success-light: var(--paper-success-light);
-  --color-warning-light: var(--paper-warning-light);
-  --color-danger-light: var(--paper-danger-light);
-  --color-muted-light: var(--paper-muted-light);
-
-  --color-primary-dark: var(--paper-primary-dark);
-  --color-secondary-dark: var(--paper-secondary-dark);
-  --color-success-dark: var(--paper-success-dark);
-  --color-warning-dark: var(--paper-warning-dark);
-  --color-danger-dark: var(--paper-danger-dark);
-  --color-muted-dark: var(--paper-muted-dark);
-
-  --color-primary-light-10: var(--paper-primary-light-10);
-  --color-secondary-light-10: var(--paper-secondary-light-10);
-  --color-success-light-10: var(--paper-success-light-10);
-  --color-warning-light-10: var(--paper-warning-light-10);
-  --color-danger-light-10: var(--paper-danger-light-10);
-  --color-muted-light-10: var(--paper-muted-light-10);
-
-  --color-primary-dark-10: var(--paper-primary-dark-10);
-  --color-secondary-dark-10: var(--paper-secondary-dark-10);
-  --color-success-dark-10: var(--paper-success-dark-10);
-  --color-warning-dark-10: var(--paper-warning-dark-10);
-  --color-danger-dark-10: var(--paper-danger-dark-10);
-  --color-muted-dark-10: var(--paper-muted-dark-10);
-
-  --color-primary-shaded-50: var(--paper-primary-shaded-50);
-  --color-primary-shaded-70: var(--paper-primary-shaded-70);
-
-  --color-primary-text: var(--paper-primary-text);
-  --color-secondary-text: var(--paper-secondary-text);
-  --color-success-text: var(--paper-success-text);
-  --color-warning-text: var(--paper-warning-text);
-  --color-danger-text: var(--paper-danger-text);
-  --color-muted-text: var(--paper-muted-text);
+  --color-primary-soft: var(--paper-primary-soft);
+  --color-primary-soft-fg: var(--paper-primary-soft-fg);
+  --color-primary-soft-border: var(--paper-primary-soft-border);
+  --color-secondary-soft: var(--paper-secondary-soft);
+  --color-secondary-soft-fg: var(--paper-secondary-soft-fg);
+  --color-secondary-soft-border: var(--paper-secondary-soft-border);
+  --color-success-soft: var(--paper-success-soft);
+  --color-success-soft-fg: var(--paper-success-soft-fg);
+  --color-success-soft-border: var(--paper-success-soft-border);
+  --color-warning-soft: var(--paper-warning-soft);
+  --color-warning-soft-fg: var(--paper-warning-soft-fg);
+  --color-warning-soft-border: var(--paper-warning-soft-border);
+  --color-danger-soft: var(--paper-danger-soft);
+  --color-danger-soft-fg: var(--paper-danger-soft-fg);
+  --color-danger-soft-border: var(--paper-danger-soft-border);
+  --color-muted-soft: var(--paper-muted-soft);
+  --color-muted-soft-fg: var(--paper-muted-soft-fg);
+  --color-muted-soft-border: var(--paper-muted-soft-border);
+  --color-muted-border: var(--paper-muted-border);
 
   --color-main-background: var(--paper-main-background);
   --color-main-background-light: var(--paper-main-background-light);
@@ -175,6 +374,11 @@
   --color-primary-inverse: var(--paper-primary-inverse);
   --color-tag-text: var(--paper-tag-text);
   --color-tag-primary-bg: var(--paper-tag-primary-bg);
+  --color-tag-secondary-bg: var(--paper-tag-secondary-bg);
+  --color-tag-success-bg: var(--paper-tag-success-bg);
+  --color-tag-warning-bg: var(--paper-tag-warning-bg);
+  --color-tag-danger-bg: var(--paper-tag-danger-bg);
+  --color-tag-muted-bg: var(--paper-tag-muted-bg);
 
   --shadow-paper: 15px 28px 25px -18px var(--paper-shadow-color);
   --shadow-paper-sm: 10px 19px 17px -13px var(--paper-shadow-color);
