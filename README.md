@@ -50,6 +50,16 @@ Default aliases (light → dark):
 Components typically use soft role tokens (`*-soft` fill + `*-soft-fg` text),
 remapped for dark mode so fills stay dark instead of pastel.
 
+Surfaces (neutral canvas):
+
+| Token | Role |
+| --- | --- |
+| `surface` | page / canvas |
+| `surface-raised` | cards, modals, nav, inputs |
+| `surface-sunken` | card header/footer, recessed areas |
+
+Legacy aliases: `main-background` → `surface`, `white-dark` → `surface-sunken`.
+
 Override tokens in your app:
 
 ```css

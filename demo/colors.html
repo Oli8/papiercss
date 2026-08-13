@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-surface">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PapierCSS — Colors</title>
     <link rel="stylesheet" href="./dist.css" />
   </head>
-  <body class="text-paper-base bg-main-background min-h-screen">
+  <body class="text-paper-base bg-surface min-h-screen">
     <nav class="nav-paper nav-paper-split border-b-2 border-muted-border px-4 py-2 mb-8">
       <div class="font-paper-heading text-2xl text-primary">
         <a href="./index.html">PapierCSS</a>
@@ -196,33 +196,41 @@
 
       <section class="space-y-4">
         <h2 class="font-paper-heading text-3xl text-primary border-b-2 border-muted-border pb-2">
-          Surfaces & helpers
+          Surfaces
         </h2>
+        <p class="text-sm text-muted-600">
+          Neutral canvas hierarchy. Legacy aliases
+          (<code>main-background</code>, <code>white-dark</code>) still work.
+        </p>
         <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
           <div class="space-y-1">
-            <div class="bg-main-background h-16 border-paper border-primary"></div>
-            <p class="text-sm">main-background</p>
+            <div class="bg-surface h-16 border-paper border-primary"></div>
+            <p class="text-sm">surface</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-surface-raised h-16 border-paper border-primary"></div>
+            <p class="text-sm">surface-raised</p>
+          </div>
+          <div class="space-y-1">
+            <div class="bg-surface-sunken h-16 border-paper border-primary"></div>
+            <p class="text-sm">surface-sunken</p>
           </div>
           <div class="space-y-1">
             <div class="bg-main-background-light h-16 border-paper border-primary"></div>
-            <p class="text-sm">main-background-light</p>
+            <p class="text-sm">main-background-light (legacy)</p>
           </div>
           <div class="space-y-1">
             <div class="bg-primary-inverse h-16 border-paper border-primary"></div>
             <p class="text-sm">primary-inverse</p>
           </div>
           <div class="space-y-1">
-            <div class="bg-white-dark h-16 border-paper border-primary"></div>
-            <p class="text-sm">white-dark</p>
-          </div>
-          <div class="space-y-1">
-            <div class="bg-white-dark-light-80 h-16 border-paper border-primary"></div>
-            <p class="text-sm">white-dark-light-80</p>
-          </div>
-          <div class="space-y-1">
             <div class="bg-light-dark h-16 border-paper border-primary"></div>
             <p class="text-sm">light-dark</p>
           </div>
+        </div>
+
+        <h3 class="font-paper-heading text-2xl text-primary pt-4">Tag chips</h3>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
           <div class="space-y-1">
             <div class="bg-tag-primary-bg text-tag-text flex h-16 items-center justify-center border-paper border-primary font-paper text-sm">
               primary

@@ -9,7 +9,7 @@
   border-style: solid;
   border-color: var(--color-muted-border);
   box-shadow: var(--shadow-paper);
-  background-color: var(--color-main-background);
+  background-color: var(--color-surface-raised);
   color: var(--color-primary);
   transition: all 235ms ease;
 
@@ -20,7 +20,7 @@
 }
 
 @utility card-paper-header {
-  background-color: var(--color-white-dark);
+  background-color: var(--color-surface-sunken);
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-color: var(--color-muted-border);
@@ -28,7 +28,7 @@
 }
 
 @utility card-paper-footer {
-  background-color: var(--color-white-dark);
+  background-color: var(--color-surface-sunken);
   border-top-width: 2px;
   border-top-style: solid;
   border-color: var(--color-muted-border);

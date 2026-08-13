@@ -10,7 +10,7 @@
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
   color: var(--color-primary);
-  background-color: var(--color-main-background);
+  background-color: var(--color-surface-raised);
 }
 
 @utility alert-paper-dismissible {

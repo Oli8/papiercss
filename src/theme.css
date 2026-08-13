@@ -94,10 +94,17 @@
 
   --paper-white: #fff;
   --paper-black: #000;
-  --paper-main-background: #fff;
-  --paper-main-background-light: color-mix(in srgb, var(--paper-main-background) 50%, white);
-  --paper-white-dark: rgb(0 0 0 / 0.03);
-  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, white);
+
+  /* Surfaces (neutral canvas hierarchy) */
+  --paper-surface: #fff;
+  --paper-surface-raised: var(--paper-surface);
+  --paper-surface-sunken: rgb(0 0 0 / 0.03);
+
+  /* Legacy aliases → surfaces */
+  --paper-main-background: var(--paper-surface);
+  --paper-main-background-light: color-mix(in srgb, var(--paper-surface) 50%, white);
+  --paper-white-dark: var(--paper-surface-sunken);
+  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-surface-sunken) 20%, white);
   --paper-light-dark: rgb(0 0 0 / 0.7);
   --paper-primary-inverse: #fff;
 
@@ -227,10 +234,15 @@
 
   --paper-white: #fff;
   --paper-black: #000;
-  --paper-main-background: #41403e;
-  --paper-main-background-light: color-mix(in srgb, var(--paper-main-background) 50%, white);
-  --paper-white-dark: rgb(255 255 255 / 0.03);
-  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-white-dark) 20%, black);
+
+  --paper-surface: #41403e;
+  --paper-surface-raised: var(--paper-surface);
+  --paper-surface-sunken: rgb(255 255 255 / 0.03);
+
+  --paper-main-background: var(--paper-surface);
+  --paper-main-background-light: color-mix(in srgb, var(--paper-surface) 50%, white);
+  --paper-white-dark: var(--paper-surface-sunken);
+  --paper-white-dark-light-80: color-mix(in srgb, var(--paper-surface-sunken) 20%, black);
   --paper-light-dark: rgb(255 255 255 / 0.7);
   --paper-primary-inverse: var(--paper-primary-700);
 
@@ -366,6 +378,11 @@
   --color-muted-soft-border: var(--paper-muted-soft-border);
   --color-muted-border: var(--paper-muted-border);
 
+  --color-surface: var(--paper-surface);
+  --color-surface-raised: var(--paper-surface-raised);
+  --color-surface-sunken: var(--paper-surface-sunken);
+
+  /* Legacy surface aliases */
   --color-main-background: var(--paper-main-background);
   --color-main-background-light: var(--paper-main-background-light);
   --color-white-dark: var(--paper-white-dark);

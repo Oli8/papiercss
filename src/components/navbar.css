@@ -4,7 +4,7 @@
   z-index: 100;
   width: 100%;
   padding: 0.3rem;
-  background-color: var(--color-main-background);
+  background-color: var(--color-surface-raised);
   font-family: var(--font-paper);
 
   @media (max-width: 768px) {
