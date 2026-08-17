@@ -1,6 +1,6 @@
 @utility progress-paper {
   width: 100%;
-  height: 1.2rem;
+  height: 1.5rem;
   overflow: hidden;
   border-width: 2px;
   border-style: solid;
@@ -14,11 +14,11 @@
 
 @utility progress-paper-bar {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   height: 100%;
   width: 0%;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   line-height: 1;
   text-align: center;
   background-color: var(--color-primary-soft);
@@ -33,9 +33,19 @@
 @utility progress-paper-striped {
   background-image: repeating-linear-gradient(
     45deg,
-    var(--color-primary-soft),
-    var(--color-primary-soft) 0.25rem,
-    var(--color-primary-soft-border) 0.25rem,
-    var(--color-primary-soft-border) 0.5rem
+    transparent,
+    transparent 0.25rem,
+    rgb(0 0 0 / 0.18) 0.25rem,
+    rgb(0 0 0 / 0.18) 0.5rem
   );
+
+  @variant dark {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 0.25rem,
+      rgb(255 255 255 / 0.18) 0.25rem,
+      rgb(255 255 255 / 0.18) 0.5rem
+    );
+  }
 }
