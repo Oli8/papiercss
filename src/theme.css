@@ -138,6 +138,62 @@
   --paper-tag-danger-bg: var(--paper-danger-700);
   --paper-tag-muted-bg: var(--paper-muted-600);
 
+  /* Component tokens (override these — not exposed in @theme) */
+  --paper-btn-bg: var(--paper-surface-raised);
+  --paper-btn-fg: var(--paper-primary);
+  --paper-btn-border: var(--paper-primary);
+  --paper-btn-focus-border: var(--paper-secondary);
+  --paper-btn-primary-bg: var(--paper-primary-soft);
+  --paper-btn-primary-fg: var(--paper-primary-soft-fg);
+  --paper-btn-primary-border: var(--paper-primary-soft-border);
+  --paper-btn-secondary-bg: var(--paper-secondary-soft);
+  --paper-btn-secondary-fg: var(--paper-secondary-soft-fg);
+  --paper-btn-secondary-border: var(--paper-secondary-soft-border);
+  --paper-btn-success-bg: var(--paper-success-soft);
+  --paper-btn-success-fg: var(--paper-success-soft-fg);
+  --paper-btn-success-border: var(--paper-success-soft-border);
+  --paper-btn-warning-bg: var(--paper-warning-soft);
+  --paper-btn-warning-fg: var(--paper-warning-soft-fg);
+  --paper-btn-warning-border: var(--paper-warning-soft-border);
+  --paper-btn-danger-bg: var(--paper-danger-soft);
+  --paper-btn-danger-fg: var(--paper-danger-soft-fg);
+  --paper-btn-danger-border: var(--paper-danger-soft-border);
+  --paper-btn-muted-bg: var(--paper-muted-soft);
+  --paper-btn-muted-fg: var(--paper-muted-soft-fg);
+  --paper-btn-muted-border: var(--paper-muted-soft-border);
+
+  --paper-alert-bg: var(--paper-surface-raised);
+  --paper-alert-fg: var(--paper-primary);
+  --paper-alert-border: var(--paper-primary);
+  --paper-alert-primary-bg: var(--paper-primary-soft);
+  --paper-alert-primary-fg: var(--paper-primary-soft-fg);
+  --paper-alert-primary-border: var(--paper-primary-soft-border);
+  --paper-alert-secondary-bg: var(--paper-secondary-soft);
+  --paper-alert-secondary-fg: var(--paper-secondary-soft-fg);
+  --paper-alert-secondary-border: var(--paper-secondary-soft-border);
+  --paper-alert-success-bg: var(--paper-success-soft);
+  --paper-alert-success-fg: var(--paper-success-soft-fg);
+  --paper-alert-success-border: var(--paper-success-soft-border);
+  --paper-alert-warning-bg: var(--paper-warning-soft);
+  --paper-alert-warning-fg: var(--paper-warning-soft-fg);
+  --paper-alert-warning-border: var(--paper-warning-soft-border);
+  --paper-alert-danger-bg: var(--paper-danger-soft);
+  --paper-alert-danger-fg: var(--paper-danger-soft-fg);
+  --paper-alert-danger-border: var(--paper-danger-soft-border);
+  --paper-alert-muted-bg: var(--paper-muted-soft);
+  --paper-alert-muted-fg: var(--paper-muted-soft-fg);
+  --paper-alert-muted-border: var(--paper-muted-soft-border);
+
+  --paper-table-stripe-fg: color-mix(in srgb, var(--paper-primary) 75%, white);
+  --paper-table-stripe-bg: transparent;
+  --paper-table-row-border: color-mix(in srgb, var(--paper-primary) 40%, white);
+  --paper-table-hover-fg: var(--paper-secondary);
+
+  --paper-progress-track-border: var(--paper-primary);
+  --paper-progress-bar-bg: var(--paper-primary-soft);
+  --paper-progress-bar-border: var(--paper-primary-soft-border);
+  --paper-progress-bar-fg: var(--paper-primary-soft-fg);
+
   --paper-shadow-color: hsl(0 0% 0% / 0.2);
   --paper-shadow-color-hover: hsl(0 0% 0% / 0.3);
 }
@@ -274,6 +330,10 @@
   --paper-tag-warning-bg: var(--paper-warning-600);
   --paper-tag-danger-bg: var(--paper-danger-600);
   --paper-tag-muted-bg: var(--paper-muted-600);
+
+  /* Table mixes need dark-aware defaults (primary is light in dark) */
+  --paper-table-stripe-fg: color-mix(in srgb, var(--paper-primary) 65%, black);
+  --paper-table-row-border: color-mix(in srgb, var(--paper-primary) 30%, black);
 }
 
 @theme {

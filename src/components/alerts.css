@@ -4,13 +4,13 @@
   padding: 0.9375rem;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--color-primary);
+  border-color: var(--paper-alert-border);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  color: var(--color-primary);
-  background-color: var(--color-surface-raised);
+  color: var(--paper-alert-fg);
+  background-color: var(--paper-alert-bg);
 }
 
 @utility alert-paper-dismissible {
@@ -22,39 +22,39 @@
 }
 
 @utility alert-paper-primary {
-  color: var(--color-primary-soft-fg);
-  background-color: var(--color-primary-soft);
-  border-color: var(--color-primary-soft-border);
+  color: var(--paper-alert-primary-fg);
+  background-color: var(--paper-alert-primary-bg);
+  border-color: var(--paper-alert-primary-border);
 }
 
 @utility alert-paper-secondary {
-  color: var(--color-secondary-soft-fg);
-  background-color: var(--color-secondary-soft);
-  border-color: var(--color-secondary-soft-border);
+  color: var(--paper-alert-secondary-fg);
+  background-color: var(--paper-alert-secondary-bg);
+  border-color: var(--paper-alert-secondary-border);
 }
 
 @utility alert-paper-success {
-  color: var(--color-success-soft-fg);
-  background-color: var(--color-success-soft);
-  border-color: var(--color-success-soft-border);
+  color: var(--paper-alert-success-fg);
+  background-color: var(--paper-alert-success-bg);
+  border-color: var(--paper-alert-success-border);
 }
 
 @utility alert-paper-warning {
-  color: var(--color-warning-soft-fg);
-  background-color: var(--color-warning-soft);
-  border-color: var(--color-warning-soft-border);
+  color: var(--paper-alert-warning-fg);
+  background-color: var(--paper-alert-warning-bg);
+  border-color: var(--paper-alert-warning-border);
 }
 
 @utility alert-paper-danger {
-  color: var(--color-danger-soft-fg);
-  background-color: var(--color-danger-soft);
-  border-color: var(--color-danger-soft-border);
+  color: var(--paper-alert-danger-fg);
+  background-color: var(--paper-alert-danger-bg);
+  border-color: var(--paper-alert-danger-border);
 }
 
 @utility alert-paper-muted {
-  color: var(--color-muted-soft-fg);
-  background-color: var(--color-muted-soft);
-  border-color: var(--color-muted-soft-border);
+  color: var(--paper-alert-muted-fg);
+  background-color: var(--paper-alert-muted-bg);
+  border-color: var(--paper-alert-muted-border);
 }
 
 @utility alert-paper-close {

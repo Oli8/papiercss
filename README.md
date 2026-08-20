@@ -60,6 +60,34 @@ Surfaces (neutral canvas):
 
 Legacy aliases: `main-background` → `surface`, `white-dark` → `surface-sunken`.
 
+### Component tokens
+
+Buttons, alerts, tables, and progress read `--paper-*` component variables
+(not in `@theme`). Defaults point at soft / surface tokens — override to
+tweak one component without changing the whole palette:
+
+```css
+:root {
+  --paper-btn-primary-bg: #ffe4e1;
+  --paper-btn-primary-fg: #7f1d1d;
+  --paper-btn-primary-border: #b91c1c;
+
+  --paper-table-stripe-fg: var(--paper-muted-500);
+  --paper-table-hover-fg: var(--paper-secondary-700);
+  --paper-progress-bar-bg: var(--paper-secondary-soft);
+}
+
+.dark {
+  --paper-btn-primary-bg: #3f1d1d;
+  --paper-btn-primary-fg: #fecaca;
+}
+```
+
+Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
+`--paper-table-stripe-fg`, `--paper-table-stripe-bg` (default `transparent`),
+`--paper-table-row-border`, `--paper-table-hover-fg`,
+`--paper-progress-bar-bg`, `--paper-tag-{color}-bg`.
+
 Override tokens in your app:
 
 ```css

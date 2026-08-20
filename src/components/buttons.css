@@ -4,11 +4,11 @@
   cursor: pointer;
   outline: none;
   background-image: none;
-  background-color: var(--color-surface-raised);
-  color: var(--color-primary);
+  background-color: var(--paper-btn-bg);
+  color: var(--paper-btn-fg);
   border-width: 2px;
   border-style: solid;
-  border-color: var(--color-primary);
+  border-color: var(--paper-btn-border);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
@@ -26,7 +26,7 @@
   }
 
   &:focus {
-    border-color: var(--color-secondary);
+    border-color: var(--paper-btn-focus-border);
     box-shadow: 2px 8px 4px -6px hsl(0 0% 0% / 0.3);
   }
 
@@ -60,103 +60,103 @@
 }
 
 @utility btn-paper-primary {
-  color: var(--color-primary-soft-fg);
-  background-color: var(--color-primary-soft);
-  border-color: var(--color-primary-soft-border);
+  color: var(--paper-btn-primary-fg);
+  background-color: var(--paper-btn-primary-bg);
+  border-color: var(--paper-btn-primary-border);
 }
 
 @utility btn-paper-secondary {
-  color: var(--color-secondary-soft-fg);
-  background-color: var(--color-secondary-soft);
-  border-color: var(--color-secondary-soft-border);
+  color: var(--paper-btn-secondary-fg);
+  background-color: var(--paper-btn-secondary-bg);
+  border-color: var(--paper-btn-secondary-border);
 }
 
 @utility btn-paper-success {
-  color: var(--color-success-soft-fg);
-  background-color: var(--color-success-soft);
-  border-color: var(--color-success-soft-border);
+  color: var(--paper-btn-success-fg);
+  background-color: var(--paper-btn-success-bg);
+  border-color: var(--paper-btn-success-border);
 }
 
 @utility btn-paper-warning {
-  color: var(--color-warning-soft-fg);
-  background-color: var(--color-warning-soft);
-  border-color: var(--color-warning-soft-border);
+  color: var(--paper-btn-warning-fg);
+  background-color: var(--paper-btn-warning-bg);
+  border-color: var(--paper-btn-warning-border);
 }
 
 @utility btn-paper-danger {
-  color: var(--color-danger-soft-fg);
-  background-color: var(--color-danger-soft);
-  border-color: var(--color-danger-soft-border);
+  color: var(--paper-btn-danger-fg);
+  background-color: var(--paper-btn-danger-bg);
+  border-color: var(--paper-btn-danger-border);
 }
 
 @utility btn-paper-muted {
-  color: var(--color-muted-soft-fg);
-  background-color: var(--color-muted-soft);
-  border-color: var(--color-muted-soft-border);
+  color: var(--paper-btn-muted-fg);
+  background-color: var(--paper-btn-muted-bg);
+  border-color: var(--paper-btn-muted-border);
 }
 
 @utility btn-paper-primary-outline {
-  color: var(--color-primary);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-primary);
+  color: var(--paper-btn-fg);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-btn-border);
 
   &:hover {
-    color: var(--color-primary-soft-fg);
-    background-color: var(--color-primary-soft);
+    color: var(--paper-btn-primary-fg);
+    background-color: var(--paper-btn-primary-bg);
   }
 }
 
 @utility btn-paper-secondary-outline {
-  color: var(--color-secondary);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-secondary);
+  color: var(--paper-secondary);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-secondary);
 
   &:hover {
-    color: var(--color-secondary-soft-fg);
-    background-color: var(--color-secondary-soft);
+    color: var(--paper-btn-secondary-fg);
+    background-color: var(--paper-btn-secondary-bg);
   }
 }
 
 @utility btn-paper-success-outline {
-  color: var(--color-success);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-success);
+  color: var(--paper-success);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-success);
 
   &:hover {
-    color: var(--color-success-soft-fg);
-    background-color: var(--color-success-soft);
+    color: var(--paper-btn-success-fg);
+    background-color: var(--paper-btn-success-bg);
   }
 }
 
 @utility btn-paper-warning-outline {
-  color: var(--color-warning);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-warning);
+  color: var(--paper-warning);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-warning);
 
   &:hover {
-    color: var(--color-warning-soft-fg);
-    background-color: var(--color-warning-soft);
+    color: var(--paper-btn-warning-fg);
+    background-color: var(--paper-btn-warning-bg);
   }
 }
 
 @utility btn-paper-danger-outline {
-  color: var(--color-danger);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-danger);
+  color: var(--paper-danger);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-danger);
 
   &:hover {
-    color: var(--color-danger-soft-fg);
-    background-color: var(--color-danger-soft);
+    color: var(--paper-btn-danger-fg);
+    background-color: var(--paper-btn-danger-bg);
   }
 }
 
 @utility btn-paper-muted-outline {
-  color: var(--color-muted);
-  background-color: var(--color-surface-raised);
-  border-color: var(--color-muted);
+  color: var(--paper-muted);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-muted);
 
   &:hover {
-    color: var(--color-muted-soft-fg);
-    background-color: var(--color-muted-soft);
+    color: var(--paper-btn-muted-fg);
+    background-color: var(--paper-btn-muted-bg);
   }
 }

@@ -4,7 +4,7 @@
   overflow: hidden;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--color-primary);
+  border-color: var(--paper-progress-track-border);
   border-bottom-left-radius: 20px 115px;
   border-bottom-right-radius: 15px 105px;
   border-top-left-radius: 250px 15px;
@@ -21,8 +21,9 @@
   font-size: 0.75rem;
   line-height: 1;
   text-align: center;
-  background-color: var(--color-primary-soft);
-  border-right: 2px solid var(--color-primary-soft-border);
+  color: var(--paper-progress-bar-fg);
+  background-color: var(--paper-progress-bar-bg);
+  border-right: 2px solid var(--paper-progress-bar-border);
   border-bottom-left-radius: 20px 115px;
   border-bottom-right-radius: 15px 105px;
   border-top-left-radius: 250px 15px;

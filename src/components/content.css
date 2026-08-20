@@ -48,7 +48,7 @@
   }
 
   & tbody tr td {
-    border-top: 1px dashed color-mix(in srgb, var(--color-primary) 40%, white);
+    border-top: 1px dashed var(--paper-table-row-border);
     line-height: 1.5;
     padding: 8px;
     vertical-align: top;
@@ -57,13 +57,14 @@
 
 @utility table-paper-hover {
   & tbody tr:hover {
-    color: var(--color-secondary);
+    color: var(--paper-table-hover-fg);
   }
 }
 
 @utility table-paper-alternating {
   & tbody tr:nth-of-type(even) {
-    color: color-mix(in srgb, var(--color-primary) 75%, white);
+    color: var(--paper-table-stripe-fg);
+    background-color: var(--paper-table-stripe-bg);
   }
 }
 
