@@ -86,7 +86,12 @@ tweak one component without changing the whole palette:
 Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-table-stripe-fg`, `--paper-table-stripe-bg` (default `transparent`),
 `--paper-table-row-border`, `--paper-table-hover-fg`,
-`--paper-progress-bar-bg`, `--paper-tag-{color}-bg`.
+`--paper-progress-bar-bg`, `--paper-progress-{color}-stripe`,
+`--paper-tag-{color}-bg`.
+
+Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
+each color owns its fill + stripe band (`--paper-progress-{color}-stripe`).
+Defaults: soft fill (`*-100` / dark `*-900`) + stripe (`*-200` / dark `*-950`).
 
 Override tokens in your app:
 
@@ -151,7 +156,7 @@ Example:
 | `input-paper`, `select-paper`, `textarea-paper` | form controls |
 | `paper-check`, `paper-radio` | checkbox / radio |
 | `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper` | switches / range slider |
-| `progress-paper`, `progress-paper-bar` | progress |
+| `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
 | `collapsible-paper` | accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
 | `modal-paper`, `modal-paper-body`, … | modal |

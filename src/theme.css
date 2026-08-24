@@ -193,6 +193,18 @@
   --paper-progress-bar-bg: var(--paper-primary-soft);
   --paper-progress-bar-border: var(--paper-primary-soft-border);
   --paper-progress-bar-fg: var(--paper-primary-soft-fg);
+  --paper-progress-bar-stripe-size: 0.25rem;
+  /*
+    Stripe = one step darker than the soft fill (PaperCSS darken ~10% feel).
+    Avoid hsl(from var(--soft) …): nested vars make relative colors invalid → white bars.
+  */
+  --paper-progress-primary-stripe: var(--paper-primary-300);
+  --paper-progress-secondary-stripe: var(--paper-secondary-300);
+  --paper-progress-success-stripe: var(--paper-success-300);
+  --paper-progress-warning-stripe: var(--paper-warning-300);
+  --paper-progress-danger-stripe: var(--paper-danger-300);
+  --paper-progress-muted-stripe: var(--paper-muted-300);
+  --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
 
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
@@ -337,6 +349,14 @@
   /* Table mixes need dark-aware defaults (primary is light in dark) */
   --paper-table-stripe-fg: color-mix(in srgb, var(--paper-primary) 65%, black);
   --paper-table-row-border: color-mix(in srgb, var(--paper-primary) 30%, black);
+
+  /* Soft fill is *-900 in dark → stripe one step darker */
+  --paper-progress-primary-stripe: var(--paper-primary-950);
+  --paper-progress-secondary-stripe: var(--paper-secondary-950);
+  --paper-progress-success-stripe: var(--paper-success-950);
+  --paper-progress-warning-stripe: var(--paper-warning-950);
+  --paper-progress-danger-stripe: var(--paper-danger-950);
+  --paper-progress-muted-stripe: var(--paper-muted-950);
 }
 
 @theme {

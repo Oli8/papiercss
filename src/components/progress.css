@@ -21,6 +21,8 @@
   font-size: 0.75rem;
   line-height: 1;
   text-align: center;
+  /* Handwriting fonts sit optically high when flex-centered */
+  padding-top: 0.2rem;
   color: var(--paper-progress-bar-fg);
   background-color: var(--paper-progress-bar-bg);
   border-right: 2px solid var(--paper-progress-bar-border);
@@ -31,22 +33,120 @@
   transition: all 235ms ease-in-out;
 }
 
+@utility progress-paper-bar-secondary {
+  --paper-progress-bar-bg: var(--paper-secondary-soft);
+  --paper-progress-bar-border: var(--paper-secondary-soft-border);
+  --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
+}
+
+@utility progress-paper-bar-success {
+  --paper-progress-bar-bg: var(--paper-success-soft);
+  --paper-progress-bar-border: var(--paper-success-soft-border);
+  --paper-progress-bar-fg: var(--paper-success-soft-fg);
+}
+
+@utility progress-paper-bar-warning {
+  --paper-progress-bar-bg: var(--paper-warning-soft);
+  --paper-progress-bar-border: var(--paper-warning-soft-border);
+  --paper-progress-bar-fg: var(--paper-warning-soft-fg);
+}
+
+@utility progress-paper-bar-danger {
+  --paper-progress-bar-bg: var(--paper-danger-soft);
+  --paper-progress-bar-border: var(--paper-danger-soft-border);
+  --paper-progress-bar-fg: var(--paper-danger-soft-fg);
+}
+
+@utility progress-paper-bar-muted {
+  --paper-progress-bar-bg: var(--paper-muted-soft);
+  --paper-progress-bar-border: var(--paper-muted-soft-border);
+  --paper-progress-bar-fg: var(--paper-muted-soft-fg);
+}
+
+/* Striped variants: each color owns fill + stripe band */
 @utility progress-paper-striped {
+  --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
+  background-color: transparent;
   background-image: repeating-linear-gradient(
     45deg,
-    transparent,
-    transparent 0.25rem,
-    rgb(0 0 0 / 0.18) 0.25rem,
-    rgb(0 0 0 / 0.18) 0.5rem
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
   );
+}
 
-  @variant dark {
-    background-image: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 0.25rem,
-      rgb(255 255 255 / 0.18) 0.25rem,
-      rgb(255 255 255 / 0.18) 0.5rem
-    );
-  }
+@utility progress-paper-striped-secondary {
+  --paper-progress-bar-bg: var(--paper-secondary-soft);
+  --paper-progress-bar-border: var(--paper-secondary-soft-border);
+  --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
+  --paper-progress-bar-stripe: var(--paper-progress-secondary-stripe);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
+  );
+}
+
+@utility progress-paper-striped-success {
+  --paper-progress-bar-bg: var(--paper-success-soft);
+  --paper-progress-bar-border: var(--paper-success-soft-border);
+  --paper-progress-bar-fg: var(--paper-success-soft-fg);
+  --paper-progress-bar-stripe: var(--paper-progress-success-stripe);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
+  );
+}
+
+@utility progress-paper-striped-warning {
+  --paper-progress-bar-bg: var(--paper-warning-soft);
+  --paper-progress-bar-border: var(--paper-warning-soft-border);
+  --paper-progress-bar-fg: var(--paper-warning-soft-fg);
+  --paper-progress-bar-stripe: var(--paper-progress-warning-stripe);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
+  );
+}
+
+@utility progress-paper-striped-danger {
+  --paper-progress-bar-bg: var(--paper-danger-soft);
+  --paper-progress-bar-border: var(--paper-danger-soft-border);
+  --paper-progress-bar-fg: var(--paper-danger-soft-fg);
+  --paper-progress-bar-stripe: var(--paper-progress-danger-stripe);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
+  );
+}
+
+@utility progress-paper-striped-muted {
+  --paper-progress-bar-bg: var(--paper-muted-soft);
+  --paper-progress-bar-border: var(--paper-muted-soft-border);
+  --paper-progress-bar-fg: var(--paper-muted-soft-fg);
+  --paper-progress-bar-stripe: var(--paper-progress-muted-stripe);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--paper-progress-bar-bg),
+    var(--paper-progress-bar-bg) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) var(--paper-progress-bar-stripe-size),
+    var(--paper-progress-bar-stripe) calc(var(--paper-progress-bar-stripe-size) * 2)
+  );
 }
