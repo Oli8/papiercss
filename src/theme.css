@@ -194,6 +194,9 @@
   --paper-progress-bar-border: var(--paper-primary-soft-border);
   --paper-progress-bar-fg: var(--paper-primary-soft-fg);
 
+  --paper-divider-fg: var(--paper-muted);
+  --paper-divider-content: "~~~";
+
   --paper-shadow-color: hsl(0 0% 0% / 0.2);
   --paper-shadow-color-hover: hsl(0 0% 0% / 0.3);
 }

@@ -109,3 +109,22 @@
     content: none;
   }
 }
+
+@utility divider-paper {
+  border: 0;
+  height: 0;
+  margin: 1.5rem 0;
+  overflow: visible;
+
+  &::after {
+    color: var(--paper-divider-fg);
+    content: var(--paper-divider-content);
+    display: block;
+    font-family: var(--font-paper);
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    position: relative;
+    text-align: center;
+    top: -0.75rem;
+  }
+}

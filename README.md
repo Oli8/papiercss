@@ -160,6 +160,7 @@ Example:
 | `popover-paper` + `data-popover="…"` | popover |
 | `table-paper`, `table-paper-hover`, `table-paper-alternating`, `table-paper-borderless` | tables |
 | `list-paper`, `article-paper` | lists / articles |
+| `divider-paper` | `~~~` divider |
 
 Example:
 
