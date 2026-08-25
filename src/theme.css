@@ -190,20 +190,27 @@
   --paper-table-hover-fg: var(--paper-secondary);
 
   --paper-progress-track-border: var(--paper-primary);
-  --paper-progress-bar-bg: var(--paper-primary-soft);
-  --paper-progress-bar-border: var(--paper-primary-soft-border);
-  --paper-progress-bar-fg: var(--paper-primary-soft-fg);
   --paper-progress-bar-stripe-size: 0.25rem;
   /*
-    Stripe = one step darker than the soft fill (PaperCSS darken ~10% feel).
-    Avoid hsl(from var(--soft) …): nested vars make relative colors invalid → white bars.
+    Per-color progress fills (default soft) + stripe bands.
+    Override --paper-progress-{color}-bg / -stripe without touching btn/alert soft.
   */
+  --paper-progress-primary-bg: var(--paper-primary-soft);
+  --paper-progress-secondary-bg: var(--paper-secondary-soft);
+  --paper-progress-success-bg: var(--paper-success-soft);
+  --paper-progress-warning-bg: var(--paper-warning-soft);
+  --paper-progress-danger-bg: var(--paper-danger-soft);
+  --paper-progress-muted-bg: var(--paper-muted-soft);
   --paper-progress-primary-stripe: var(--paper-primary-300);
   --paper-progress-secondary-stripe: var(--paper-secondary-300);
   --paper-progress-success-stripe: var(--paper-success-300);
   --paper-progress-warning-stripe: var(--paper-warning-300);
   --paper-progress-danger-stripe: var(--paper-danger-300);
   --paper-progress-muted-stripe: var(--paper-muted-300);
+
+  --paper-progress-bar-bg: var(--paper-progress-primary-bg);
+  --paper-progress-bar-border: var(--paper-primary-soft-border);
+  --paper-progress-bar-fg: var(--paper-primary-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
 
   --paper-divider-fg: var(--paper-muted);

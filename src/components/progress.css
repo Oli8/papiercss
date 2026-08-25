@@ -34,37 +34,38 @@
 }
 
 @utility progress-paper-bar-secondary {
-  --paper-progress-bar-bg: var(--paper-secondary-soft);
+  --paper-progress-bar-bg: var(--paper-progress-secondary-bg);
   --paper-progress-bar-border: var(--paper-secondary-soft-border);
   --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
 }
 
 @utility progress-paper-bar-success {
-  --paper-progress-bar-bg: var(--paper-success-soft);
+  --paper-progress-bar-bg: var(--paper-progress-success-bg);
   --paper-progress-bar-border: var(--paper-success-soft-border);
   --paper-progress-bar-fg: var(--paper-success-soft-fg);
 }
 
 @utility progress-paper-bar-warning {
-  --paper-progress-bar-bg: var(--paper-warning-soft);
+  --paper-progress-bar-bg: var(--paper-progress-warning-bg);
   --paper-progress-bar-border: var(--paper-warning-soft-border);
   --paper-progress-bar-fg: var(--paper-warning-soft-fg);
 }
 
 @utility progress-paper-bar-danger {
-  --paper-progress-bar-bg: var(--paper-danger-soft);
+  --paper-progress-bar-bg: var(--paper-progress-danger-bg);
   --paper-progress-bar-border: var(--paper-danger-soft-border);
   --paper-progress-bar-fg: var(--paper-danger-soft-fg);
 }
 
 @utility progress-paper-bar-muted {
-  --paper-progress-bar-bg: var(--paper-muted-soft);
+  --paper-progress-bar-bg: var(--paper-progress-muted-bg);
   --paper-progress-bar-border: var(--paper-muted-soft-border);
   --paper-progress-bar-fg: var(--paper-muted-soft-fg);
 }
 
 /* Striped variants: each color owns fill + stripe band */
 @utility progress-paper-striped {
+  --paper-progress-bar-bg: var(--paper-progress-primary-bg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -77,7 +78,7 @@
 }
 
 @utility progress-paper-striped-secondary {
-  --paper-progress-bar-bg: var(--paper-secondary-soft);
+  --paper-progress-bar-bg: var(--paper-progress-secondary-bg);
   --paper-progress-bar-border: var(--paper-secondary-soft-border);
   --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-secondary-stripe);
@@ -92,7 +93,7 @@
 }
 
 @utility progress-paper-striped-success {
-  --paper-progress-bar-bg: var(--paper-success-soft);
+  --paper-progress-bar-bg: var(--paper-progress-success-bg);
   --paper-progress-bar-border: var(--paper-success-soft-border);
   --paper-progress-bar-fg: var(--paper-success-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-success-stripe);
@@ -107,7 +108,7 @@
 }
 
 @utility progress-paper-striped-warning {
-  --paper-progress-bar-bg: var(--paper-warning-soft);
+  --paper-progress-bar-bg: var(--paper-progress-warning-bg);
   --paper-progress-bar-border: var(--paper-warning-soft-border);
   --paper-progress-bar-fg: var(--paper-warning-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-warning-stripe);
@@ -122,7 +123,7 @@
 }
 
 @utility progress-paper-striped-danger {
-  --paper-progress-bar-bg: var(--paper-danger-soft);
+  --paper-progress-bar-bg: var(--paper-progress-danger-bg);
   --paper-progress-bar-border: var(--paper-danger-soft-border);
   --paper-progress-bar-fg: var(--paper-danger-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-danger-stripe);
@@ -137,7 +138,7 @@
 }
 
 @utility progress-paper-striped-muted {
-  --paper-progress-bar-bg: var(--paper-muted-soft);
+  --paper-progress-bar-bg: var(--paper-progress-muted-bg);
   --paper-progress-bar-border: var(--paper-muted-soft-border);
   --paper-progress-bar-fg: var(--paper-muted-soft-fg);
   --paper-progress-bar-stripe: var(--paper-progress-muted-stripe);
