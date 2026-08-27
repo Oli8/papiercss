@@ -192,8 +192,8 @@
   --paper-progress-track-border: var(--paper-primary);
   --paper-progress-bar-stripe-size: 0.25rem;
   /*
-    Per-color progress fills (default soft) + stripe bands.
-    Override --paper-progress-{color}-bg / -stripe without touching btn/alert soft.
+    Per-color progress fill / text / stripe (defaults soft).
+    Override --paper-progress-{color}-bg|fg|stripe without touching btn/alert soft.
   */
   --paper-progress-primary-bg: var(--paper-primary-soft);
   --paper-progress-secondary-bg: var(--paper-secondary-soft);
@@ -201,6 +201,12 @@
   --paper-progress-warning-bg: var(--paper-warning-soft);
   --paper-progress-danger-bg: var(--paper-danger-soft);
   --paper-progress-muted-bg: var(--paper-muted-soft);
+  --paper-progress-primary-fg: var(--paper-primary-soft-fg);
+  --paper-progress-secondary-fg: var(--paper-secondary-soft-fg);
+  --paper-progress-success-fg: var(--paper-success-soft-fg);
+  --paper-progress-warning-fg: var(--paper-warning-soft-fg);
+  --paper-progress-danger-fg: var(--paper-danger-soft-fg);
+  --paper-progress-muted-fg: var(--paper-muted-soft-fg);
   --paper-progress-primary-stripe: var(--paper-primary-300);
   --paper-progress-secondary-stripe: var(--paper-secondary-300);
   --paper-progress-success-stripe: var(--paper-success-300);
@@ -210,7 +216,7 @@
 
   --paper-progress-bar-bg: var(--paper-progress-primary-bg);
   --paper-progress-bar-border: var(--paper-primary-soft-border);
-  --paper-progress-bar-fg: var(--paper-primary-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-primary-fg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
 
   --paper-divider-fg: var(--paper-muted);

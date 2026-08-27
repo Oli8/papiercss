@@ -36,36 +36,37 @@
 @utility progress-paper-bar-secondary {
   --paper-progress-bar-bg: var(--paper-progress-secondary-bg);
   --paper-progress-bar-border: var(--paper-secondary-soft-border);
-  --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-secondary-fg);
 }
 
 @utility progress-paper-bar-success {
   --paper-progress-bar-bg: var(--paper-progress-success-bg);
   --paper-progress-bar-border: var(--paper-success-soft-border);
-  --paper-progress-bar-fg: var(--paper-success-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-success-fg);
 }
 
 @utility progress-paper-bar-warning {
   --paper-progress-bar-bg: var(--paper-progress-warning-bg);
   --paper-progress-bar-border: var(--paper-warning-soft-border);
-  --paper-progress-bar-fg: var(--paper-warning-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-warning-fg);
 }
 
 @utility progress-paper-bar-danger {
   --paper-progress-bar-bg: var(--paper-progress-danger-bg);
   --paper-progress-bar-border: var(--paper-danger-soft-border);
-  --paper-progress-bar-fg: var(--paper-danger-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-danger-fg);
 }
 
 @utility progress-paper-bar-muted {
   --paper-progress-bar-bg: var(--paper-progress-muted-bg);
   --paper-progress-bar-border: var(--paper-muted-soft-border);
-  --paper-progress-bar-fg: var(--paper-muted-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-muted-fg);
 }
 
 /* Striped variants: each color owns fill + stripe band */
 @utility progress-paper-striped {
   --paper-progress-bar-bg: var(--paper-progress-primary-bg);
+  --paper-progress-bar-fg: var(--paper-progress-primary-fg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -80,7 +81,7 @@
 @utility progress-paper-striped-secondary {
   --paper-progress-bar-bg: var(--paper-progress-secondary-bg);
   --paper-progress-bar-border: var(--paper-secondary-soft-border);
-  --paper-progress-bar-fg: var(--paper-secondary-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-secondary-fg);
   --paper-progress-bar-stripe: var(--paper-progress-secondary-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -95,7 +96,7 @@
 @utility progress-paper-striped-success {
   --paper-progress-bar-bg: var(--paper-progress-success-bg);
   --paper-progress-bar-border: var(--paper-success-soft-border);
-  --paper-progress-bar-fg: var(--paper-success-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-success-fg);
   --paper-progress-bar-stripe: var(--paper-progress-success-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -110,7 +111,7 @@
 @utility progress-paper-striped-warning {
   --paper-progress-bar-bg: var(--paper-progress-warning-bg);
   --paper-progress-bar-border: var(--paper-warning-soft-border);
-  --paper-progress-bar-fg: var(--paper-warning-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-warning-fg);
   --paper-progress-bar-stripe: var(--paper-progress-warning-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -125,7 +126,7 @@
 @utility progress-paper-striped-danger {
   --paper-progress-bar-bg: var(--paper-progress-danger-bg);
   --paper-progress-bar-border: var(--paper-danger-soft-border);
-  --paper-progress-bar-fg: var(--paper-danger-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-danger-fg);
   --paper-progress-bar-stripe: var(--paper-progress-danger-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(
@@ -140,7 +141,7 @@
 @utility progress-paper-striped-muted {
   --paper-progress-bar-bg: var(--paper-progress-muted-bg);
   --paper-progress-bar-border: var(--paper-muted-soft-border);
-  --paper-progress-bar-fg: var(--paper-muted-soft-fg);
+  --paper-progress-bar-fg: var(--paper-progress-muted-fg);
   --paper-progress-bar-stripe: var(--paper-progress-muted-stripe);
   background-color: transparent;
   background-image: repeating-linear-gradient(

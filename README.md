@@ -76,6 +76,7 @@ tweak one component without changing the whole palette:
   --paper-table-hover-fg: var(--paper-secondary-700);
 
   --paper-progress-secondary-bg: #cceeff;
+  --paper-progress-secondary-fg: #0c4a6e;
   --paper-progress-secondary-stripe: #66c2ff;
 }
 
@@ -88,12 +89,12 @@ tweak one component without changing the whole palette:
 Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-table-stripe-fg`, `--paper-table-stripe-bg` (default `transparent`),
 `--paper-table-row-border`, `--paper-table-hover-fg`,
-`--paper-progress-{color}-bg` (default soft), `--paper-progress-{color}-stripe`,
+`--paper-progress-{color}-bg|fg` (default soft), `--paper-progress-{color}-stripe`,
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
-each color owns fill + stripe (`--paper-progress-secondary-bg` /
-`--paper-progress-secondary-stripe`, etc.).
+each color owns fill, text, and stripe (`--paper-progress-secondary-bg` /
+`-fg` / `-stripe`, etc.).
 
 Override tokens in your app:
 
