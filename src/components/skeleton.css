@@ -1,0 +1,134 @@
+@keyframes paper-skeleton-loading {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+@utility skeleton-paper {
+  display: block;
+  min-height: 1rem;
+  width: var(--paper-skeleton-width, auto);
+  height: var(--paper-skeleton-height, 100%);
+  cursor: progress;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  background-color: transparent;
+  background-image: var(--paper-skeleton-gradient);
+  background-size: 200% 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: paper-skeleton-loading 2s linear infinite alternate;
+  }
+}
+
+@utility skeleton-paper-static {
+  @media (prefers-reduced-motion: no-preference) {
+    animation: none;
+  }
+}
+
+@utility skeleton-paper-inline {
+  display: inline-block;
+}
+
+@utility skeleton-paper-circle {
+  border-radius: 9999px;
+}
+
+@utility skeleton-paper-1 {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+@utility skeleton-paper-2 {
+  border-bottom-left-radius: 185px 25px;
+  border-bottom-right-radius: 20px 205px;
+  border-top-left-radius: 125px 25px;
+  border-top-right-radius: 10px 205px;
+}
+
+@utility skeleton-paper-3 {
+  border-bottom-left-radius: 225px 15px;
+  border-bottom-right-radius: 15px 255px;
+  border-top-left-radius: 15px 225px;
+  border-top-right-radius: 255px 15px;
+}
+
+@utility skeleton-paper-4 {
+  border-bottom-left-radius: 25px 115px;
+  border-bottom-right-radius: 155px 25px;
+  border-top-left-radius: 15px 225px;
+  border-top-right-radius: 25px 150px;
+}
+
+@utility skeleton-paper-5 {
+  border-bottom-left-radius: 20px 115px;
+  border-bottom-right-radius: 15px 105px;
+  border-top-left-radius: 250px 15px;
+  border-top-right-radius: 25px 80px;
+}
+
+@utility skeleton-paper-6 {
+  border-bottom-left-radius: 15px 225px;
+  border-bottom-right-radius: 20px 205px;
+  border-top-left-radius: 28px 125px;
+  border-top-right-radius: 100px 30px;
+}
+
+/* Cycle hand-drawn radii on children (PaperCSS-style variety) */
+@utility skeleton-paper-group {
+  & > * {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  & > *:nth-child(6n + 1) {
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+  }
+
+  & > *:nth-child(6n + 2) {
+    border-bottom-left-radius: 185px 25px;
+    border-bottom-right-radius: 20px 205px;
+    border-top-left-radius: 125px 25px;
+    border-top-right-radius: 10px 205px;
+  }
+
+  & > *:nth-child(6n + 3) {
+    border-bottom-left-radius: 225px 15px;
+    border-bottom-right-radius: 15px 255px;
+    border-top-left-radius: 15px 225px;
+    border-top-right-radius: 255px 15px;
+  }
+
+  & > *:nth-child(6n + 4) {
+    border-bottom-left-radius: 25px 115px;
+    border-bottom-right-radius: 155px 25px;
+    border-top-left-radius: 15px 225px;
+    border-top-right-radius: 25px 150px;
+  }
+
+  & > *:nth-child(6n + 5) {
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 15px 105px;
+    border-top-left-radius: 250px 15px;
+    border-top-right-radius: 25px 80px;
+  }
+
+  & > *:nth-child(6n + 6) {
+    border-bottom-left-radius: 15px 225px;
+    border-bottom-right-radius: 20px 205px;
+    border-top-left-radius: 28px 125px;
+    border-top-right-radius: 100px 30px;
+  }
+}

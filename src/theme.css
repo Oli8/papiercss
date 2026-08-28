@@ -219,6 +219,16 @@
   --paper-progress-bar-fg: var(--paper-progress-primary-fg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
 
+  --paper-skeleton-from: var(--paper-muted);
+  --paper-skeleton-via: var(--paper-muted-200);
+  --paper-skeleton-to: var(--paper-muted);
+  --paper-skeleton-gradient: linear-gradient(
+    95deg,
+    var(--paper-skeleton-from) 5%,
+    var(--paper-skeleton-via) 20%,
+    var(--paper-skeleton-to) 50%
+  );
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 
@@ -370,6 +380,10 @@
   --paper-progress-warning-stripe: var(--paper-warning-950);
   --paper-progress-danger-stripe: var(--paper-danger-950);
   --paper-progress-muted-stripe: var(--paper-muted-950);
+
+  --paper-skeleton-from: var(--paper-muted-700);
+  --paper-skeleton-via: var(--paper-muted-600);
+  --paper-skeleton-to: var(--paper-muted-700);
 }
 
 @theme {
