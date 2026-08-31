@@ -1,0 +1,66 @@
+@keyframes paper-spinner-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@utility spinner-paper {
+  display: inline-block;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: var(--paper-spinner-size);
+  height: var(--paper-spinner-size);
+  border-width: var(--paper-spinner-border-width);
+  border-style: solid;
+  border-color: var(--paper-spinner-track);
+  border-top-color: var(--paper-spinner-color);
+  border-radius: var(--paper-spinner-radius);
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: paper-spinner-spin var(--paper-spinner-duration) linear infinite;
+  }
+}
+
+@utility spinner-paper-static {
+  @media (prefers-reduced-motion: no-preference) {
+    animation: none;
+  }
+}
+
+@utility spinner-paper-inline {
+  vertical-align: middle;
+}
+
+@utility spinner-paper-sm {
+  --paper-spinner-size: var(--paper-spinner-size-sm);
+  --paper-spinner-border-width: 2px;
+}
+
+@utility spinner-paper-lg {
+  --paper-spinner-size: var(--paper-spinner-size-lg);
+  --paper-spinner-border-width: 3px;
+}
+
+@utility spinner-paper-primary {
+  --paper-spinner-color: var(--paper-spinner-primary-color);
+}
+
+@utility spinner-paper-secondary {
+  --paper-spinner-color: var(--paper-spinner-secondary-color);
+}
+
+@utility spinner-paper-success {
+  --paper-spinner-color: var(--paper-spinner-success-color);
+}
+
+@utility spinner-paper-warning {
+  --paper-spinner-color: var(--paper-spinner-warning-color);
+}
+
+@utility spinner-paper-danger {
+  --paper-spinner-color: var(--paper-spinner-danger-color);
+}
+
+@utility spinner-paper-muted {
+  --paper-spinner-color: var(--paper-spinner-muted-color);
+}

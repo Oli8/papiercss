@@ -229,6 +229,22 @@
     var(--paper-skeleton-to) 50%
   );
 
+  --paper-spinner-size: 2rem;
+  --paper-spinner-size-sm: 1.25rem;
+  --paper-spinner-size-lg: 3rem;
+  --paper-spinner-border-width: 2px;
+  --paper-spinner-duration: 0.85s;
+  --paper-spinner-primary-color: var(--paper-primary);
+  --paper-spinner-secondary-color: var(--paper-secondary);
+  --paper-spinner-success-color: var(--paper-success);
+  --paper-spinner-warning-color: var(--paper-warning);
+  --paper-spinner-danger-color: var(--paper-danger);
+  --paper-spinner-muted-color: var(--paper-muted);
+  --paper-spinner-color: var(--paper-spinner-secondary-color);
+  --paper-spinner-track: var(--paper-muted-200);
+  /* Slightly wobbly circle — not a geometric 50% */
+  --paper-spinner-radius: 41% 59% 54% 46% / 45% 55% 43% 58%;
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 
@@ -239,10 +255,6 @@
 .dark {
   color-scheme: dark;
 
-  /*
-    Dark primary: alias is white (50). Steps 100–950 reuse the light
-    stone scale so fills/borders stay usable (generator output was all #000).
-  */
   --paper-primary-50: #ffffff;
   --paper-primary-100: #f5f5f4;
   --paper-primary-200: #e6e6e5;
@@ -384,6 +396,8 @@
   --paper-skeleton-from: var(--paper-muted-700);
   --paper-skeleton-via: var(--paper-muted-600);
   --paper-skeleton-to: var(--paper-muted-700);
+
+  --paper-spinner-track: var(--paper-muted-700);
 }
 
 @theme {
