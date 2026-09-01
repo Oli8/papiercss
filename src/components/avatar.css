@@ -1,0 +1,132 @@
+@utility avatar-paper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: var(--paper-avatar-size);
+  height: var(--paper-avatar-size);
+  font-family: var(--font-paper-heading);
+  font-size: var(--paper-avatar-font-size);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--paper-avatar-fg);
+  background-color: var(--paper-avatar-bg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--paper-avatar-border);
+  border-radius: var(--paper-avatar-radius);
+  box-shadow: var(--shadow-paper-sm);
+  vertical-align: middle;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+  }
+}
+
+@utility avatar-paper-sm {
+  --paper-avatar-size: var(--paper-avatar-size-sm);
+  --paper-avatar-font-size: var(--paper-avatar-font-size-sm);
+}
+
+@utility avatar-paper-lg {
+  --paper-avatar-size: var(--paper-avatar-size-lg);
+  --paper-avatar-font-size: var(--paper-avatar-font-size-lg);
+}
+
+@utility avatar-paper-circle-1 {
+  --paper-avatar-radius: var(--paper-circle-1-radius);
+}
+
+@utility avatar-paper-circle-2 {
+  --paper-avatar-radius: var(--paper-circle-2-radius);
+}
+
+@utility avatar-paper-circle-3 {
+  --paper-avatar-radius: var(--paper-circle-3-radius);
+}
+
+@utility avatar-paper-circle-4 {
+  --paper-avatar-radius: var(--paper-circle-4-radius);
+}
+
+@utility avatar-paper-circle-5 {
+  --paper-avatar-radius: var(--paper-circle-5-radius);
+}
+
+@utility avatar-paper-circle-6 {
+  --paper-avatar-radius: var(--paper-circle-6-radius);
+}
+
+@utility avatar-paper-primary {
+  --paper-avatar-bg: var(--paper-avatar-primary-bg);
+  --paper-avatar-fg: var(--paper-avatar-primary-fg);
+  --paper-avatar-border: var(--paper-avatar-primary-border);
+}
+
+@utility avatar-paper-secondary {
+  --paper-avatar-bg: var(--paper-avatar-secondary-bg);
+  --paper-avatar-fg: var(--paper-avatar-secondary-fg);
+  --paper-avatar-border: var(--paper-avatar-secondary-border);
+}
+
+@utility avatar-paper-success {
+  --paper-avatar-bg: var(--paper-avatar-success-bg);
+  --paper-avatar-fg: var(--paper-avatar-success-fg);
+  --paper-avatar-border: var(--paper-avatar-success-border);
+}
+
+@utility avatar-paper-warning {
+  --paper-avatar-bg: var(--paper-avatar-warning-bg);
+  --paper-avatar-fg: var(--paper-avatar-warning-fg);
+  --paper-avatar-border: var(--paper-avatar-warning-border);
+}
+
+@utility avatar-paper-danger {
+  --paper-avatar-bg: var(--paper-avatar-danger-bg);
+  --paper-avatar-fg: var(--paper-avatar-danger-fg);
+  --paper-avatar-border: var(--paper-avatar-danger-border);
+}
+
+@utility avatar-paper-muted {
+  --paper-avatar-bg: var(--paper-avatar-muted-bg);
+  --paper-avatar-fg: var(--paper-avatar-muted-fg);
+  --paper-avatar-border: var(--paper-avatar-muted-border);
+}
+
+@utility avatar-paper-stack {
+  display: inline-flex;
+  align-items: center;
+
+  & > * {
+    position: relative;
+    margin-inline-start: calc(var(--paper-avatar-stack-overlap) * -1);
+    outline: var(--paper-avatar-stack-ring-width) solid var(--paper-avatar-stack-ring);
+    outline-offset: calc(var(--paper-avatar-stack-ring-width) * -1);
+  }
+
+  & > :first-child {
+    margin-inline-start: 0;
+  }
+
+  & > *:hover {
+    z-index: 1;
+  }
+}
+
+@utility avatar-paper-stack-sm {
+  --paper-avatar-size: var(--paper-avatar-size-sm);
+  --paper-avatar-font-size: var(--paper-avatar-font-size-sm);
+}
+
+@utility avatar-paper-stack-lg {
+  --paper-avatar-size: var(--paper-avatar-size-lg);
+  --paper-avatar-font-size: var(--paper-avatar-font-size-lg);
+}

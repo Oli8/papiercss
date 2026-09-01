@@ -260,6 +260,38 @@
   --paper-spinner-radius: var(--paper-circle-radius);
   /* Slightly wobbly circle — not a geometric 50% */
 
+  --paper-avatar-size: 2.5rem;
+  --paper-avatar-size-sm: 2rem;
+  --paper-avatar-size-lg: 3.5rem;
+  --paper-avatar-font-size: 0.875rem;
+  --paper-avatar-font-size-sm: 0.75rem;
+  --paper-avatar-font-size-lg: 1.125rem;
+  --paper-avatar-radius: var(--paper-circle-radius);
+  --paper-avatar-bg: var(--paper-muted-soft);
+  --paper-avatar-fg: var(--paper-muted-soft-fg);
+  --paper-avatar-border: var(--paper-muted-soft-border);
+  --paper-avatar-primary-bg: var(--paper-primary-soft);
+  --paper-avatar-primary-fg: var(--paper-primary-soft-fg);
+  --paper-avatar-primary-border: var(--paper-primary-soft-border);
+  --paper-avatar-secondary-bg: var(--paper-secondary-soft);
+  --paper-avatar-secondary-fg: var(--paper-secondary-soft-fg);
+  --paper-avatar-secondary-border: var(--paper-secondary-soft-border);
+  --paper-avatar-success-bg: var(--paper-success-soft);
+  --paper-avatar-success-fg: var(--paper-success-soft-fg);
+  --paper-avatar-success-border: var(--paper-success-soft-border);
+  --paper-avatar-warning-bg: var(--paper-warning-soft);
+  --paper-avatar-warning-fg: var(--paper-warning-soft-fg);
+  --paper-avatar-warning-border: var(--paper-warning-soft-border);
+  --paper-avatar-danger-bg: var(--paper-danger-soft);
+  --paper-avatar-danger-fg: var(--paper-danger-soft-fg);
+  --paper-avatar-danger-border: var(--paper-danger-soft-border);
+  --paper-avatar-muted-bg: var(--paper-muted-soft);
+  --paper-avatar-muted-fg: var(--paper-muted-soft-fg);
+  --paper-avatar-muted-border: var(--paper-muted-soft-border);
+  --paper-avatar-stack-overlap: calc(var(--paper-avatar-size) * 0.28);
+  --paper-avatar-stack-ring: var(--paper-surface);
+  --paper-avatar-stack-ring-width: 2px;
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 

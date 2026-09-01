@@ -84,6 +84,9 @@ tweak one component without changing the whole palette:
 
   --paper-spinner-secondary-color: #e85d04;
   --paper-spinner-success-color: #16a34a;
+
+  --paper-avatar-secondary-bg: #d6f3ff;
+  --paper-avatar-secondary-fg: #0c4a6e;
 }
 
 .dark {
@@ -98,6 +101,8 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-progress-{color}-bg|fg` (default soft), `--paper-progress-{color}-stripe`,
 `--paper-skeleton-from`, `--paper-skeleton-via`, `--paper-skeleton-to`,
 `--paper-circle-{1-6}-radius`, `--paper-circle-radius`,
+`--paper-avatar-{color}-{bg|fg|border}`, `--paper-avatar-size`, `--paper-avatar-radius`,
+`--paper-avatar-stack-overlap`, `--paper-avatar-stack-ring`,
 `--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
 `--paper-spinner-size`, `--paper-spinner-radius` (alias of `--paper-circle-radius`),
 `--paper-tag-{color}-bg`.
@@ -167,6 +172,7 @@ Example:
 | `card-paper`, `card-paper-header/body/footer` | cards |
 | `alert-paper`, `alert-paper-success`, … | alerts |
 | `tag-paper`, `tag-paper-primary`, … | tags |
+| `avatar-paper`, `avatar-paper-{sm|lg}`, `avatar-paper-{color}`, `avatar-paper-circle-{1-6}`, `avatar-paper-stack[-{sm|lg}]` | avatar (initials or image) |
 | `input-paper`, `select-paper`, `textarea-paper` | form controls |
 | `paper-check`, `paper-radio` | checkbox / radio |
 | `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper` | switches / range slider |
