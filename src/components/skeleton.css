@@ -37,31 +37,31 @@
 }
 
 @utility skeleton-paper-circle {
-  border-radius: var(--paper-skeleton-circle-radius);
+  border-radius: var(--paper-circle-radius);
 }
 
 @utility skeleton-paper-circle-1 {
-  border-radius: var(--paper-skeleton-circle-1-radius);
+  border-radius: var(--paper-circle-1-radius);
 }
 
 @utility skeleton-paper-circle-2 {
-  border-radius: var(--paper-skeleton-circle-2-radius);
+  border-radius: var(--paper-circle-2-radius);
 }
 
 @utility skeleton-paper-circle-3 {
-  border-radius: var(--paper-skeleton-circle-3-radius);
+  border-radius: var(--paper-circle-3-radius);
 }
 
 @utility skeleton-paper-circle-4 {
-  border-radius: var(--paper-skeleton-circle-4-radius);
+  border-radius: var(--paper-circle-4-radius);
 }
 
 @utility skeleton-paper-circle-5 {
-  border-radius: var(--paper-skeleton-circle-5-radius);
+  border-radius: var(--paper-circle-5-radius);
 }
 
 @utility skeleton-paper-circle-6 {
-  border-radius: var(--paper-skeleton-circle-6-radius);
+  border-radius: var(--paper-circle-6-radius);
 }
 
 @utility skeleton-paper-1 {

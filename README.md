@@ -97,9 +97,9 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-table-row-border`, `--paper-table-hover-fg`,
 `--paper-progress-{color}-bg|fg` (default soft), `--paper-progress-{color}-stripe`,
 `--paper-skeleton-from`, `--paper-skeleton-via`, `--paper-skeleton-to`,
-`--paper-skeleton-circle-{1-6}-radius`, `--paper-skeleton-circle-radius`,
+`--paper-circle-{1-6}-radius`, `--paper-circle-radius`,
 `--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
-`--paper-spinner-size`, `--paper-spinner-radius`,
+`--paper-spinner-size`, `--paper-spinner-radius` (alias of `--paper-circle-radius`),
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
@@ -142,6 +142,7 @@ Dark mode: add class `dark` on a parent (usually `<html class="dark">`).
 | --- | --- |
 | `border-paper` / `border-paper-{1-6}` | 2px solid + hand-drawn radius |
 | `rounded-paper` / `rounded-paper-{1-6}` | radius only |
+| `rounded-paper-circle` / `rounded-paper-circle-{1-6}` | imperfect circle/blob radius |
 | `border-paper-thick` | 5px width |
 | `child-borders-paper` | cycle border styles 1–6 on children |
 | `shadow-paper` / `shadow-paper-sm` / `lg` / `hover` | paper shadows (theme) |

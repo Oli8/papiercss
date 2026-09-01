@@ -228,13 +228,21 @@
     var(--paper-skeleton-via) 20%,
     var(--paper-skeleton-to) 50%
   );
-  --paper-skeleton-circle-1-radius: 41% 59% 54% 46% / 45% 55% 43% 58%;
-  --paper-skeleton-circle-2-radius: 48% 52% 45% 55% / 52% 48% 46% 54%;
-  --paper-skeleton-circle-3-radius: 43% 57% 50% 50% / 47% 53% 51% 49%;
-  --paper-skeleton-circle-4-radius: 39% 61% 56% 44% / 44% 56% 40% 60%;
-  --paper-skeleton-circle-5-radius: 52% 48% 42% 58% / 49% 51% 55% 45%;
-  --paper-skeleton-circle-6-radius: 37% 63% 53% 47% / 50% 50% 38% 62%;
-  --paper-skeleton-circle-radius: var(--paper-skeleton-circle-1-radius);
+  --paper-circle-1-radius: 41% 59% 54% 46% / 45% 55% 43% 58%;
+  --paper-circle-2-radius: 48% 52% 45% 55% / 52% 48% 46% 54%;
+  --paper-circle-3-radius: 43% 57% 50% 50% / 47% 53% 51% 49%;
+  --paper-circle-4-radius: 39% 61% 56% 44% / 44% 56% 40% 60%;
+  --paper-circle-5-radius: 52% 48% 42% 58% / 49% 51% 55% 45%;
+  --paper-circle-6-radius: 37% 63% 53% 47% / 50% 50% 38% 62%;
+  --paper-circle-radius: var(--paper-circle-1-radius);
+
+  --paper-skeleton-circle-1-radius: var(--paper-circle-1-radius);
+  --paper-skeleton-circle-2-radius: var(--paper-circle-2-radius);
+  --paper-skeleton-circle-3-radius: var(--paper-circle-3-radius);
+  --paper-skeleton-circle-4-radius: var(--paper-circle-4-radius);
+  --paper-skeleton-circle-5-radius: var(--paper-circle-5-radius);
+  --paper-skeleton-circle-6-radius: var(--paper-circle-6-radius);
+  --paper-skeleton-circle-radius: var(--paper-circle-radius);
 
   --paper-spinner-size: 2rem;
   --paper-spinner-size-sm: 1.25rem;
@@ -249,8 +257,8 @@
   --paper-spinner-muted-color: var(--paper-muted);
   --paper-spinner-color: var(--paper-spinner-secondary-color);
   --paper-spinner-track: var(--paper-muted-200);
+  --paper-spinner-radius: var(--paper-circle-radius);
   /* Slightly wobbly circle — not a geometric 50% */
-  --paper-spinner-radius: 41% 59% 54% 46% / 45% 55% 43% 58%;
 
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";

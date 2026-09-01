@@ -49,6 +49,35 @@
   border-top-right-radius: 100px 30px;
 }
 
+/* Imperfect circles — wobbly blobs (square elements + equal width/height) */
+@utility rounded-paper-circle {
+  border-radius: var(--paper-circle-radius);
+}
+
+@utility rounded-paper-circle-1 {
+  border-radius: var(--paper-circle-1-radius);
+}
+
+@utility rounded-paper-circle-2 {
+  border-radius: var(--paper-circle-2-radius);
+}
+
+@utility rounded-paper-circle-3 {
+  border-radius: var(--paper-circle-3-radius);
+}
+
+@utility rounded-paper-circle-4 {
+  border-radius: var(--paper-circle-4-radius);
+}
+
+@utility rounded-paper-circle-5 {
+  border-radius: var(--paper-circle-5-radius);
+}
+
+@utility rounded-paper-circle-6 {
+  border-radius: var(--paper-circle-6-radius);
+}
+
 @utility border-paper {
   border-width: 2px;
   border-style: solid;
