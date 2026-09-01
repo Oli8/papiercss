@@ -97,6 +97,7 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-table-row-border`, `--paper-table-hover-fg`,
 `--paper-progress-{color}-bg|fg` (default soft), `--paper-progress-{color}-stripe`,
 `--paper-skeleton-from`, `--paper-skeleton-via`, `--paper-skeleton-to`,
+`--paper-skeleton-circle-{1-6}-radius`, `--paper-skeleton-circle-radius`,
 `--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
 `--paper-spinner-size`, `--paper-spinner-radius`,
 `--paper-tag-{color}-bg`.
@@ -169,7 +170,7 @@ Example:
 | `paper-check`, `paper-radio` | checkbox / radio |
 | `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper` | switches / range slider |
 | `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
-| `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
+| `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle[-{1-6}]`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |
 | `collapsible-paper` | accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
