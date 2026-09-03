@@ -105,9 +105,9 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-avatar-stack-overlap`, `--paper-avatar-stack-ring`,
 `--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
 `--paper-spinner-size`, `--paper-spinner-radius` (alias of `--paper-circle-radius`),
-`--paper-range-{color}-fill`, `--paper-range-{color}-border`,
-`--paper-range-fill`, `--paper-range-track`, `--paper-range-thumb`,
-`--paper-range-border`, `--paper-range-thumb-radius`,
+`--paper-slider-{color}-fill`, `--paper-slider-{color}-border`,
+`--paper-slider-fill`, `--paper-slider-track`, `--paper-slider-thumb`,
+`--paper-slider-border`, `--paper-slider-thumb-radius`,
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —

@@ -430,15 +430,15 @@
   /* Webkit: fill via gradient driven by --value (set via oninput) */
   &::-webkit-slider-runnable-track {
     width: 100%;
-    height: var(--paper-range-track-height);
+    height: var(--paper-slider-track-height);
     margin: 10px 0;
     background: linear-gradient(
       to right,
-      var(--paper-range-fill) var(--value, 50%),
-      var(--paper-range-track) var(--value, 50%)
+      var(--paper-slider-fill) var(--value, 50%),
+      var(--paper-slider-track) var(--value, 50%)
     );
-    border: 1px solid var(--paper-range-border);
-    border-radius: var(--paper-range-track-radius);
+    border: 1px solid var(--paper-slider-border);
+    border-radius: var(--paper-slider-track-radius);
     box-shadow:
       1px 1px 1px #000,
       0 0 1px #0d0d0d;
@@ -450,8 +450,8 @@
     width: 16px;
     height: 36px;
     margin-top: -14px;
-    background: var(--paper-range-thumb);
-    border: 1px solid var(--paper-range-border);
+    background: var(--paper-slider-thumb);
+    border: 1px solid var(--paper-slider-border);
     border-bottom-left-radius: 0.7rem 1rem;
     border-bottom-right-radius: 1rem 0.9rem;
     border-top-left-radius: 1rem 1rem;
@@ -464,26 +464,26 @@
   /* Firefox: native range-progress pseudo */
   &::-moz-range-track {
     width: 100%;
-    height: var(--paper-range-track-height);
-    background: var(--paper-range-track);
-    border: 1px solid var(--paper-range-border);
-    border-radius: var(--paper-range-track-radius);
+    height: var(--paper-slider-track-height);
+    background: var(--paper-slider-track);
+    border: 1px solid var(--paper-slider-border);
+    border-radius: var(--paper-slider-track-radius);
     box-shadow:
       1px 1px 1px #000,
       0 0 1px #0d0d0d;
   }
 
   &::-moz-range-progress {
-    height: var(--paper-range-track-height);
-    background: var(--paper-range-fill);
-    border-radius: var(--paper-range-track-radius) 0 0 var(--paper-range-track-radius);
+    height: var(--paper-slider-track-height);
+    background: var(--paper-slider-fill);
+    border-radius: var(--paper-slider-track-radius) 0 0 var(--paper-slider-track-radius);
   }
 
   &::-moz-range-thumb {
     width: 16px;
     height: 36px;
-    background: var(--paper-range-thumb);
-    border: 1px solid var(--paper-range-border);
+    background: var(--paper-slider-thumb);
+    border: 1px solid var(--paper-slider-border);
     border-bottom-left-radius: 0.7rem 1rem;
     border-bottom-right-radius: 1rem 0.9rem;
     border-top-left-radius: 1rem 1rem;
@@ -495,31 +495,31 @@
 }
 
 @utility range-paper-primary {
-  --paper-range-fill: var(--paper-range-primary-fill);
-  --paper-range-border: var(--paper-range-primary-border);
+  --paper-slider-fill: var(--paper-slider-primary-fill);
+  --paper-slider-border: var(--paper-slider-primary-border);
 }
 
 @utility range-paper-secondary {
-  --paper-range-fill: var(--paper-range-secondary-fill);
-  --paper-range-border: var(--paper-range-secondary-border);
+  --paper-slider-fill: var(--paper-slider-secondary-fill);
+  --paper-slider-border: var(--paper-slider-secondary-border);
 }
 
 @utility range-paper-success {
-  --paper-range-fill: var(--paper-range-success-fill);
-  --paper-range-border: var(--paper-range-success-border);
+  --paper-slider-fill: var(--paper-slider-success-fill);
+  --paper-slider-border: var(--paper-slider-success-border);
 }
 
 @utility range-paper-warning {
-  --paper-range-fill: var(--paper-range-warning-fill);
-  --paper-range-border: var(--paper-range-warning-border);
+  --paper-slider-fill: var(--paper-slider-warning-fill);
+  --paper-slider-border: var(--paper-slider-warning-border);
 }
 
 @utility range-paper-danger {
-  --paper-range-fill: var(--paper-range-danger-fill);
-  --paper-range-border: var(--paper-range-danger-border);
+  --paper-slider-fill: var(--paper-slider-danger-fill);
+  --paper-slider-border: var(--paper-slider-danger-border);
 }
 
 @utility range-paper-muted {
-  --paper-range-fill: var(--paper-range-muted-fill);
-  --paper-range-border: var(--paper-range-muted-border);
+  --paper-slider-fill: var(--paper-slider-muted-fill);
+  --paper-slider-border: var(--paper-slider-muted-border);
 }
