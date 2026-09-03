@@ -219,9 +219,9 @@
   --paper-progress-bar-fg: var(--paper-progress-primary-fg);
   --paper-progress-bar-stripe: var(--paper-progress-primary-stripe);
 
-  --paper-skeleton-from: var(--paper-muted);
-  --paper-skeleton-via: var(--paper-muted-200);
-  --paper-skeleton-to: var(--paper-muted);
+  --paper-skeleton-from: var(--paper-muted-300);
+  --paper-skeleton-via: var(--paper-muted-100);
+  --paper-skeleton-to: var(--paper-muted-300);
   --paper-skeleton-gradient: linear-gradient(
     95deg,
     var(--paper-skeleton-from) 5%,
@@ -440,11 +440,11 @@
   --paper-progress-danger-stripe: var(--paper-danger-950);
   --paper-progress-muted-stripe: var(--paper-muted-950);
 
-  --paper-skeleton-from: var(--paper-muted-700);
+  --paper-skeleton-from: var(--paper-muted-800);
   --paper-skeleton-via: var(--paper-muted-600);
-  --paper-skeleton-to: var(--paper-muted-700);
+  --paper-skeleton-to: var(--paper-muted-800);
 
-  --paper-spinner-track: var(--paper-muted-700);
+  --paper-spinner-track: var(--paper-muted-500);
 }
 
 @theme {
