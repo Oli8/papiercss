@@ -421,6 +421,12 @@
   background: transparent;
   font-family: var(--font-paper);
 
+  &:disabled,
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
   /* Webkit: fill via gradient driven by --value (set via oninput) */
   &::-webkit-slider-runnable-track {
     width: 100%;

@@ -392,6 +392,20 @@
             />
             <output id="percentage-out" class="text-sm text-muted-600">42%</output>
           </div>
+          <div class="form-group-paper max-w-md">
+            <label for="disabled-range">Disabled</label>
+            <input
+              id="disabled-range"
+              class="range-paper"
+              type="range"
+              name="disabled-range"
+              min="0"
+              max="100"
+              value="50"
+              style="--value:50%"
+              disabled
+            />
+          </div>
           <div class="form-group-paper max-w-md space-y-3">
             <input class="range-paper range-paper-primary" type="range" min="0" max="100" value="60" style="--value:60%" oninput="this.style.setProperty('--value', this.value + '%')" />
             <input class="range-paper range-paper-secondary" type="range" min="0" max="100" value="70" style="--value:70%" oninput="this.style.setProperty('--value', this.value + '%')" />
