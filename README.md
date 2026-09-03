@@ -105,6 +105,9 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-avatar-stack-overlap`, `--paper-avatar-stack-ring`,
 `--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
 `--paper-spinner-size`, `--paper-spinner-radius` (alias of `--paper-circle-radius`),
+`--paper-range-{color}-fill`, `--paper-range-{color}-border`,
+`--paper-range-fill`, `--paper-range-track`, `--paper-range-thumb`,
+`--paper-range-border`, `--paper-range-thumb-radius`,
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
@@ -175,7 +178,7 @@ Example:
 | `avatar-paper`, `avatar-paper-{sm|lg}`, `avatar-paper-{color}`, `avatar-paper-circle-{1-6}`, `avatar-paper-stack[-{sm|lg}]` | avatar (initials or image) |
 | `input-paper`, `select-paper`, `textarea-paper` | form controls |
 | `paper-check`, `paper-radio` | checkbox / radio |
-| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper` | switches / range slider |
+| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper`, `range-paper-{color}` | switches / range slider |
 | `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
 | `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle[-{1-6}]`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |

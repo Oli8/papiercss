@@ -373,6 +373,8 @@
               min="0"
               max="10"
               value="7"
+              style="--value:70%"
+              oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%')"
             />
           </div>
           <div class="form-group-paper max-w-md">
@@ -385,9 +387,18 @@
               min="0"
               max="100"
               value="42"
-              oninput="document.getElementById('percentage-out').value = this.value + '%'"
+              style="--value:42%"
+              oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%'); document.getElementById('percentage-out').value = this.value + '%'"
             />
             <output id="percentage-out" class="text-sm text-muted-600">42%</output>
+          </div>
+          <div class="form-group-paper max-w-md space-y-3">
+            <input class="range-paper range-paper-primary" type="range" min="0" max="100" value="60" style="--value:60%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-secondary" type="range" min="0" max="100" value="70" style="--value:70%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-success" type="range" min="0" max="100" value="55" style="--value:55%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-warning" type="range" min="0" max="100" value="40" style="--value:40%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-danger" type="range" min="0" max="100" value="35" style="--value:35%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-muted" type="range" min="0" max="100" value="50" style="--value:50%" oninput="this.style.setProperty('--value', this.value + '%')" />
           </div>
         </div>
 

@@ -292,6 +292,27 @@
   --paper-avatar-stack-ring: var(--paper-surface);
   --paper-avatar-stack-ring-width: 2px;
 
+  --paper-range-track-height: 0.625rem;
+  --paper-range-track-radius: 18px;
+  --paper-range-track: var(--paper-muted-200);
+  --paper-range-thumb: var(--paper-surface-raised);
+  --paper-range-thumb-size: 1rem;
+  --paper-range-thumb-radius: 42% 58% 54% 46% / 47% 53% 44% 56%;
+  --paper-range-primary-fill: var(--paper-primary);
+  --paper-range-secondary-fill: var(--paper-secondary);
+  --paper-range-success-fill: var(--paper-success);
+  --paper-range-warning-fill: var(--paper-warning);
+  --paper-range-danger-fill: var(--paper-danger);
+  --paper-range-muted-fill: var(--paper-muted);
+  --paper-range-primary-border: var(--paper-primary);
+  --paper-range-secondary-border: var(--paper-secondary);
+  --paper-range-success-border: var(--paper-success);
+  --paper-range-warning-border: var(--paper-warning);
+  --paper-range-danger-border: var(--paper-danger);
+  --paper-range-muted-border: var(--paper-muted);
+  --paper-range-fill: var(--paper-range-secondary-fill);
+  --paper-range-border: var(--paper-range-primary-border);
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 
@@ -445,6 +466,9 @@
   --paper-skeleton-to: var(--paper-muted-800);
 
   --paper-spinner-track: var(--paper-muted-500);
+
+  --paper-range-track: var(--paper-muted-700);
+  --paper-range-thumb: var(--paper-muted-300);
 }
 
 @theme {
