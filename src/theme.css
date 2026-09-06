@@ -7,6 +7,7 @@
 
 :root {
   color-scheme: light;
+  interpolate-size: allow-keywords;
 
   /* primary */
   --paper-primary-50: #fafaf9;
@@ -312,6 +313,10 @@
   --paper-slider-muted-border: var(--paper-muted);
   --paper-slider-fill: var(--paper-slider-secondary-fill);
   --paper-slider-border: var(--paper-slider-primary-border);
+
+  --paper-collapsible-duration: 0.3s;
+  --paper-collapsible-border: var(--paper-muted-border);
+  --paper-collapsible-content-bg: var(--paper-surface-sunken);
 
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";

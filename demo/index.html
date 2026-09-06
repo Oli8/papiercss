@@ -588,28 +588,46 @@
         <!-- Accordion / Collapsible -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Collapsible</h3>
+
+          <h4 class="font-paper-heading text-xl">Standalone</h4>
+          <details class="collapsible-paper border-paper border-muted-border">
+            <summary>A single collapsible</summary>
+            Useful on its own — no group wrapper needed.
+          </details>
+
+          <h4 class="font-paper-heading text-xl">Independent</h4>
           <div class="border-paper border-muted-border overflow-hidden">
-            <div class="collapsible-paper">
-              <input id="col1" type="checkbox" />
-              <label for="col1">First section</label>
-              <div class="collapsible-paper-body">
-                Content of the first collapsible panel. Uses the checkbox trick.
-              </div>
-            </div>
-            <div class="collapsible-paper">
-              <input id="col2" type="checkbox" />
-              <label for="col2">Second section</label>
-              <div class="collapsible-paper-body">
-                More paper-styled content in the second panel.
-              </div>
-            </div>
-            <div class="collapsible-paper">
-              <input id="col3" type="checkbox" checked />
-              <label for="col3">Open by default</label>
-              <div class="collapsible-paper-body">
-                This one starts expanded.
-              </div>
-            </div>
+            <details class="collapsible-paper">
+              <summary>First section</summary>
+              Content of the first collapsible panel. Uses native
+              <code>&lt;details&gt;</code>.
+            </details>
+            <details class="collapsible-paper">
+              <summary>Second section</summary>
+              More paper-styled content in the second panel. Multiple can stay open.
+            </details>
+            <details class="collapsible-paper" open>
+              <summary>Open by default</summary>
+              This one starts expanded via the
+              <code>open</code> attribute.
+            </details>
+          </div>
+
+          <h4 class="font-paper-heading text-xl">Accordion (same name)</h4>
+          <div class="border-paper border-muted-border overflow-hidden">
+            <details class="collapsible-paper" name="demo-accordion">
+              <summary>One</summary>
+              Only one panel in this group can be open at a time.
+            </details>
+            <details class="collapsible-paper" name="demo-accordion" open>
+              <summary>Two</summary>
+              Opening another closes this one (shared
+              <code>name</code>).
+            </details>
+            <details class="collapsible-paper" name="demo-accordion">
+              <summary>Three</summary>
+              Native exclusive accordion — no JS.
+            </details>
           </div>
         </div>
 

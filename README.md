@@ -108,6 +108,7 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-slider-{color}-fill`, `--paper-slider-{color}-border`,
 `--paper-slider-fill`, `--paper-slider-track`, `--paper-slider-thumb`,
 `--paper-slider-border`, `--paper-slider-thumb-radius`,
+`--paper-collapsible-duration`, `--paper-collapsible-border`, `--paper-collapsible-content-bg`,
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
@@ -182,7 +183,7 @@ Example:
 | `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
 | `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle[-{1-6}]`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |
-| `collapsible-paper` | accordion |
+| `collapsible-paper` on `<details>` (+ same `name` for exclusive accordion) | collapsible / accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
 | `modal-paper`, `modal-paper-body`, … | modal |
 | `nav-paper` | navbar |
