@@ -714,22 +714,20 @@
         <!-- Modal -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Modal</h3>
-          <label for="demo-modal" class="btn-paper btn-paper-secondary inline-block cursor-pointer">
+          <button
+            type="button"
+            class="btn-paper btn-paper-secondary"
+            onclick="document.getElementById('demo-modal').showModal()"
+          >
             Open modal
-          </label>
-          <input id="demo-modal" type="checkbox" class="modal-paper-state" />
-          <div class="modal-paper">
-            <label for="demo-modal" class="modal-paper-bg" aria-label="Close overlay"></label>
-            <div class="modal-paper-body border-paper rounded-paper shadow-paper max-w-md w-[90%]">
-              <label for="demo-modal" class="modal-paper-close" aria-label="Close">×</label>
-              <h4 class="font-paper-heading text-2xl mt-0 mb-2">Modal title</h4>
-              <p class="text-secondary mb-2">Subtitle</p>
-              <p class="mb-4">This modal uses the checkbox + label pattern.</p>
-              <label for="demo-modal" class="btn-paper btn-paper-sm btn-paper-primary inline-block cursor-pointer">
-                Close
-              </label>
-            </div>
-          </div>
+          </button>
+          <button
+            type="button"
+            class="btn-paper btn-paper-primary"
+            onclick="document.getElementById('demo-modal-form').showModal()"
+          >
+            Open form modal
+          </button>
         </div>
 
         <!-- Popovers -->
@@ -1000,5 +998,60 @@
         </div>
       </section>
     </main>
+
+    <dialog
+      id="demo-modal"
+      class="modal-paper border-paper rounded-paper shadow-paper"
+      onclick="if (event.target === this) this.close()"
+    >
+      <form method="dialog">
+        <button type="submit" class="modal-paper-close" aria-label="Close">×</button>
+      </form>
+      <h4 class="font-paper-heading text-2xl mt-0 mb-2">Modal title</h4>
+      <p class="text-secondary mb-2">Subtitle</p>
+      <p class="mb-4">
+        Native <code>&lt;dialog&gt;</code> — Esc, focus trap, and
+        <code>form method="dialog"</code> to close.
+      </p>
+      <form method="dialog">
+        <button type="submit" class="btn-paper btn-paper-sm btn-paper-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog
+      id="demo-modal-form"
+      class="modal-paper border-paper rounded-paper shadow-paper"
+      onclick="if (event.target === this) this.close()"
+    >
+      <form method="dialog">
+        <button type="submit" class="modal-paper-close" aria-label="Close">×</button>
+      </form>
+      <h4 class="font-paper-heading text-2xl mt-0 mb-2">Subscribe</h4>
+      <p class="text-secondary mb-4">A short form inside a dialog.</p>
+      <form method="dialog" class="space-y-3">
+        <div class="form-group-paper">
+          <label for="modal-name">Name</label>
+          <input id="modal-name" class="input-paper" name="name" placeholder="Jane Doe" autofocus />
+        </div>
+        <div class="form-group-paper">
+          <label for="modal-email">Email</label>
+          <input
+            id="modal-email"
+            class="input-paper"
+            type="email"
+            name="email"
+            placeholder="jane@example.com"
+          />
+        </div>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <button type="submit" class="btn-paper btn-paper-sm btn-paper-primary" value="subscribe">
+            Subscribe
+          </button>
+          <button type="submit" class="btn-paper btn-paper-sm btn-paper-muted" value="cancel">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </dialog>
   </body>
 </html>

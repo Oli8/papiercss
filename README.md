@@ -109,6 +109,8 @@ Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
 `--paper-slider-fill`, `--paper-slider-track`, `--paper-slider-thumb`,
 `--paper-slider-border`, `--paper-slider-thumb-radius`,
 `--paper-collapsible-duration`, `--paper-collapsible-border`, `--paper-collapsible-content-bg`,
+`--paper-modal-bg`, `--paper-modal-fg`, `--paper-modal-border`, `--paper-modal-backdrop`,
+`--paper-modal-duration`,
 `--paper-tag-{color}-bg`.
 
 Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
@@ -185,7 +187,7 @@ Example:
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |
 | `collapsible-paper` on `<details>` (+ same `name` for exclusive accordion) | collapsible / accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
-| `modal-paper`, `modal-paper-body`, … | modal |
+| `modal-paper` on `<dialog>` (+ `modal-paper-close`, `showModal()` / `form method="dialog"`) | modal |
 | `nav-paper` | navbar |
 | `breadcrumb-paper` | breadcrumb |
 | `popover-paper` + `data-popover="…"` | popover |

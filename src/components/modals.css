@@ -1,38 +1,54 @@
 @utility modal-paper {
+  /* fixed to viewport — avoids scroll jump when focus moves into the dialog */
   position: fixed;
   inset: 0;
-  z-index: 200;
-  display: flex;
-  flex: 1 1 auto;
-  opacity: 0;
-  visibility: hidden;
-  background: rgb(0 0 0 / 0.6);
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  max-width: min(28rem, 90vw);
+  padding: 1.25rem;
+  color: var(--paper-modal-fg);
+  background: var(--paper-modal-bg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--paper-modal-border);
   text-align: left;
   word-wrap: break-word;
-  transition: opacity 235ms ease-in-out;
+  opacity: 0;
+  transform: translateY(-40vh);
+  transition:
+    opacity var(--paper-modal-duration) ease,
+    transform var(--paper-modal-duration) ease,
+    overlay var(--paper-modal-duration) allow-discrete,
+    display var(--paper-modal-duration) allow-discrete;
+
+  &[open] {
+    opacity: 1;
+    transform: none;
+  }
+
+  &::backdrop {
+    background-color: rgb(0 0 0 / 0);
+    transition:
+      background-color var(--paper-modal-duration) ease,
+      overlay var(--paper-modal-duration) allow-discrete,
+      display var(--paper-modal-duration) allow-discrete;
+  }
+
+  &[open]::backdrop {
+    background-color: var(--paper-modal-backdrop);
+  }
 }
 
-@utility modal-paper-bg {
-  position: absolute;
-  inset: 0;
-  cursor: pointer;
-}
+/* Entry transition from closed → open */
+@starting-style {
+  .modal-paper[open] {
+    opacity: 0;
+    transform: translateY(-40vh);
+  }
 
-@utility modal-paper-body {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -50%);
-  padding: 1.25rem;
-  color: var(--color-primary);
-  background: var(--color-surface-raised);
-  border: 2px solid var(--color-muted-border);
-  backface-visibility: hidden;
-  transition: all 235ms ease-in-out;
-
-  @media (max-width: 768px) {
-    box-sizing: border-box;
-    width: 90%;
+  .modal-paper[open]::backdrop {
+    background-color: rgb(0 0 0 / 0);
   }
 }
 
@@ -42,40 +58,18 @@
   right: 1rem;
   width: 1.1rem;
   height: 1.1rem;
+  padding: 0;
   font-size: 30px;
   line-height: 1;
   cursor: pointer;
-  color: var(--color-primary-400);
+  color: var(--paper-modal-close-fg);
   background: none;
   border: none;
   text-decoration: none;
-  transition: all 235ms ease-in-out;
+  transition: color var(--paper-modal-duration) ease;
 
   &:hover,
   &:focus {
-    color: var(--color-primary);
-  }
-}
-
-@utility modal-paper-open {
-  opacity: 1;
-  visibility: visible;
-
-  & .modal-paper-body {
-    top: 50%;
-  }
-}
-
-/* Checkbox/radio driven open state (legacy pattern) */
-.modal-paper-state {
-  display: none;
-
-  &:checked + .modal-paper {
-    opacity: 1;
-    visibility: visible;
-
-    & .modal-paper-body {
-      top: 50%;
-    }
+    color: var(--paper-modal-close-fg-hover);
   }
 }

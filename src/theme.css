@@ -318,6 +318,14 @@
   --paper-collapsible-border: var(--paper-muted-border);
   --paper-collapsible-content-bg: var(--paper-surface-sunken);
 
+  --paper-modal-duration: 0.3s;
+  --paper-modal-bg: var(--paper-surface-raised);
+  --paper-modal-fg: var(--paper-primary);
+  --paper-modal-border: var(--paper-muted-border);
+  --paper-modal-backdrop: hsl(0 0% 0% / 0.6);
+  --paper-modal-close-fg: var(--paper-primary-400);
+  --paper-modal-close-fg-hover: var(--paper-primary);
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 
