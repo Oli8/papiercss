@@ -161,6 +161,12 @@
     -webkit-mask-position: center;
     mask-position: center;
   }
+
+  &:has(input:disabled),
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
 @utility paper-radio {
@@ -221,6 +227,12 @@
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
+  }
+
+  &:has(input:disabled),
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
@@ -295,6 +307,16 @@
     border-top-left-radius: 1rem 1rem;
     border-top-right-radius: 1rem 0.6rem;
   }
+
+  &:has(input:disabled),
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    & .paper-switch-slider {
+      cursor: not-allowed;
+    }
+  }
 }
 
 @utility paper-switch-2 {
@@ -365,6 +387,16 @@
     border-top-left-radius: 1rem 1rem;
     border-top-right-radius: 1rem 0.6rem;
   }
+
+  &:has(input:disabled),
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    & .paper-switch-slider {
+      cursor: not-allowed;
+    }
+  }
 }
 
 @utility paper-switch-label {
@@ -410,6 +442,22 @@
   &:hover input:checked + .paper-switch-tile-card {
     box-shadow: 0 10px 15px -15px rgb(0 0 0 / 0.9);
     transform: rotateX(150deg);
+  }
+
+  &:has(input:disabled),
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover .paper-switch-tile-card {
+      box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 0.3);
+      transform: none;
+    }
+
+    &:hover input:checked + .paper-switch-tile-card {
+      box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 0.3);
+      transform: rotateX(180deg);
+    }
   }
 }
 

@@ -175,7 +175,7 @@ Example:
 | Class | Notes |
 | --- | --- |
 | `btn-paper` (+ `btn-paper-secondary`, `-outline`, `-sm`, `-lg`, …) | buttons |
-| `card-paper`, `card-paper-header/body/footer` | cards |
+| `card-paper` (+ `header` / `footer` children, `card-paper-body`) | cards |
 | `alert-paper`, `alert-paper-success`, … | alerts |
 | `tag-paper`, `tag-paper-primary`, … | tags |
 | `avatar-paper`, `avatar-paper-{sm|lg}`, `avatar-paper-{color}`, `avatar-paper-circle-{1-6}`, `avatar-paper-stack[-{sm|lg}]` | avatar (initials or image) |
