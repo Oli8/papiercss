@@ -17,22 +17,22 @@
     transform: translate3d(0, 2px, 0);
     box-shadow: var(--shadow-paper-hover);
   }
-}
 
-@utility card-paper-header {
-  background-color: var(--color-surface-sunken);
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: var(--color-muted-border);
-  padding: 0.75rem 1.25rem;
-}
+  & > header {
+    background-color: var(--color-surface-sunken);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--color-muted-border);
+    padding: 0.75rem 1.25rem;
+  }
 
-@utility card-paper-footer {
-  background-color: var(--color-surface-sunken);
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-color: var(--color-muted-border);
-  padding: 0.75rem 1.25rem;
+  & > footer {
+    background-color: var(--color-surface-sunken);
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-color: var(--color-muted-border);
+    padding: 0.75rem 1.25rem;
+  }
 }
 
 @utility card-paper-body {
