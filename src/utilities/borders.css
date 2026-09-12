@@ -46,7 +46,7 @@
   border-top-right-radius: 100px 30px;
 }
 
-/* Softer irregular radius (radios, round switches, range thumbs) */
+/* Softer irregular radius (radios, round switches, slider thumbs) */
 @utility rounded-paper-soft {
   border-bottom-left-radius: 0.7rem 1rem;
   border-bottom-right-radius: 1rem 0.9rem;

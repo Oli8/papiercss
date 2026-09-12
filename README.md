@@ -184,7 +184,7 @@ Example:
 | `avatar-paper`, `avatar-paper-{sm|lg}`, `avatar-paper-{color}`, `avatar-paper-circle-{1-6}`, `avatar-paper-stack[-{sm|lg}]` | avatar (initials or image) |
 | `input-paper`, `select-paper`, `textarea-paper` | form controls |
 | `paper-check`, `paper-radio` | checkbox / radio |
-| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `range-paper`, `range-paper-{color}` | switches / range slider |
+| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `slider-paper`, `slider-paper-{color}` | switches / slider |
 | `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
 | `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle[-{1-6}]`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |

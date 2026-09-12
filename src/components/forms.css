@@ -401,7 +401,7 @@
   }
 }
 
-@utility range-paper {
+@utility slider-paper {
   appearance: none;
   -webkit-appearance: none;
   display: block;
@@ -478,32 +478,32 @@
   }
 }
 
-@utility range-paper-primary {
+@utility slider-paper-primary {
   --paper-slider-fill: var(--paper-slider-primary-fill);
   --paper-slider-border: var(--paper-slider-primary-border);
 }
 
-@utility range-paper-secondary {
+@utility slider-paper-secondary {
   --paper-slider-fill: var(--paper-slider-secondary-fill);
   --paper-slider-border: var(--paper-slider-secondary-border);
 }
 
-@utility range-paper-success {
+@utility slider-paper-success {
   --paper-slider-fill: var(--paper-slider-success-fill);
   --paper-slider-border: var(--paper-slider-success-border);
 }
 
-@utility range-paper-warning {
+@utility slider-paper-warning {
   --paper-slider-fill: var(--paper-slider-warning-fill);
   --paper-slider-border: var(--paper-slider-warning-border);
 }
 
-@utility range-paper-danger {
+@utility slider-paper-danger {
   --paper-slider-fill: var(--paper-slider-danger-fill);
   --paper-slider-border: var(--paper-slider-danger-border);
 }
 
-@utility range-paper-muted {
+@utility slider-paper-muted {
   --paper-slider-fill: var(--paper-slider-muted-fill);
   --paper-slider-border: var(--paper-slider-muted-border);
 }
