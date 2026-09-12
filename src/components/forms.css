@@ -1,19 +1,14 @@
-@utility input-paper {
+/* Shared text-field look (input / select / textarea) */
+@utility field-paper {
   display: block;
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-paper);
   color: var(--color-primary);
-  background: transparent;
   outline: none;
-  border-width: 2px;
-  border-style: solid;
+  @apply border-paper;
   border-color: var(--color-primary);
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
 
   &:focus {
     border-color: var(--color-secondary);
@@ -21,38 +16,19 @@
 
   &:disabled,
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
   }
 }
 
+@utility input-paper {
+  @apply field-paper;
+  background: transparent;
+}
+
 @utility select-paper {
-  display: block;
-  width: 100%;
+  @apply field-paper;
   height: 2.35rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: var(--font-paper);
-  color: var(--color-primary);
   background-color: var(--color-surface-raised);
-  outline: none;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--color-primary);
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-
-  &:focus {
-    border-color: var(--color-secondary);
-  }
-
-  &:disabled,
-  &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
 
   /* Native dropdown follows theme tokens */
   & option,
@@ -63,33 +39,10 @@
 }
 
 @utility textarea-paper {
-  display: block;
-  width: 100%;
+  @apply field-paper;
   max-width: 100%;
   max-height: 90vh;
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: var(--font-paper);
-  color: var(--color-primary);
   background: transparent;
-  outline: none;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--color-primary);
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-
-  &:focus {
-    border-color: var(--color-secondary);
-  }
-
-  &:disabled,
-  &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
 }
 
 @utility form-group-paper {
@@ -134,13 +87,8 @@
     top: 0.125em;
     width: 1rem;
     height: 1rem;
-    border-width: 2px;
-    border-style: solid;
+    @apply border-paper;
     border-color: var(--color-primary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
   }
 
   /* Handwritten check mark */
@@ -164,8 +112,7 @@
 
   &:has(input:disabled),
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
   }
 }
 
@@ -204,10 +151,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: var(--color-primary);
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
   }
 
   /* Scribble fill */
@@ -231,8 +175,7 @@
 
   &:has(input:disabled),
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
   }
 }
 
@@ -266,13 +209,8 @@
     position: absolute;
     inset: 0;
     cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
+    @apply border-paper;
     border-color: var(--color-primary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
     transition: 0.4s;
   }
 
@@ -284,34 +222,24 @@
     width: 20px;
     height: 20px;
     background: var(--color-secondary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
+    @apply rounded-paper;
     transition: 0.4s;
   }
 
   & .paper-switch-slider.round {
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
   }
 
   & .paper-switch-slider.round::before {
     bottom: -7px;
     width: 23px;
     height: 23px;
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
   }
 
   &:has(input:disabled),
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
 
     & .paper-switch-slider {
       cursor: not-allowed;
@@ -349,13 +277,8 @@
     position: absolute;
     inset: 0;
     cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
+    @apply border-paper;
     border-color: var(--color-primary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
     transition: 0.4s;
   }
 
@@ -367,31 +290,21 @@
     width: 14px;
     height: 14px;
     background: var(--color-secondary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
+    @apply rounded-paper;
     transition: 0.4s;
   }
 
   & .paper-switch-slider.round {
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
   }
 
   & .paper-switch-slider.round::before {
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
   }
 
   &:has(input:disabled),
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
 
     & .paper-switch-slider {
       cursor: not-allowed;
@@ -446,8 +359,7 @@
 
   &:has(input:disabled),
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
 
     &:hover .paper-switch-tile-card {
       box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 0.3);
@@ -480,13 +392,8 @@
     text-align: center;
     backface-visibility: hidden;
     box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 0.3);
-    border-width: 2px;
-    border-style: solid;
+    @apply border-paper;
     border-color: var(--color-primary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
   }
 
   & .paper-switch-tile-card-back {
@@ -507,8 +414,7 @@
 
   &:disabled,
   &.disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+    @apply disabled-paper;
   }
 
   /* Webkit: fill via gradient driven by --value (set via oninput) */
@@ -536,10 +442,7 @@
     margin-top: -14px;
     background: var(--paper-slider-thumb);
     border: 1px solid var(--paper-slider-border);
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
     box-shadow:
       1px 1px 1px #000,
       0 0 1px #0d0d0d;
@@ -568,10 +471,7 @@
     height: 36px;
     background: var(--paper-slider-thumb);
     border: 1px solid var(--paper-slider-border);
-    border-bottom-left-radius: 0.7rem 1rem;
-    border-bottom-right-radius: 1rem 0.9rem;
-    border-top-left-radius: 1rem 1rem;
-    border-top-right-radius: 1rem 0.6rem;
+    @apply rounded-paper-soft;
     box-shadow:
       1px 1px 1px #000,
       0 0 1px #0d0d0d;

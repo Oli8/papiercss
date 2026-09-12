@@ -2,13 +2,8 @@
   width: 100%;
   margin-bottom: 1.25rem;
   padding: 0.9375rem;
-  border-width: 2px;
-  border-style: solid;
+  @apply border-paper;
   border-color: var(--paper-alert-border);
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
   color: var(--paper-alert-fg);
   background-color: var(--paper-alert-bg);
 }

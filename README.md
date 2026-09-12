@@ -153,6 +153,7 @@ Dark mode: add class `dark` on a parent (usually `<html class="dark">`).
 | --- | --- |
 | `border-paper` / `border-paper-{1-6}` | 2px solid + hand-drawn radius |
 | `rounded-paper` / `rounded-paper-{1-6}` | radius only |
+| `rounded-paper-soft` | softer irregular radius (radios, thumbs, …) |
 | `rounded-paper-circle` / `rounded-paper-circle-{1-6}` | imperfect circle/blob radius |
 | `border-paper-thick` | 5px width |
 | `child-borders-paper` | cycle border styles 1–6 on children |
@@ -161,6 +162,8 @@ Dark mode: add class `dark` on a parent (usually `<html class="dark">`).
 | `font-paper` / `font-paper-heading` | Neucha / Patrick Hand SC |
 | `text-paper-base` | base body look |
 | `link-paper` | scribble underline link |
+| `disabled-paper` | `cursor: not-allowed` + `--paper-disabled-opacity` |
+| `field-paper` | shared text-field base (`input` / `select` / `textarea`) |
 
 Example:
 

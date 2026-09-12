@@ -15,10 +15,7 @@
     color: var(--color-primary-inverse);
     background-color: var(--color-primary);
     border: 2px solid var(--color-primary);
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
+    @apply rounded-paper;
     opacity: 0;
     visibility: hidden;
     transform: translateX(-50%) translateY(-100%);
