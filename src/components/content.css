@@ -68,12 +68,6 @@
   }
 }
 
-@utility table-paper-borderless {
-  & tbody tr td {
-    border-top: none;
-  }
-}
-
 @utility list-paper {
   list-style: none;
   margin-left: 0;

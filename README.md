@@ -194,7 +194,7 @@ Example:
 | `nav-paper` | navbar |
 | `breadcrumb-paper` | breadcrumb |
 | `popover-paper` + `data-popover="…"` | popover |
-| `table-paper`, `table-paper-hover`, `table-paper-alternating`, `table-paper-borderless` | tables |
+| `table-paper`, `table-paper-hover`, `table-paper-alternating` | tables |
 | `list-paper`, `article-paper` | lists / articles |
 | `divider-paper` | `~~~` divider |
 
