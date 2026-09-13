@@ -77,7 +77,15 @@
 @utility list-paper {
   list-style: none;
   margin-left: 0;
+  padding-left: 0;
   font-family: var(--font-paper);
+
+  & ul,
+  & ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
 
   & li {
     text-indent: -7px;
@@ -89,12 +97,26 @@
     position: relative;
   }
 
-  & ul li::before {
+  & ul li::before,
+  & ol li::before {
     content: "+";
   }
 
-  & ul ul li::before {
+  & ul ul li::before,
+  & ol ol li::before,
+  & ul ol li::before,
+  & ol ul li::before {
     content: "~";
+  }
+
+  & ul ul ul li::before,
+  & ol ol ol li::before {
+    content: "⤍";
+  }
+
+  & ul ul ul ul li::before,
+  & ol ol ol ol li::before {
+    content: "⁎";
   }
 }
 
