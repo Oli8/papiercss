@@ -326,6 +326,10 @@
   --paper-modal-close-fg: var(--paper-primary-400);
   --paper-modal-close-fg-hover: var(--paper-primary);
 
+  --paper-popover-bg: var(--paper-primary-600);
+  --paper-popover-fg: var(--paper-primary-inverse);
+  --paper-popover-border: var(--paper-primary);
+
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";
 
