@@ -193,7 +193,7 @@ Example:
 | `modal-paper` on `<dialog>` (+ `modal-paper-title`, `modal-paper-subtitle`, `modal-paper-close`) | modal |
 | `nav-paper` | navbar |
 | `breadcrumb-paper` | breadcrumb |
-| `popover-paper` + `data-popover="…"` | popover |
+| `popover-paper` + `data-popover="…"` (+ `popover-paper-{top|bottom|left|right}`, `popover-paper-{color}`) | popover |
 | `table-paper`, `table-paper-hover`, `table-paper-alternating` | tables |
 | `list-paper`, `article-paper` | lists / articles |
 | `divider-paper` | `~~~` divider |

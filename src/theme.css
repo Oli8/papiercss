@@ -326,9 +326,27 @@
   --paper-modal-close-fg: var(--paper-primary-400);
   --paper-modal-close-fg-hover: var(--paper-primary);
 
-  --paper-popover-bg: var(--paper-primary-600);
-  --paper-popover-fg: var(--paper-primary-inverse);
-  --paper-popover-border: var(--paper-primary);
+  --paper-popover-primary-bg: var(--paper-primary-600);
+  --paper-popover-primary-fg: var(--paper-primary-inverse);
+  --paper-popover-primary-border: var(--paper-primary);
+  --paper-popover-secondary-bg: var(--paper-secondary);
+  --paper-popover-secondary-fg: var(--paper-white);
+  --paper-popover-secondary-border: var(--paper-secondary);
+  --paper-popover-success-bg: var(--paper-success-600);
+  --paper-popover-success-fg: var(--paper-white);
+  --paper-popover-success-border: var(--paper-success-600);
+  --paper-popover-warning-bg: var(--paper-warning-600);
+  --paper-popover-warning-fg: var(--paper-white);
+  --paper-popover-warning-border: var(--paper-warning-600);
+  --paper-popover-danger-bg: var(--paper-danger);
+  --paper-popover-danger-fg: var(--paper-white);
+  --paper-popover-danger-border: var(--paper-danger);
+  --paper-popover-muted-bg: var(--paper-muted-600);
+  --paper-popover-muted-fg: var(--paper-white);
+  --paper-popover-muted-border: var(--paper-muted-600);
+  --paper-popover-bg: var(--paper-popover-primary-bg);
+  --paper-popover-fg: var(--paper-popover-primary-fg);
+  --paper-popover-border: var(--paper-popover-primary-border);
 
   --paper-divider-fg: var(--paper-muted);
   --paper-divider-content: "~~~";

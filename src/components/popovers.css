@@ -72,3 +72,39 @@
     transform: translateX(0) translateY(-50%);
   }
 }
+
+@utility popover-paper-primary {
+  --paper-popover-bg: var(--paper-popover-primary-bg);
+  --paper-popover-fg: var(--paper-popover-primary-fg);
+  --paper-popover-border: var(--paper-popover-primary-border);
+}
+
+@utility popover-paper-secondary {
+  --paper-popover-bg: var(--paper-popover-secondary-bg);
+  --paper-popover-fg: var(--paper-popover-secondary-fg);
+  --paper-popover-border: var(--paper-popover-secondary-border);
+}
+
+@utility popover-paper-success {
+  --paper-popover-bg: var(--paper-popover-success-bg);
+  --paper-popover-fg: var(--paper-popover-success-fg);
+  --paper-popover-border: var(--paper-popover-success-border);
+}
+
+@utility popover-paper-warning {
+  --paper-popover-bg: var(--paper-popover-warning-bg);
+  --paper-popover-fg: var(--paper-popover-warning-fg);
+  --paper-popover-border: var(--paper-popover-warning-border);
+}
+
+@utility popover-paper-danger {
+  --paper-popover-bg: var(--paper-popover-danger-bg);
+  --paper-popover-fg: var(--paper-popover-danger-fg);
+  --paper-popover-border: var(--paper-popover-danger-border);
+}
+
+@utility popover-paper-muted {
+  --paper-popover-bg: var(--paper-popover-muted-bg);
+  --paper-popover-fg: var(--paper-popover-muted-fg);
+  --paper-popover-border: var(--paper-popover-muted-border);
+}
