@@ -1,13 +1,13 @@
 # PapierCSS
 
-The less formal CSS framework — now a **Tailwind CSS v4** theme + utilities pack.
+The less formal CSS framework, rebuilt with Tailwind v4.
 
 Nothing is styled until you add classes. Layout, spacing, and colors use Tailwind; the paper look comes from Paper utilities (`border-paper`, `btn-paper`, …).
 
 ## Install
 
 ```bash
-npm install papercss tailwindcss
+npm install papiercss tailwindcss
 ```
 
 In your CSS entry:
@@ -47,23 +47,10 @@ Default aliases (light → dark):
 | `danger` | 700 | 500 |
 | `muted` | 400 | 400 |
 
-Components typically use soft role tokens (`*-soft` fill + `*-soft-fg` text),
-remapped for dark mode so fills stay dark instead of pastel.
-
-Surfaces (neutral canvas):
-
-| Token | Role |
-| --- | --- |
-| `surface` | page / canvas |
-| `surface-raised` | cards, modals, nav, inputs |
-| `surface-sunken` | card header/footer, recessed areas |
-
-Legacy aliases: `main-background` → `surface`, `white-dark` → `surface-sunken`.
-
 ### Component tokens
 
 Buttons, alerts, tables, and progress read `--paper-*` component variables
-(not in `@theme`). Defaults point at soft / surface tokens — override to
+(not in `@theme`).  override to
 tweak one component without changing the whole palette:
 
 ```css
@@ -94,28 +81,6 @@ tweak one component without changing the whole palette:
   --paper-btn-primary-fg: #fecaca;
 }
 ```
-
-Useful names: `--paper-btn-{color}-{bg|fg|border}`, `--paper-alert-{color}-…`,
-`--paper-table-stripe-fg`, `--paper-table-stripe-bg` (default `transparent`),
-`--paper-table-row-border`, `--paper-table-hover-fg`,
-`--paper-progress-{color}-bg|fg` (default soft), `--paper-progress-{color}-stripe`,
-`--paper-skeleton-from`, `--paper-skeleton-via`, `--paper-skeleton-to`,
-`--paper-circle-{1-6}-radius`, `--paper-circle-radius`,
-`--paper-avatar-{color}-{bg|fg|border}`, `--paper-avatar-size`, `--paper-avatar-radius`,
-`--paper-avatar-stack-overlap`, `--paper-avatar-stack-ring`,
-`--paper-spinner-{color}-color`, `--paper-spinner-color`, `--paper-spinner-track`,
-`--paper-spinner-size`, `--paper-spinner-radius` (alias of `--paper-circle-radius`),
-`--paper-slider-{color}-fill`, `--paper-slider-{color}-border`,
-`--paper-slider-fill`, `--paper-slider-track`, `--paper-slider-thumb`,
-`--paper-slider-border`, `--paper-slider-thumb-radius`,
-`--paper-collapsible-duration`, `--paper-collapsible-border`, `--paper-collapsible-content-bg`,
-`--paper-modal-bg`, `--paper-modal-fg`, `--paper-modal-border`, `--paper-modal-backdrop`,
-`--paper-modal-duration`,
-`--paper-tag-{color}-bg`.
-
-Use `progress-paper-striped` (primary) or `progress-paper-striped-{color}` —
-each color owns fill, text, and stripe (`--paper-progress-secondary-bg` /
-`-fg` / `-stripe`, etc.).
 
 Override tokens in your app:
 
@@ -175,28 +140,30 @@ Example:
 
 ## Components (opt-in)
 
-| Class | Notes |
-| --- | --- |
-| `btn-paper` (+ `btn-paper-secondary`, `-outline`, `-sm`, `-lg`, …) | buttons |
-| `card-paper` (+ `header` / `footer` children, `card-paper-body`) | cards |
-| `alert-paper`, `alert-paper-success`, … | alerts |
-| `tag-paper`, `tag-paper-primary`, … | tags |
-| `avatar-paper`, `avatar-paper-{sm|lg}`, `avatar-paper-{color}`, `avatar-paper-circle-{1-6}`, `avatar-paper-stack[-{sm|lg}]` | avatar (initials or image) |
-| `input-paper`, `select-paper`, `textarea-paper` | form controls |
-| `paper-check`, `paper-radio` | checkbox / radio |
-| `paper-switch`, `paper-switch-2`, `paper-switch-tile`, `slider-paper`, `slider-paper-{color}` | switches / slider |
-| `progress-paper`, `progress-paper-bar`, `progress-paper-bar-{color}`, `progress-paper-striped[-{color}]` | progress |
-| `skeleton-paper`, `skeleton-paper-{1-6}`, `skeleton-paper-circle[-{1-6}]`, `skeleton-paper-inline`, `skeleton-paper-static`, `skeleton-paper-group` | loading placeholders |
-| `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |
-| `collapsible-paper` on `<details>` (+ same `name` for exclusive accordion) | collapsible / accordion |
-| `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
-| `modal-paper` on `<dialog>` (+ `modal-paper-title`, `modal-paper-subtitle`, `modal-paper-close`) | modal |
-| `nav-paper` | navbar |
-| `breadcrumb-paper` | breadcrumb |
-| `popover-paper` + `data-popover="…"` (+ `popover-paper-{top|bottom|left|right}`, `popover-paper-{color}`) | popover |
-| `table-paper`, `table-paper-hover`, `table-paper-alternating` | tables |
-| `list-paper`, `article-paper` | lists / articles |
-| `divider-paper` | `~~~` divider |
+- Alert
+- Article
+- Avatar
+- Breadcrumb
+- Button
+- Card
+- Checkbox
+- Collapsible
+- Divider
+- Input
+- List
+- Modal
+- Navbar
+- Popover
+- Progress
+- Radio
+- Select
+- Skeleton
+- Slider
+- Spinner
+- Switch
+- Table
+- Tabs
+- Tag
 
 Example:
 
@@ -212,14 +179,14 @@ npm run demo:build
 npx serve demo
 ```
 
-## Migrating from 1.x
+## Migrating from papiercss
 
 - Drop-in `paper.css` auto-styling is gone (`button`, `a`, `input`, headings are no longer global).
 - Old spacing utils (`margin-top-large`, …) → Tailwind (`mt-4`, …).
 - `.border` → `border-paper` (plus `border-primary` if you want the color).
 - `.paper-btn` / `button` styles → `btn-paper`.
-- Recompile with Tailwind; Paper is a CSS source package, not a prebuilt monolithic sheet.
 
 ## License
 
-ISC
+ISC — based on [PaperCSS](https://github.com/papercss/papercss) by [@rhyneav](https://github.com/rhyneav).
+See [LICENSE.md](LICENSE.md)
