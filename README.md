@@ -190,7 +190,7 @@ Example:
 | `spinner-paper`, `spinner-paper-{sm|lg}`, `spinner-paper-{color}`, `spinner-paper-inline`, `spinner-paper-static` | loading spinner |
 | `collapsible-paper` on `<details>` (+ same `name` for exclusive accordion) | collapsible / accordion |
 | `tabs-paper` (evenly by default) + `tabs-paper-start/center/end/between/around` | tabs |
-| `modal-paper` on `<dialog>` (+ `modal-paper-close`, `showModal()` / `form method="dialog"`) | modal |
+| `modal-paper` on `<dialog>` (+ `modal-paper-title`, `modal-paper-subtitle`, `modal-paper-close`) | modal |
 | `nav-paper` | navbar |
 | `breadcrumb-paper` | breadcrumb |
 | `popover-paper` + `data-popover="…"` | popover |
