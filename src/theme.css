@@ -314,6 +314,26 @@
   --paper-slider-fill: var(--paper-slider-secondary-fill);
   --paper-slider-border: var(--paper-slider-primary-border);
 
+  --paper-check-border-color: var(--paper-primary);
+  --paper-check-checked-color: var(--paper-secondary);
+
+  --paper-radio-border-color: var(--paper-primary);
+  --paper-radio-checked-color: var(--paper-secondary);
+
+  --paper-select-option-bg: var(--paper-surface-raised);
+  --paper-select-option-fg: var(--paper-primary);
+  --paper-select-option-hover-bg: var(--paper-secondary-soft);
+  --paper-select-option-hover-fg: var(--paper-secondary-soft-fg);
+
+  --paper-switch-border-color: var(--paper-primary);
+  --paper-switch-knob-color: var(--paper-secondary);
+  --paper-switch-checked-bg: var(--paper-success-soft);
+  --paper-switch-focus-color: var(--paper-secondary);
+  --paper-switch-tile-border-color: var(--paper-primary);
+
+  --paper-breadcrumb-separator: "/\00a0";
+  --paper-breadcrumb-link-color: var(--paper-secondary);
+
   --paper-collapsible-duration: 0.3s;
   --paper-collapsible-border: var(--paper-muted-border);
   --paper-collapsible-content-bg: var(--paper-surface-sunken);

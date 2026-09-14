@@ -13,12 +13,12 @@
   }
 
   & li + li::before {
-    content: "/\00a0";
+    content: var(--paper-breadcrumb-separator);
     padding: 8px;
   }
 
   & a {
-    color: var(--color-secondary);
+    color: var(--paper-breadcrumb-link-color);
     text-decoration: none;
     background-image: none;
 
