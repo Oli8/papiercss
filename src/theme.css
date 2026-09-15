@@ -139,7 +139,7 @@
   --paper-tag-danger-bg: var(--paper-danger-700);
   --paper-tag-muted-bg: var(--paper-muted-600);
 
-  /* Component tokens (override these — not exposed in @theme) */
+  /* Component tokens */
   --paper-btn-bg: var(--paper-surface-raised);
   --paper-btn-fg: var(--paper-primary);
   --paper-btn-border-color: var(--paper-primary);
@@ -185,17 +185,14 @@
   --paper-alert-muted-fg: var(--paper-muted-soft-fg);
   --paper-alert-muted-border-color: var(--paper-muted-soft-border-color);
 
-  --paper-table-stripe-fg: color-mix(in srgb, var(--paper-primary) 75%, white);
-  --paper-table-stripe-bg: transparent;
-  --paper-table-row-border-color: color-mix(in srgb, var(--paper-primary) 40%, white);
+  --paper-table-stripe-fg: var(--paper-primary);
+  --paper-table-stripe-bg: var(--paper-primary-100);
+  --paper-table-row-border-color: var(--paper-primary-300);
   --paper-table-hover-fg: var(--paper-secondary);
 
   --paper-progress-track-border-color: var(--paper-primary);
   --paper-progress-bar-stripe-size: 0.25rem;
-  /*
-    Per-color progress fill / text / stripe (defaults soft).
-    Override --paper-progress-{color}-bg|fg|stripe-color without touching btn/alert soft.
-  */
+
   --paper-progress-primary-bg: var(--paper-primary-soft);
   --paper-progress-secondary-bg: var(--paper-secondary-soft);
   --paper-progress-success-bg: var(--paper-success-soft);
@@ -532,11 +529,9 @@
   --paper-tag-danger-bg: var(--paper-danger-600);
   --paper-tag-muted-bg: var(--paper-muted-600);
 
-  /* Table mixes need dark-aware defaults (primary is light in dark) */
-  --paper-table-stripe-fg: color-mix(in srgb, var(--paper-primary) 65%, black);
-  --paper-table-row-border-color: color-mix(in srgb, var(--paper-primary) 30%, black);
+  --paper-table-stripe-bg: var(--paper-primary-600);
+  --paper-table-row-border-color: var(--paper-primary-500);
 
-  /* Soft fill is *-900 in dark → stripe one step darker */
   --paper-progress-primary-stripe-color: var(--paper-primary-950);
   --paper-progress-secondary-stripe-color: var(--paper-secondary-950);
   --paper-progress-success-stripe-color: var(--paper-success-950);
