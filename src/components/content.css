@@ -1,6 +1,7 @@
 @utility article-paper {
   font-family: var(--font-paper);
   color: var(--color-primary);
+  padding: var(--paper-article-padding);
 
   & p {
     line-height: 1.6;

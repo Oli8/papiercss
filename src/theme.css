@@ -385,6 +385,7 @@
   --paper-divider-content: "~~~";
 
   --paper-article-meta-color: var(--paper-muted-600);
+  --paper-article-padding: 1.5rem;
   --paper-subtitle-color: var(--paper-secondary);
   --paper-card-subtitle-color: var(--paper-subtitle-color);
   --paper-card-title-size: 1.5rem;
@@ -558,6 +559,9 @@
 @theme {
   --font-paper: "Neucha", cursive, sans-serif;
   --font-paper-heading: "Patrick Hand SC", cursive, sans-serif;
+
+  /* Navbar hamburger breakpoint (inlined into nav-paper media queries). */
+  --breakpoint-paper-nav: 48rem;
 
   --color-primary-50: var(--paper-primary-50);
   --color-primary-100: var(--paper-primary-100);

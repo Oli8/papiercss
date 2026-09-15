@@ -7,24 +7,38 @@
     <link rel="stylesheet" href="./dist.css" />
   </head>
   <body class="text-paper-base bg-surface min-h-screen">
-    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border px-4 py-2 mb-8">
-      <div class="font-paper-heading text-2xl text-primary">
+    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border mb-8">
+      <div class="font-paper-heading text-3xl text-primary">
         <a href="/">PapierCSS</a>
       </div>
-      <ul class="inline">
-        <li><a href="#utilities">Utilities</a></li>
-        <li><a href="#components">Components</a></li>
-        <li><a href="./colors.html">Colors</a></li>
-        <li>
-          <button
-            type="button"
-            class="btn-paper btn-paper-sm"
-            onclick="document.documentElement.classList.toggle('dark')"
-          >
-            Dark
-          </button>
-        </li>
-      </ul>
+      <div class="nav-paper-collapsible">
+        <input
+          id="nav-toggle-demo"
+          class="nav-paper-collapsible-input"
+          type="checkbox"
+        />
+        <label class="nav-paper-burger" for="nav-toggle-demo">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="nav-paper-collapsible-body">
+          <ul class="inline">
+            <li><a href="#utilities">Utilities</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="./colors.html">Colors</a></li>
+            <li>
+              <button
+                type="button"
+                class="btn-paper btn-paper-sm"
+                onclick="document.documentElement.classList.toggle('dark')"
+              >
+                Dark
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="mx-auto max-w-3xl space-y-14 px-8 pb-24">
@@ -850,15 +864,29 @@
         <!-- Navbar (inline example; top nav already shown) -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Navbar</h3>
-          <nav class="nav-paper nav-paper-split border-paper border-muted-border px-3">
-            <div class="font-paper-heading text-2xl">
+          <nav class="nav-paper nav-paper-split border-paper border-muted-border">
+            <div class="font-paper-heading text-3xl">
               <a href="#">PapierCSS</a>
             </div>
-            <ul class="inline">
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">GitHub</a></li>
-            </ul>
+            <div class="nav-paper-collapsible">
+              <input
+                id="nav-toggle-inline"
+                class="nav-paper-collapsible-input"
+                type="checkbox"
+              />
+              <label class="nav-paper-burger" for="nav-toggle-inline">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </label>
+              <div class="nav-paper-collapsible-body">
+                <ul class="inline">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </div>
 
@@ -875,8 +903,8 @@
         <!-- Article -->
         <div class="space-y-3">
           <h3 class="font-paper-heading text-2xl">Article</h3>
-          <article class="article-paper border-paper border-muted-border p-6">
-            <h4 class="article-paper-title mt-0">Handwritten headlines</h4>
+          <article class="article-paper border-paper border-muted-border">
+            <h4 class="article-paper-title">Handwritten headlines</h4>
             <p class="article-paper-meta">
               By <a href="#">Author</a> · Aug 6, 2026
             </p>

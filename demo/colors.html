@@ -7,23 +7,37 @@
     <link rel="stylesheet" href="./dist.css" />
   </head>
   <body class="text-paper-base bg-surface min-h-screen">
-    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border px-4 py-2 mb-8">
+    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border mb-8">
       <div class="font-paper-heading text-2xl text-primary">
         <a href="./index.html">PapierCSS</a>
       </div>
-      <ul class="inline">
-        <li><a href="./index.html">Components</a></li>
-        <li><a href="./colors.html">Colors</a></li>
-        <li>
-          <button
-            type="button"
-            class="btn-paper btn-paper-sm"
-            onclick="document.documentElement.classList.toggle('dark')"
-          >
-            Dark
-          </button>
-        </li>
-      </ul>
+      <div class="nav-paper-collapsible">
+        <input
+          id="nav-toggle-colors"
+          class="nav-paper-collapsible-input"
+          type="checkbox"
+        />
+        <label class="nav-paper-burger" for="nav-toggle-colors">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="nav-paper-collapsible-body">
+          <ul class="inline">
+            <li><a href="./index.html">Components</a></li>
+            <li><a href="./colors.html">Colors</a></li>
+            <li>
+              <button
+                type="button"
+                class="btn-paper btn-paper-sm"
+                onclick="document.documentElement.classList.toggle('dark')"
+              >
+                Dark
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="mx-auto max-w-4xl space-y-14 px-8 pb-24">
