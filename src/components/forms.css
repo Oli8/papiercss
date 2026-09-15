@@ -5,13 +5,17 @@
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-paper);
-  color: var(--color-primary);
+  color: var(--paper-field-fg);
   outline: none;
   @apply border-paper;
-  border-color: var(--color-primary);
+  border-color: var(--paper-field-border-color);
+
+  &::placeholder {
+    color: var(--paper-field-placeholder-color);
+  }
 
   &:focus {
-    border-color: var(--color-secondary);
+    border-color: var(--paper-field-border-focus-color);
   }
 
   &:disabled,
@@ -23,12 +27,17 @@
 @utility input-paper {
   @apply field-paper;
   background: transparent;
+  --paper-field-fg: var(--paper-input-fg);
+  --paper-field-border-color: var(--paper-input-border-color);
+  --paper-field-border-focus-color: var(--paper-input-border-focus-color);
+  --paper-field-placeholder-color: var(--paper-input-placeholder-color);
 }
 
 @utility select-paper {
   @apply field-paper;
   height: 2.35rem;
   background-color: var(--color-surface-raised);
+  --paper-field-border-color: var(--paper-select-border-color);
 
   /* Native dropdown — hover styles are browser-dependent */
   & option,
@@ -50,6 +59,10 @@
   max-width: 100%;
   max-height: 90vh;
   background: transparent;
+  --paper-field-fg: var(--paper-textarea-fg);
+  --paper-field-border-color: var(--paper-textarea-border-color);
+  --paper-field-border-focus-color: var(--paper-textarea-border-focus-color);
+  --paper-field-placeholder-color: var(--paper-textarea-placeholder-color);
 }
 
 @utility form-group-paper {

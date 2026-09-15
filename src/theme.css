@@ -324,6 +324,22 @@
   --paper-select-option-fg: var(--paper-primary);
   --paper-select-option-hover-bg: var(--paper-secondary-soft);
   --paper-select-option-hover-fg: var(--paper-secondary-soft-fg);
+  --paper-select-border-color: var(--paper-primary);
+
+  --paper-field-fg: var(--paper-primary);
+  --paper-field-border-color: var(--paper-primary);
+  --paper-field-border-focus-color: var(--paper-secondary);
+  --paper-field-placeholder-color: var(--paper-primary-400);
+
+  --paper-input-fg: var(--paper-field-fg);
+  --paper-input-border-color: var(--paper-field-border-color);
+  --paper-input-border-focus-color: var(--paper-field-border-focus-color);
+  --paper-input-placeholder-color: var(--paper-field-placeholder-color);
+
+  --paper-textarea-fg: var(--paper-field-fg);
+  --paper-textarea-border-color: var(--paper-field-border-color);
+  --paper-textarea-border-focus-color: var(--paper-field-border-focus-color);
+  --paper-textarea-placeholder-color: var(--paper-field-placeholder-color);
 
   --paper-switch-border-color: var(--paper-primary);
   --paper-switch-knob-color: var(--paper-secondary);
