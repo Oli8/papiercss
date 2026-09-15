@@ -17,7 +17,7 @@
   background-color: var(--paper-avatar-bg);
   border-width: 2px;
   border-style: solid;
-  border-color: var(--paper-avatar-border);
+  border-color: var(--paper-avatar-border-color);
   border-radius: var(--paper-avatar-radius);
   box-shadow: var(--shadow-paper-sm);
   vertical-align: middle;
@@ -68,37 +68,37 @@
 @utility avatar-paper-primary {
   --paper-avatar-bg: var(--paper-avatar-primary-bg);
   --paper-avatar-fg: var(--paper-avatar-primary-fg);
-  --paper-avatar-border: var(--paper-avatar-primary-border);
+  --paper-avatar-border-color: var(--paper-avatar-primary-border-color);
 }
 
 @utility avatar-paper-secondary {
   --paper-avatar-bg: var(--paper-avatar-secondary-bg);
   --paper-avatar-fg: var(--paper-avatar-secondary-fg);
-  --paper-avatar-border: var(--paper-avatar-secondary-border);
+  --paper-avatar-border-color: var(--paper-avatar-secondary-border-color);
 }
 
 @utility avatar-paper-success {
   --paper-avatar-bg: var(--paper-avatar-success-bg);
   --paper-avatar-fg: var(--paper-avatar-success-fg);
-  --paper-avatar-border: var(--paper-avatar-success-border);
+  --paper-avatar-border-color: var(--paper-avatar-success-border-color);
 }
 
 @utility avatar-paper-warning {
   --paper-avatar-bg: var(--paper-avatar-warning-bg);
   --paper-avatar-fg: var(--paper-avatar-warning-fg);
-  --paper-avatar-border: var(--paper-avatar-warning-border);
+  --paper-avatar-border-color: var(--paper-avatar-warning-border-color);
 }
 
 @utility avatar-paper-danger {
   --paper-avatar-bg: var(--paper-avatar-danger-bg);
   --paper-avatar-fg: var(--paper-avatar-danger-fg);
-  --paper-avatar-border: var(--paper-avatar-danger-border);
+  --paper-avatar-border-color: var(--paper-avatar-danger-border-color);
 }
 
 @utility avatar-paper-muted {
   --paper-avatar-bg: var(--paper-avatar-muted-bg);
   --paper-avatar-fg: var(--paper-avatar-muted-fg);
-  --paper-avatar-border: var(--paper-avatar-muted-border);
+  --paper-avatar-border-color: var(--paper-avatar-muted-border-color);
 }
 
 @utility avatar-paper-stack {
@@ -108,7 +108,7 @@
   & > * {
     position: relative;
     margin-inline-start: calc(var(--paper-avatar-stack-overlap) * -1);
-    outline: var(--paper-avatar-stack-ring-width) solid var(--paper-avatar-stack-ring);
+    outline: var(--paper-avatar-stack-ring-width) solid var(--paper-avatar-stack-ring-color);
     outline-offset: calc(var(--paper-avatar-stack-ring-width) * -1);
   }
 

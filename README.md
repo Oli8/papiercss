@@ -57,14 +57,14 @@ tweak one component without changing the whole palette:
 :root {
   --paper-btn-primary-bg: #ffe4e1;
   --paper-btn-primary-fg: #7f1d1d;
-  --paper-btn-primary-border: #b91c1c;
+  --paper-btn-primary-border-color: #b91c1c;
 
   --paper-table-stripe-fg: var(--paper-muted-500);
   --paper-table-hover-fg: var(--paper-secondary-700);
 
   --paper-progress-secondary-bg: #cceeff;
   --paper-progress-secondary-fg: #0c4a6e;
-  --paper-progress-secondary-stripe: #66c2ff;
+  --paper-progress-secondary-stripe-color: #66c2ff;
 
   --paper-skeleton-from: var(--paper-muted-500);
   --paper-skeleton-via: var(--paper-muted-300);

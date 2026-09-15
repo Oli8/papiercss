@@ -30,7 +30,7 @@
     <main class="mx-auto max-w-3xl space-y-14 px-8 pb-24">
       <header class="space-y-2">
         <h1 class="font-paper-heading text-5xl text-primary">PaperCSS demo</h1>
-        <p class="text-muted-600">
+        <p class="text-muted-600 dark:text-muted-400">
           Tailwind utilities + paper look. Opt-in classes only —
           <a class="link-paper" href="#components">scribble link</a>
           /
@@ -96,7 +96,7 @@
           <p class="font-paper-heading text-3xl">font-paper-heading</p>
           <p class="text-paper-base">text-paper-base</p>
           <hr class="divider-paper" />
-          <p class="text-sm text-muted-600">divider-paper (~~~)</p>
+          <p class="text-sm text-muted-600 dark:text-muted-400">divider-paper (~~~)</p>
         </div>
 
         <div class="space-y-3">
@@ -168,25 +168,25 @@
           <h3 class="font-paper-heading text-2xl">Avatar</h3>
 
           <div class="flex flex-wrap items-center gap-4">
-            <span class="avatar-paper" aria-hidden="true">OB</span>
-            <span class="avatar-paper avatar-paper-primary" aria-hidden="true">AB</span>
-            <span class="avatar-paper avatar-paper-secondary" aria-hidden="true">CD</span>
-            <span class="avatar-paper avatar-paper-success" aria-hidden="true">EF</span>
-            <span class="avatar-paper avatar-paper-warning" aria-hidden="true">GH</span>
-            <span class="avatar-paper avatar-paper-danger" aria-hidden="true">IJ</span>
-            <span class="avatar-paper avatar-paper-muted" aria-hidden="true">KL</span>
+            <span class="avatar-paper">OB</span>
+            <span class="avatar-paper avatar-paper-primary">AB</span>
+            <span class="avatar-paper avatar-paper-secondary">CD</span>
+            <span class="avatar-paper avatar-paper-success">EF</span>
+            <span class="avatar-paper avatar-paper-warning">GH</span>
+            <span class="avatar-paper avatar-paper-danger">IJ</span>
+            <span class="avatar-paper avatar-paper-muted">KL</span>
           </div>
 
           <div class="flex flex-wrap items-center gap-4">
-            <span class="avatar-paper avatar-paper-sm avatar-paper-secondary" aria-hidden="true">SM</span>
-            <span class="avatar-paper avatar-paper-secondary" aria-hidden="true">MD</span>
-            <span class="avatar-paper avatar-paper-lg avatar-paper-secondary" aria-hidden="true">LG</span>
+            <span class="avatar-paper avatar-paper-sm avatar-paper-secondary">SM</span>
+            <span class="avatar-paper avatar-paper-secondary">MD</span>
+            <span class="avatar-paper avatar-paper-lg avatar-paper-secondary">LG</span>
           </div>
 
           <div class="flex flex-wrap items-center gap-4">
-            <span class="avatar-paper avatar-paper-circle-2" aria-hidden="true">A</span>
-            <span class="avatar-paper avatar-paper-circle-4 avatar-paper-primary" aria-hidden="true">B</span>
-            <span class="avatar-paper avatar-paper-circle-6 avatar-paper-danger" aria-hidden="true">C</span>
+            <span class="avatar-paper avatar-paper-circle-2">A</span>
+            <span class="avatar-paper avatar-paper-circle-4 avatar-paper-primary">B</span>
+            <span class="avatar-paper avatar-paper-circle-6 avatar-paper-danger">C</span>
           </div>
 
           <div class="flex flex-wrap items-center gap-4">
@@ -199,10 +199,10 @@
           </div>
 
           <div class="avatar-paper-stack">
-            <span class="avatar-paper avatar-paper-primary" aria-hidden="true">AB</span>
-            <span class="avatar-paper avatar-paper-secondary" aria-hidden="true">CD</span>
-            <span class="avatar-paper avatar-paper-success" aria-hidden="true">EF</span>
-            <span class="avatar-paper avatar-paper-warning" aria-hidden="true">GH</span>
+            <span class="avatar-paper avatar-paper-primary">AB</span>
+            <span class="avatar-paper avatar-paper-secondary">CD</span>
+            <span class="avatar-paper avatar-paper-success">EF</span>
+            <span class="avatar-paper avatar-paper-warning">GH</span>
           </div>
 
           <div class="avatar-paper-stack avatar-paper-stack-lg">
@@ -215,7 +215,7 @@
             <span class="avatar-paper avatar-paper-circle-6">
               <img src="https://picsum.photos/seed/papier-stack-3/128" alt="Member 3" />
             </span>
-            <span class="avatar-paper avatar-paper-muted" aria-hidden="true">+2</span>
+            <span class="avatar-paper avatar-paper-muted">+2</span>
           </div>
         </div>
 
@@ -248,7 +248,7 @@
               <p class="mb-4">Uses semantic <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>.</p>
               <button type="button" class="btn-paper btn-paper-sm btn-paper-primary">Action</button>
             </div>
-            <footer class="text-sm text-muted-600">Footer</footer>
+            <footer class="text-sm text-muted-600 dark:text-muted-400">Footer</footer>
           </div>
           <div class="card-paper rounded-paper max-w-md overflow-hidden">
             <img
@@ -262,7 +262,7 @@
               <p class="mb-4">Shadow + border paper style, composed with Tailwind spacing.</p>
               <button type="button" class="btn-paper btn-paper-sm btn-paper-primary">Action</button>
             </div>
-            <footer class="text-sm text-muted-600">Footer</footer>
+            <footer class="text-sm text-muted-600 dark:text-muted-400">Footer</footer>
           </div>
         </div>
 
@@ -472,7 +472,7 @@
               style="--value:42%"
               oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%'); document.getElementById('percentage-out').value = this.value + '%'"
             />
-            <output id="percentage-out" class="text-sm text-muted-600">42%</output>
+            <output id="percentage-out" class="text-sm text-muted-600 dark:text-muted-400">42%</output>
           </div>
           <div class="form-group-paper max-w-md">
             <label for="disabled-range">Disabled</label>

@@ -7,7 +7,7 @@
   background-color: var(--paper-btn-bg);
   color: var(--paper-btn-fg);
   @apply border-paper;
-  border-color: var(--paper-btn-border);
+  border-color: var(--paper-btn-border-color);
   box-shadow: var(--shadow-paper);
   font-size: 1.125rem;
   font-family: var(--font-paper);
@@ -21,7 +21,7 @@
   }
 
   &:focus {
-    border-color: var(--paper-btn-focus-border);
+    border-color: var(--paper-btn-focus-border-color);
     box-shadow: 2px 8px 4px -6px hsl(0 0% 0% / 0.3);
   }
 
@@ -56,43 +56,43 @@
 @utility btn-paper-primary {
   color: var(--paper-btn-primary-fg);
   background-color: var(--paper-btn-primary-bg);
-  border-color: var(--paper-btn-primary-border);
+  border-color: var(--paper-btn-primary-border-color);
 }
 
 @utility btn-paper-secondary {
   color: var(--paper-btn-secondary-fg);
   background-color: var(--paper-btn-secondary-bg);
-  border-color: var(--paper-btn-secondary-border);
+  border-color: var(--paper-btn-secondary-border-color);
 }
 
 @utility btn-paper-success {
   color: var(--paper-btn-success-fg);
   background-color: var(--paper-btn-success-bg);
-  border-color: var(--paper-btn-success-border);
+  border-color: var(--paper-btn-success-border-color);
 }
 
 @utility btn-paper-warning {
   color: var(--paper-btn-warning-fg);
   background-color: var(--paper-btn-warning-bg);
-  border-color: var(--paper-btn-warning-border);
+  border-color: var(--paper-btn-warning-border-color);
 }
 
 @utility btn-paper-danger {
   color: var(--paper-btn-danger-fg);
   background-color: var(--paper-btn-danger-bg);
-  border-color: var(--paper-btn-danger-border);
+  border-color: var(--paper-btn-danger-border-color);
 }
 
 @utility btn-paper-muted {
   color: var(--paper-btn-muted-fg);
   background-color: var(--paper-btn-muted-bg);
-  border-color: var(--paper-btn-muted-border);
+  border-color: var(--paper-btn-muted-border-color);
 }
 
 @utility btn-paper-primary-outline {
   color: var(--paper-btn-fg);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-btn-border);
+  border-color: var(--paper-btn-border-color);
 
   &:hover {
     color: var(--paper-btn-primary-fg);

@@ -14,7 +14,7 @@
     text-align: center;
     color: var(--paper-popover-fg);
     background-color: var(--paper-popover-bg);
-    border: 2px solid var(--paper-popover-border);
+    border: 2px solid var(--paper-popover-border-color);
     @apply rounded-paper;
     opacity: 0;
     visibility: hidden;
@@ -76,35 +76,35 @@
 @utility popover-paper-primary {
   --paper-popover-bg: var(--paper-popover-primary-bg);
   --paper-popover-fg: var(--paper-popover-primary-fg);
-  --paper-popover-border: var(--paper-popover-primary-border);
+  --paper-popover-border-color: var(--paper-popover-primary-border-color);
 }
 
 @utility popover-paper-secondary {
   --paper-popover-bg: var(--paper-popover-secondary-bg);
   --paper-popover-fg: var(--paper-popover-secondary-fg);
-  --paper-popover-border: var(--paper-popover-secondary-border);
+  --paper-popover-border-color: var(--paper-popover-secondary-border-color);
 }
 
 @utility popover-paper-success {
   --paper-popover-bg: var(--paper-popover-success-bg);
   --paper-popover-fg: var(--paper-popover-success-fg);
-  --paper-popover-border: var(--paper-popover-success-border);
+  --paper-popover-border-color: var(--paper-popover-success-border-color);
 }
 
 @utility popover-paper-warning {
   --paper-popover-bg: var(--paper-popover-warning-bg);
   --paper-popover-fg: var(--paper-popover-warning-fg);
-  --paper-popover-border: var(--paper-popover-warning-border);
+  --paper-popover-border-color: var(--paper-popover-warning-border-color);
 }
 
 @utility popover-paper-danger {
   --paper-popover-bg: var(--paper-popover-danger-bg);
   --paper-popover-fg: var(--paper-popover-danger-fg);
-  --paper-popover-border: var(--paper-popover-danger-border);
+  --paper-popover-border-color: var(--paper-popover-danger-border-color);
 }
 
 @utility popover-paper-muted {
   --paper-popover-bg: var(--paper-popover-muted-bg);
   --paper-popover-fg: var(--paper-popover-muted-fg);
-  --paper-popover-border: var(--paper-popover-muted-border);
+  --paper-popover-border-color: var(--paper-popover-muted-border-color);
 }

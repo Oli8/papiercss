@@ -11,7 +11,7 @@
   background: var(--paper-modal-bg);
   border-width: 2px;
   border-style: solid;
-  border-color: var(--paper-modal-border);
+  border-color: var(--paper-modal-border-color);
   text-align: left;
   word-wrap: break-word;
   opacity: 0;
@@ -36,7 +36,7 @@
   }
 
   &[open]::backdrop {
-    background-color: var(--paper-modal-backdrop);
+    background-color: var(--paper-modal-backdrop-color);
   }
 }
 
@@ -86,5 +86,5 @@
 @utility modal-paper-subtitle {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: var(--color-secondary);
+  color: var(--paper-modal-subtitle-color);
 }

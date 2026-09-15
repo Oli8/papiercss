@@ -12,7 +12,7 @@
   height: var(--paper-spinner-size);
   border-width: var(--paper-spinner-border-width);
   border-style: solid;
-  border-color: var(--paper-spinner-track);
+  border-color: var(--paper-spinner-track-color);
   border-top-color: var(--paper-spinner-color);
   border-radius: var(--paper-spinner-radius);
 

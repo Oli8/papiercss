@@ -14,10 +14,10 @@
 
 @utility article-paper-meta {
   font-size: 15px;
-  color: var(--color-muted-600);
+  color: var(--paper-article-meta-color);
 
   & a {
-    color: var(--color-muted-600);
+    color: var(--paper-article-meta-color);
     background-image: none;
 
     &:hover {
@@ -48,7 +48,7 @@
   }
 
   & tbody tr td {
-    border-top: 1px dashed var(--paper-table-row-border);
+    border-top: 1px dashed var(--paper-table-row-border-color);
     line-height: 1.5;
     padding: 8px;
     vertical-align: top;
