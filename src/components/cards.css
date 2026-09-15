@@ -44,6 +44,7 @@
 @utility card-paper-title {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-size: var(--paper-card-title-size);
   font-family: var(--font-paper-heading);
 }
 

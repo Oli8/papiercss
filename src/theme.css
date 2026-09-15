@@ -387,6 +387,7 @@
   --paper-article-meta-color: var(--paper-muted-600);
   --paper-subtitle-color: var(--paper-secondary);
   --paper-card-subtitle-color: var(--paper-subtitle-color);
+  --paper-card-title-size: 1.5rem;
   --paper-modal-subtitle-color: var(--paper-subtitle-color);
 
   --paper-tabs-inactive-color: var(--paper-primary-400);
