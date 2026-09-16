@@ -19,3 +19,5 @@ npm run dev
 ```
 
 The app imports the package CSS from `../src`, so component changes are reflected live.
+
+Production builds use `base: /papiercss/` for GitHub Pages. Copy `docs/dist` into the `/papiercss` folder of the Pages site. `404.html` is a copy of `index.html` so Vue Router history mode works on refresh.

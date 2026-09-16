@@ -7,6 +7,7 @@ const root = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
   root,
+  base: process.env.NODE_ENV === "production" ? "/papiercss/" : "/",
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
