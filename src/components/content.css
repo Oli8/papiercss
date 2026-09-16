@@ -1,0 +1,147 @@
+@utility article-paper {
+  font-family: var(--font-paper);
+  color: var(--color-primary);
+  padding: var(--paper-article-padding);
+
+  & p {
+    line-height: 1.6;
+  }
+}
+
+@utility article-paper-title {
+  font-size: 3rem;
+  font-family: var(--font-paper-heading);
+}
+
+@utility article-paper-meta {
+  font-size: 15px;
+  color: var(--paper-article-meta-color);
+
+  & a {
+    color: var(--paper-article-meta-color);
+    background-image: none;
+
+    &:hover {
+      color: var(--color-light-dark);
+    }
+  }
+}
+
+@utility article-paper-lead {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 35px;
+}
+
+@utility table-paper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  font-family: var(--font-paper);
+  color: var(--color-primary);
+
+  & thead tr th {
+    line-height: 1.5;
+    padding: 8px;
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  & tbody tr td {
+    border-top: 1px dashed var(--paper-table-row-border-color);
+    line-height: 1.5;
+    padding: 8px;
+    vertical-align: top;
+  }
+}
+
+@utility table-paper-hover {
+  & tbody tr:hover {
+    color: var(--paper-table-hover-fg);
+  }
+}
+
+@utility table-paper-alternating {
+  & tbody tr:nth-of-type(even) {
+    color: var(--paper-table-stripe-fg);
+    background-color: var(--paper-table-stripe-bg);
+  }
+}
+
+@utility list-paper {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-family: var(--font-paper);
+
+  & ul,
+  & ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+
+  & li {
+    text-indent: -7px;
+  }
+
+  & li::before {
+    content: "-";
+    left: -7px;
+    position: relative;
+  }
+
+  & ul li::before,
+  & ol li::before {
+    content: "+";
+  }
+
+  & ul ul li::before,
+  & ol ol li::before,
+  & ul ol li::before,
+  & ol ul li::before {
+    content: "~";
+  }
+
+  & ul ul ul li::before,
+  & ol ol ol li::before {
+    content: "⤍";
+  }
+
+  & ul ul ul ul li::before,
+  & ol ol ol ol li::before {
+    content: "⁎";
+  }
+}
+
+@utility list-paper-inline {
+  & li {
+    display: inline;
+    margin-left: 5px;
+    text-indent: 0;
+  }
+
+  & li::before {
+    content: none;
+  }
+}
+
+@utility divider-paper {
+  border: 0;
+  height: 0;
+  margin: 1.5rem 0;
+  overflow: visible;
+
+  &::after {
+    color: var(--paper-divider-fg);
+    content: var(--paper-divider-content);
+    display: block;
+    font-family: var(--font-paper);
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    position: relative;
+    text-align: center;
+    top: -0.75rem;
+  }
+}

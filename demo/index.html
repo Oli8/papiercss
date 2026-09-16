@@ -1,0 +1,1167 @@
+<!doctype html>
+<html lang="en" class="bg-surface">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PaperCSS × Tailwind</title>
+    <link rel="stylesheet" href="./dist.css" />
+  </head>
+  <body class="text-paper-base bg-surface min-h-screen">
+    <nav class="nav-paper nav-paper-split border-b-2 border-muted-border mb-8">
+      <div class="font-paper-heading text-3xl text-primary">
+        <a href="/">PapierCSS</a>
+      </div>
+      <div class="nav-paper-collapsible">
+        <input
+          id="nav-toggle-demo"
+          class="nav-paper-collapsible-input"
+          type="checkbox"
+        />
+        <label class="nav-paper-burger" for="nav-toggle-demo">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="nav-paper-collapsible-body">
+          <ul class="inline">
+            <li><a href="#utilities">Utilities</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="./colors.html">Colors</a></li>
+            <li>
+              <button
+                type="button"
+                class="btn-paper btn-paper-sm"
+                onclick="document.documentElement.classList.toggle('dark')"
+              >
+                Dark
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-3xl space-y-14 px-8 pb-24">
+      <header class="space-y-2">
+        <h1 class="font-paper-heading text-5xl text-primary">PaperCSS demo</h1>
+        <p class="text-muted-600 dark:text-muted-400">
+          Tailwind utilities + paper look. Opt-in classes only —
+          <a class="link-paper" href="#components">scribble link</a>
+          /
+          <a class="link-paper-plain" href="#utilities">plain link</a>.
+        </p>
+        <ol class="breadcrumb-paper">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Docs</a></li>
+          <li>Demo</li>
+        </ol>
+      </header>
+
+      <!-- ========== UTILITIES ========== -->
+      <section id="utilities" class="space-y-10">
+        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-border pb-2">
+          Utilities
+        </h2>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Borders</h3>
+          <div class="child-borders-paper grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <div class="border-paper border-primary p-4">border-paper</div>
+            <div class="border-paper-2 border-secondary p-4">border-paper-2</div>
+            <div class="border-paper-3 border-success p-4">border-paper-3</div>
+            <div class="border-paper-4 border-warning p-4">border-paper-4</div>
+            <div class="border-paper-5 border-danger p-4">border-paper-5</div>
+            <div class="border-paper-6 border-muted p-4">border-paper-6</div>
+          </div>
+          <div class="border-paper border-paper-thick border-primary p-4 mt-2">
+            border-paper-thick
+          </div>
+          <div class="flex flex-wrap gap-3 mt-2">
+            <div class="rounded-paper border-2 border-primary px-3 py-2">rounded-paper</div>
+            <div class="rounded-paper-3 border-2 border-secondary px-3 py-2">rounded-paper-3</div>
+            <div class="rounded-paper-5 border-2 border-danger px-3 py-2">rounded-paper-5</div>
+          </div>
+          <div class="flex flex-wrap items-center gap-4 mt-2">
+            <div class="rounded-paper-circle size-14 border-2 border-primary bg-secondary-soft"></div>
+            <div class="rounded-paper-circle-2 size-14 border-2 border-secondary bg-secondary-soft"></div>
+            <div class="rounded-paper-circle-4 size-14 border-2 border-warning bg-warning-soft"></div>
+            <div class="rounded-paper-circle-6 size-14 border-2 border-danger bg-danger-soft"></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Shadows</h3>
+          <div class="child-shadows-paper-hover grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div class="border-paper border-primary bg-surface p-4 shadow-paper-sm">
+              shadow-paper-sm
+            </div>
+            <div class="border-paper border-primary bg-surface p-4 shadow-paper">
+              shadow-paper
+            </div>
+            <div class="border-paper border-primary bg-surface p-4 shadow-paper-lg hover:shadow-paper-lift">
+              shadow-paper-lg + lift
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Typography</h3>
+          <p class="font-paper text-xl">font-paper (Neucha)</p>
+          <p class="font-paper-heading text-3xl">font-paper-heading</p>
+          <p class="text-paper-base">text-paper-base</p>
+          <hr class="divider-paper" />
+          <p class="text-sm text-muted-600 dark:text-muted-400">divider-paper (~~~)</p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Colors</h3>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-primary text-primary-inverse rounded-paper px-3 py-1">primary</span>
+            <span class="bg-secondary text-white rounded-paper px-3 py-1">secondary</span>
+            <span class="bg-success-soft text-success-soft-fg border-paper border-success px-3 py-1">success</span>
+            <span class="bg-warning-soft text-warning-soft-fg border-paper border-warning px-3 py-1">warning</span>
+            <span class="bg-danger-soft text-danger-soft-fg border-paper border-danger px-3 py-1">danger</span>
+            <span class="bg-muted-soft text-muted-soft-fg border-paper border-muted px-3 py-1">muted</span>
+            <span class="text-primary-soft-fg">text-primary-soft-fg</span>
+            <span class="text-secondary">text-secondary</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== COMPONENTS ========== -->
+      <section id="components" class="space-y-10">
+        <h2 class="font-paper-heading text-4xl text-primary border-b-2 border-muted-border pb-2">
+          Components
+        </h2>
+
+        <!-- Buttons -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Buttons</h3>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" class="btn-paper">Default</button>
+            <button type="button" class="btn-paper btn-paper-primary">Primary</button>
+            <button type="button" class="btn-paper btn-paper-secondary">Secondary</button>
+            <button type="button" class="btn-paper btn-paper-success">Success</button>
+            <button type="button" class="btn-paper btn-paper-warning">Warning</button>
+            <button type="button" class="btn-paper btn-paper-danger">Danger</button>
+            <button type="button" class="btn-paper btn-paper-muted">Muted</button>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" class="btn-paper btn-paper-primary-outline">Primary outline</button>
+            <button type="button" class="btn-paper btn-paper-secondary-outline">Secondary outline</button>
+            <button type="button" class="btn-paper btn-paper-success-outline">Success outline</button>
+            <button type="button" class="btn-paper btn-paper-warning-outline">Warning outline</button>
+            <button type="button" class="btn-paper btn-paper-danger-outline">Danger outline</button>
+            <button type="button" class="btn-paper btn-paper-muted-outline">Muted outline</button>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <button type="button" class="btn-paper btn-paper-sm btn-paper-secondary">Small</button>
+            <button type="button" class="btn-paper btn-paper-secondary">Regular</button>
+            <button type="button" class="btn-paper btn-paper-lg btn-paper-secondary">Large</button>
+          </div>
+          <button type="button" class="btn-paper btn-paper-block btn-paper-primary">Block button</button>
+          <button type="button" class="btn-paper" disabled>Disabled</button>
+        </div>
+
+        <!-- Tags -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Tags</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag-paper">DEFAULT</span>
+            <span class="tag-paper tag-paper-primary">PRIMARY</span>
+            <span class="tag-paper tag-paper-secondary">SECONDARY</span>
+            <span class="tag-paper tag-paper-success">SUCCESS</span>
+            <span class="tag-paper tag-paper-warning">WARNING</span>
+            <span class="tag-paper tag-paper-danger">DANGER</span>
+            <span class="tag-paper tag-paper-muted">MUTED</span>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Avatar</h3>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="avatar-paper">OB</span>
+            <span class="avatar-paper avatar-paper-primary">AB</span>
+            <span class="avatar-paper avatar-paper-secondary">CD</span>
+            <span class="avatar-paper avatar-paper-success">EF</span>
+            <span class="avatar-paper avatar-paper-warning">GH</span>
+            <span class="avatar-paper avatar-paper-danger">IJ</span>
+            <span class="avatar-paper avatar-paper-muted">KL</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="avatar-paper avatar-paper-sm avatar-paper-secondary">SM</span>
+            <span class="avatar-paper avatar-paper-secondary">MD</span>
+            <span class="avatar-paper avatar-paper-lg avatar-paper-secondary">LG</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="avatar-paper avatar-paper-circle-2">A</span>
+            <span class="avatar-paper avatar-paper-circle-4 avatar-paper-primary">B</span>
+            <span class="avatar-paper avatar-paper-circle-6 avatar-paper-danger">C</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="avatar-paper avatar-paper-secondary">
+              <img src="https://picsum.photos/seed/papier-avatar/128" alt="Olivier" />
+            </span>
+            <span class="avatar-paper avatar-paper-lg avatar-paper-circle-3">
+              <img src="https://picsum.photos/seed/papier-avatar-2/192" alt="Team member" />
+            </span>
+          </div>
+
+          <div class="avatar-paper-stack">
+            <span class="avatar-paper avatar-paper-primary">AB</span>
+            <span class="avatar-paper avatar-paper-secondary">CD</span>
+            <span class="avatar-paper avatar-paper-success">EF</span>
+            <span class="avatar-paper avatar-paper-warning">GH</span>
+          </div>
+
+          <div class="avatar-paper-stack avatar-paper-stack-lg">
+            <span class="avatar-paper avatar-paper-circle-2">
+              <img src="https://picsum.photos/seed/papier-stack-1/128" alt="Member 1" />
+            </span>
+            <span class="avatar-paper avatar-paper-circle-4">
+              <img src="https://picsum.photos/seed/papier-stack-2/128" alt="Member 2" />
+            </span>
+            <span class="avatar-paper avatar-paper-circle-6">
+              <img src="https://picsum.photos/seed/papier-stack-3/128" alt="Member 3" />
+            </span>
+            <span class="avatar-paper avatar-paper-muted">+2</span>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Alerts</h3>
+          <div class="alert-paper">Default alert</div>
+          <div class="alert-paper alert-paper-primary">Primary alert</div>
+          <div class="alert-paper alert-paper-secondary">Secondary alert</div>
+          <div class="alert-paper alert-paper-success">
+            Success with <span class="tag-paper tag-paper-success">tag</span>
+          </div>
+          <div class="alert-paper alert-paper-warning">Warning alert</div>
+          <div class="alert-paper alert-paper-danger">Danger alert</div>
+          <div class="alert-paper alert-paper-muted">Muted alert</div>
+          <div class="alert-paper alert-paper-secondary alert-paper-dismissible">
+            <span>Dismissible alert (close is visual only here)</span>
+            <button type="button" class="alert-paper-close" aria-label="Close">×</button>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Cards</h3>
+          <div class="card-paper rounded-paper max-w-md overflow-hidden">
+            <header>Header</header>
+            <div class="card-paper-body">
+              <h4 class="card-paper-title">Card title</h4>
+              <p class="card-paper-subtitle">Subtitle</p>
+              <p class="mb-4">Uses semantic <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>.</p>
+              <button type="button" class="btn-paper btn-paper-sm btn-paper-primary">Action</button>
+            </div>
+            <footer class="text-sm text-muted-600 dark:text-muted-400">Footer</footer>
+          </div>
+          <div class="card-paper rounded-paper max-w-md overflow-hidden">
+            <img
+              src="https://picsum.photos/seed/papier-card/768"
+              alt="Card cover"
+            />
+            <div class="card-paper-body">
+              <h4 class="card-paper-title">Card with image</h4>
+              <p class="card-paper-subtitle">Top image</p>
+              <p class="mb-4">Shadow + border paper style, composed with Tailwind spacing.</p>
+              <button type="button" class="btn-paper btn-paper-sm btn-paper-primary">Action</button>
+            </div>
+            <footer class="text-sm text-muted-600 dark:text-muted-400">Footer</footer>
+          </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Forms</h3>
+          <div class="form-group-paper max-w-md">
+            <label for="name">Name</label>
+            <input id="name" class="input-paper" placeholder="Type here" />
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="name-disabled">Name (disabled)</label>
+            <input id="name-disabled" class="input-paper" disabled value="Disabled input" />
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="role">Role</label>
+            <select id="role" class="select-paper">
+              <option>Designer</option>
+              <option>Developer</option>
+              <option>Writer</option>
+            </select>
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="role-disabled">Role (disabled)</label>
+            <select id="role-disabled" class="select-paper" disabled>
+              <option>Designer</option>
+              <option selected>Developer</option>
+              <option>Writer</option>
+            </select>
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="bio">Bio</label>
+            <textarea id="bio" class="textarea-paper" rows="3" placeholder="Say something…"></textarea>
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="bio-disabled">Bio (disabled)</label>
+            <textarea id="bio-disabled" class="textarea-paper" rows="3" disabled>Disabled textarea</textarea>
+          </div>
+
+          <h4 class="font-paper-heading text-xl mt-6 mb-2">Checks & radios</h4>
+          <label class="paper-check">
+            <input type="checkbox" />
+            <span>Check me</span>
+          </label>
+          <label class="paper-check">
+            <input type="checkbox" checked />
+            <span>Already checked</span>
+          </label>
+          <label class="paper-check">
+            <input type="checkbox" disabled />
+            <span>Disabled</span>
+          </label>
+          <label class="paper-check">
+            <input type="checkbox" checked disabled />
+            <span>Disabled checked</span>
+          </label>
+          <label class="paper-radio">
+            <input type="radio" name="demo-radio" />
+            <span>Radio A</span>
+          </label>
+          <label class="paper-radio">
+            <input type="radio" name="demo-radio" checked />
+            <span>Radio B</span>
+          </label>
+          <label class="paper-radio">
+            <input type="radio" name="demo-radio-disabled" disabled />
+            <span>Disabled</span>
+          </label>
+          <label class="paper-radio">
+            <input type="radio" name="demo-radio-disabled" checked disabled />
+            <span>Disabled checked</span>
+          </label>
+
+          <h4 class="font-paper-heading text-xl mt-6 mb-2">Switches</h4>
+          <div class="flex flex-wrap items-center gap-y-4 gap-x-6">
+            <div class="flex items-center">
+              <label class="paper-switch">
+                <input id="switch1" type="checkbox" />
+                <span class="paper-switch-slider"></span>
+              </label>
+              <label for="switch1" class="paper-switch-label">Off / on</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch">
+                <input id="switch2" type="checkbox" checked />
+                <span class="paper-switch-slider round"></span>
+              </label>
+              <label for="switch2" class="paper-switch-label">Round (on)</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch">
+                <input id="switch1-disabled" type="checkbox" disabled />
+                <span class="paper-switch-slider"></span>
+              </label>
+              <label for="switch1-disabled" class="paper-switch-label">Disabled</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch">
+                <input id="switch2-disabled" type="checkbox" checked disabled />
+                <span class="paper-switch-slider round"></span>
+              </label>
+              <label for="switch2-disabled" class="paper-switch-label">Disabled on</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch-2">
+                <input id="switch3" type="checkbox" />
+                <span class="paper-switch-slider"></span>
+              </label>
+              <label for="switch3" class="paper-switch-2-label">Compact</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch-2">
+                <input id="switch4" type="checkbox" checked />
+                <span class="paper-switch-slider round"></span>
+              </label>
+              <label for="switch4" class="paper-switch-2-label">Compact round</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch-2">
+                <input id="switch3-disabled" type="checkbox" disabled />
+                <span class="paper-switch-slider"></span>
+              </label>
+              <label for="switch3-disabled" class="paper-switch-2-label">Compact disabled</label>
+            </div>
+            <div class="flex items-center">
+              <label class="paper-switch-2">
+                <input id="switch4-disabled" type="checkbox" checked disabled />
+                <span class="paper-switch-slider round"></span>
+              </label>
+              <label for="switch4-disabled" class="paper-switch-2-label">Compact disabled on</label>
+            </div>
+          </div>
+
+          <h4 class="font-paper-heading text-xl mt-6 mb-2">Switch tiles</h4>
+          <div class="flex flex-wrap gap-6 pt-2">
+            <label class="paper-switch-tile">
+              <input id="tile1" type="checkbox" />
+              <div class="paper-switch-tile-card">
+                <div class="paper-switch-tile-card-front bg-surface text-primary">
+                  Front
+                </div>
+                <div class="paper-switch-tile-card-back bg-tag-primary-bg text-tag-text border-tag-primary-bg">
+                  Back
+                </div>
+              </div>
+            </label>
+            <label class="paper-switch-tile">
+              <input id="tile2" type="checkbox" />
+              <div class="paper-switch-tile-card">
+                <div class="paper-switch-tile-card-front bg-warning-soft text-warning-soft-fg border-warning">
+                  Off
+                </div>
+                <div class="paper-switch-tile-card-back bg-secondary text-tag-text border-secondary">
+                  On
+                </div>
+              </div>
+            </label>
+            <label class="paper-switch-tile">
+              <input id="tile3" type="checkbox" checked />
+              <div class="paper-switch-tile-card">
+                <div class="paper-switch-tile-card-front bg-danger-soft text-danger-soft-fg border-danger">
+                  Declined
+                </div>
+                <div class="paper-switch-tile-card-back bg-success-soft text-success-soft-fg border-success">
+                  Accepted
+                </div>
+              </div>
+            </label>
+            <label class="paper-switch-tile">
+              <input id="tile-disabled" type="checkbox" disabled />
+              <div class="paper-switch-tile-card">
+                <div class="paper-switch-tile-card-front bg-muted-soft text-muted-soft-fg border-muted">
+                  Disabled
+                </div>
+                <div class="paper-switch-tile-card-back bg-muted text-tag-text border-muted">
+                  Locked
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <h4 class="font-paper-heading text-xl mt-6 mb-2">Sliders</h4>
+          <div class="form-group-paper max-w-md">
+            <label for="note">Note /10</label>
+            <input
+              id="note"
+              class="range-paper"
+              type="range"
+              name="note"
+              min="0"
+              max="10"
+              value="7"
+              style="--value:70%"
+              oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%')"
+            />
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="percentage">Percentage</label>
+            <input
+              id="percentage"
+              class="range-paper"
+              type="range"
+              name="percentage"
+              min="0"
+              max="100"
+              value="42"
+              style="--value:42%"
+              oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%'); document.getElementById('percentage-out').value = this.value + '%'"
+            />
+            <output id="percentage-out" class="text-sm text-muted-600 dark:text-muted-400">42%</output>
+          </div>
+          <div class="form-group-paper max-w-md">
+            <label for="disabled-range">Disabled</label>
+            <input
+              id="disabled-range"
+              class="range-paper"
+              type="range"
+              name="disabled-range"
+              min="0"
+              max="100"
+              value="50"
+              style="--value:50%"
+              disabled
+            />
+          </div>
+          <div class="form-group-paper max-w-md space-y-3">
+            <input class="range-paper range-paper-primary" type="range" min="0" max="100" value="60" style="--value:60%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-secondary" type="range" min="0" max="100" value="70" style="--value:70%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-success" type="range" min="0" max="100" value="55" style="--value:55%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-warning" type="range" min="0" max="100" value="40" style="--value:40%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-danger" type="range" min="0" max="100" value="35" style="--value:35%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-muted" type="range" min="0" max="100" value="50" style="--value:50%" oninput="this.style.setProperty('--value', this.value + '%')" />
+            <input class="range-paper range-paper-success" type="range" min="0" max="100" value="45" style="--value:45%" disabled />
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Progress</h3>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar w-1/2">50%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped w-2/3">66%</div>
+          </div>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-bar-secondary w-[80%]">80%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped-secondary w-[75%]">75%</div>
+          </div>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-bar-success w-[70%]">70%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped-success w-[65%]">65%</div>
+          </div>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-bar-warning w-[60%]">60%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped-warning w-[50%]">50%</div>
+          </div>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-bar-danger w-[50%]">50%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped-danger w-[50%]">50%</div>
+          </div>
+
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-bar-muted w-[40%]">40%</div>
+          </div>
+          <div class="progress-paper">
+            <div class="progress-paper-bar progress-paper-striped-muted w-[40%]">40%</div>
+          </div>
+        </div>
+
+        <!-- Skeleton -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Skeleton</h3>
+
+          <div class="skeleton-paper-group space-y-2" aria-busy="true">
+            <div
+              class="skeleton-paper h-8 w-full"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div
+              class="skeleton-paper h-8 w-3/4"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div
+              class="skeleton-paper h-8 w-1/2"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <div
+              class="skeleton-paper skeleton-paper-circle size-16 shrink-0"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div
+              class="skeleton-paper skeleton-paper-circle-2 size-16 shrink-0"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div
+              class="skeleton-paper skeleton-paper-circle-4 size-16 shrink-0"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div
+              class="skeleton-paper skeleton-paper-circle-6 size-16 shrink-0"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="skeleton-paper skeleton-paper-circle-3 size-16 shrink-0"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></div>
+            <div class="flex-1 space-y-2">
+              <div
+                class="skeleton-paper skeleton-paper-3 h-6 w-full"
+                aria-hidden="true"
+                role="progressbar"
+                aria-valuetext="Loading..."
+              ></div>
+              <div
+                class="skeleton-paper skeleton-paper-5 h-4 w-2/3"
+                aria-hidden="true"
+                role="progressbar"
+                aria-valuetext="Loading..."
+              ></div>
+            </div>
+          </div>
+
+          <p>
+            Loading
+            <span
+              class="skeleton-paper skeleton-paper-inline h-4 w-24 align-middle"
+              aria-hidden="true"
+              role="progressbar"
+              aria-valuetext="Loading..."
+            ></span>
+            inline text…
+          </p>
+        </div>
+
+        <!-- Spinner -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Spinner</h3>
+
+          <div class="flex flex-wrap items-center gap-6">
+            <span class="spinner-paper" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-sm" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-lg" role="status" aria-label="Loading"></span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-6">
+            <span class="spinner-paper spinner-paper-primary" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-secondary" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-success" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-warning" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-danger" role="status" aria-label="Loading"></span>
+            <span class="spinner-paper spinner-paper-muted" role="status" aria-label="Loading"></span>
+          </div>
+
+          <p>
+            Saving
+            <span
+              class="spinner-paper spinner-paper-sm spinner-paper-inline"
+              role="status"
+              aria-label="Loading"
+            ></span>
+            …
+          </p>
+
+          <button class="btn-paper btn-paper-secondary" type="button" disabled>
+            <span class="spinner-paper spinner-paper-sm spinner-paper-inline me-2" role="status" aria-hidden="true"></span>
+            Please wait
+          </button>
+        </div>
+
+        <!-- Accordion / Collapsible -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Collapsible</h3>
+
+          <h4 class="font-paper-heading text-xl">Standalone</h4>
+          <details class="collapsible-paper border-paper border-muted-border">
+            <summary>A single collapsible</summary>
+            Useful on its own — no group wrapper needed.
+          </details>
+
+          <h4 class="font-paper-heading text-xl">Independent</h4>
+          <div class="border-paper border-muted-border overflow-hidden">
+            <details class="collapsible-paper">
+              <summary>First section</summary>
+              Content of the first collapsible panel. Uses native
+              <code>&lt;details&gt;</code>.
+            </details>
+            <details class="collapsible-paper">
+              <summary>Second section</summary>
+              More paper-styled content in the second panel. Multiple can stay open.
+            </details>
+            <details class="collapsible-paper" open>
+              <summary>Open by default</summary>
+              This one starts expanded via the
+              <code>open</code> attribute.
+            </details>
+          </div>
+
+          <h4 class="font-paper-heading text-xl">Accordion (same name)</h4>
+          <div class="border-paper border-muted-border overflow-hidden">
+            <details class="collapsible-paper" name="demo-accordion">
+              <summary>One</summary>
+              Only one panel in this group can be open at a time.
+            </details>
+            <details class="collapsible-paper" name="demo-accordion" open>
+              <summary>Two</summary>
+              Opening another closes this one (shared
+              <code>name</code>).
+            </details>
+            <details class="collapsible-paper" name="demo-accordion">
+              <summary>Three</summary>
+              Native exclusive accordion — no JS.
+            </details>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="space-y-8">
+          <h3 class="font-paper-heading text-2xl">Tabs</h3>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Headers evenly (default)</h4>
+            <div class="tabs-paper border-paper border-muted-border p-3">
+              <input id="even-tab1" type="radio" name="tabs-even" checked />
+              <label for="even-tab1">Tab one</label>
+              <input id="even-tab2" type="radio" name="tabs-even" />
+              <label for="even-tab2">Tab two</label>
+              <input id="even-tab3" type="radio" name="tabs-even" />
+              <label for="even-tab3">Tab three</label>
+              <div id="even-content1" class="tabs-paper-content">First panel — headers evenly spaced (default).</div>
+              <div id="even-content2" class="tabs-paper-content">Second panel — headers evenly spaced (default).</div>
+              <div id="even-content3" class="tabs-paper-content">Third panel — headers evenly spaced (default).</div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Headers start (left)</h4>
+            <div class="tabs-paper tabs-paper-start border-paper border-muted-border p-3">
+              <input id="start-tab1" type="radio" name="tabs-start" checked />
+              <label for="start-tab1">Tab one</label>
+              <input id="start-tab2" type="radio" name="tabs-start" />
+              <label for="start-tab2">Tab two</label>
+              <input id="start-tab3" type="radio" name="tabs-start" />
+              <label for="start-tab3">Tab three</label>
+              <div id="start-content1" class="tabs-paper-content">First panel — headers left-aligned.</div>
+              <div id="start-content2" class="tabs-paper-content">Second panel — headers left-aligned.</div>
+              <div id="start-content3" class="tabs-paper-content">Third panel — headers left-aligned.</div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Headers between</h4>
+            <div class="tabs-paper tabs-paper-between border-paper border-muted-border p-3">
+              <input id="between-tab1" type="radio" name="tabs-between" checked />
+              <label for="between-tab1">Tab one</label>
+              <input id="between-tab2" type="radio" name="tabs-between" />
+              <label for="between-tab2">Tab two</label>
+              <input id="between-tab3" type="radio" name="tabs-between" />
+              <label for="between-tab3">Tab three</label>
+              <div id="between-content1" class="tabs-paper-content">First panel — headers spaced across.</div>
+              <div id="between-content2" class="tabs-paper-content">Second panel — headers spaced across.</div>
+              <div id="between-content3" class="tabs-paper-content">Third panel — headers spaced across.</div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Headers center</h4>
+            <div class="tabs-paper tabs-paper-center border-paper border-muted-border p-3">
+              <input id="center-tab1" type="radio" name="tabs-center" checked />
+              <label for="center-tab1">Tab one</label>
+              <input id="center-tab2" type="radio" name="tabs-center" />
+              <label for="center-tab2">Tab two</label>
+              <input id="center-tab3" type="radio" name="tabs-center" />
+              <label for="center-tab3">Tab three</label>
+              <div id="center-content1" class="tabs-paper-content">First panel — headers centered.</div>
+              <div id="center-content2" class="tabs-paper-content">Second panel — headers centered.</div>
+              <div id="center-content3" class="tabs-paper-content">Third panel — headers centered.</div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Headers end (right)</h4>
+            <div class="tabs-paper tabs-paper-end border-paper border-muted-border p-3">
+              <input id="end-tab1" type="radio" name="tabs-end" checked />
+              <label for="end-tab1">Tab one</label>
+              <input id="end-tab2" type="radio" name="tabs-end" />
+              <label for="end-tab2">Tab two</label>
+              <input id="end-tab3" type="radio" name="tabs-end" />
+              <label for="end-tab3">Tab three</label>
+              <div id="end-content1" class="tabs-paper-content">First panel — headers right-aligned.</div>
+              <div id="end-content2" class="tabs-paper-content">Second panel — headers right-aligned.</div>
+              <div id="end-content3" class="tabs-paper-content">Third panel — headers right-aligned.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Modal</h3>
+          <button
+            type="button"
+            class="btn-paper btn-paper-secondary"
+            onclick="document.getElementById('demo-modal').showModal()"
+          >
+            Open modal
+          </button>
+          <button
+            type="button"
+            class="btn-paper btn-paper-primary"
+            onclick="document.getElementById('demo-modal-form').showModal()"
+          >
+            Open form modal
+          </button>
+        </div>
+
+        <!-- Popovers -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Popovers</h3>
+          <div class="flex flex-wrap justify-center gap-10 py-8">
+            <button
+              type="button"
+              class="btn-paper btn-paper-sm popover-paper popover-paper-top"
+              data-popover="Top tip"
+            >
+              Top
+            </button>
+            <button
+              type="button"
+              class="btn-paper btn-paper-sm popover-paper popover-paper-bottom"
+              data-popover="Bottom tip"
+            >
+              Bottom
+            </button>
+            <button
+              type="button"
+              class="btn-paper btn-paper-sm popover-paper popover-paper-left"
+              data-popover="Left tip"
+            >
+              Left
+            </button>
+            <button
+              type="button"
+              class="btn-paper btn-paper-sm popover-paper popover-paper-right"
+              data-popover="Right tip"
+            >
+              Right
+            </button>
+          </div>
+        </div>
+
+        <!-- Navbar (inline example; top nav already shown) -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Navbar</h3>
+          <nav class="nav-paper nav-paper-split border-paper border-muted-border">
+            <div class="font-paper-heading text-3xl">
+              <a href="#">PapierCSS</a>
+            </div>
+            <div class="nav-paper-collapsible">
+              <input
+                id="nav-toggle-inline"
+                class="nav-paper-collapsible-input"
+                type="checkbox"
+              />
+              <label class="nav-paper-burger" for="nav-toggle-inline">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </label>
+              <div class="nav-paper-collapsible-body">
+                <ul class="inline">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Breadcrumb already in header; show again labeled -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Breadcrumb</h3>
+          <ol class="breadcrumb-paper border-paper border-muted-border">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Components</a></li>
+            <li>Breadcrumb</li>
+          </ol>
+        </div>
+
+        <!-- Article -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Article</h3>
+          <article class="article-paper border-paper border-muted-border">
+            <h4 class="article-paper-title">Handwritten headlines</h4>
+            <p class="article-paper-meta">
+              By <a href="#">Author</a> · Aug 6, 2026
+            </p>
+            <p class="article-paper-lead">A short lead that sets the tone of the piece.</p>
+            <p>
+              Body copy uses the paper font and comfortable line-height. Mix with
+              <a class="link-paper" href="#">links</a> as needed.
+            </p>
+          </article>
+        </div>
+
+        <!-- Table -->
+        <div class="space-y-8">
+          <h3 class="font-paper-heading text-2xl">Tables</h3>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Default</h4>
+            <table class="table-paper border-paper border-muted-border">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neucha</td>
+                  <td>Body font</td>
+                  <td><span class="tag-paper tag-paper-success">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Patrick Hand</td>
+                  <td>Headings</td>
+                  <td><span class="tag-paper tag-paper-secondary">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Paper borders</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-warning">wip</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Hover</h4>
+            <table class="table-paper table-paper-hover border-paper border-muted-border">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neucha</td>
+                  <td>Body font</td>
+                  <td><span class="tag-paper tag-paper-success">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Patrick Hand</td>
+                  <td>Headings</td>
+                  <td><span class="tag-paper tag-paper-secondary">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Paper borders</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-warning">wip</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Alternating</h4>
+            <table class="table-paper table-paper-alternating border-paper border-muted-border">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neucha</td>
+                  <td>Body font</td>
+                  <td><span class="tag-paper tag-paper-success">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Patrick Hand</td>
+                  <td>Headings</td>
+                  <td><span class="tag-paper tag-paper-secondary">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Paper borders</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-warning">wip</span></td>
+                </tr>
+                <tr>
+                  <td>Shadows</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-muted">soon</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Borderless</h4>
+            <table class="table-paper table-paper-borderless">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neucha</td>
+                  <td>Body font</td>
+                  <td><span class="tag-paper tag-paper-success">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Patrick Hand</td>
+                  <td>Headings</td>
+                  <td><span class="tag-paper tag-paper-secondary">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Paper borders</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-warning">wip</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="font-paper-heading text-xl">Hover + alternating</h4>
+            <table class="table-paper table-paper-hover table-paper-alternating border-paper border-muted-border">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neucha</td>
+                  <td>Body font</td>
+                  <td><span class="tag-paper tag-paper-success">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Patrick Hand</td>
+                  <td>Headings</td>
+                  <td><span class="tag-paper tag-paper-secondary">ok</span></td>
+                </tr>
+                <tr>
+                  <td>Paper borders</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-warning">wip</span></td>
+                </tr>
+                <tr>
+                  <td>Shadows</td>
+                  <td>Utility</td>
+                  <td><span class="tag-paper tag-paper-muted">soon</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Lists -->
+        <div class="space-y-3">
+          <h3 class="font-paper-heading text-2xl">Lists</h3>
+          <ul class="list-paper">
+            <li>First item</li>
+            <li>
+              Nested
+              <ul>
+                <li>Child A</li>
+                <li>
+                  Child B
+                  <ul>
+                    <li>Grandchild</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Last item</li>
+          </ul>
+          <ul class="list-paper list-paper-inline">
+            <li>Inline</li>
+            <li>list</li>
+            <li>items</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      id="demo-modal"
+      class="modal-paper border-paper rounded-paper shadow-paper"
+      onclick="if (event.target === this) this.close()"
+    >
+      <form method="dialog">
+        <button type="submit" class="modal-paper-close" aria-label="Close">×</button>
+      </form>
+      <h4 class="font-paper-heading text-2xl mt-0 mb-2">Modal title</h4>
+      <p class="text-secondary mb-2">Subtitle</p>
+      <p class="mb-4">
+        Native <code>&lt;dialog&gt;</code> — Esc, focus trap, and
+        <code>form method="dialog"</code> to close.
+      </p>
+      <form method="dialog">
+        <button type="submit" class="btn-paper btn-paper-sm btn-paper-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog
+      id="demo-modal-form"
+      class="modal-paper border-paper rounded-paper shadow-paper"
+      onclick="if (event.target === this) this.close()"
+    >
+      <form method="dialog">
+        <button type="submit" class="modal-paper-close" aria-label="Close">×</button>
+      </form>
+      <h4 class="font-paper-heading text-2xl mt-0 mb-2">Subscribe</h4>
+      <p class="text-secondary mb-4">A short form inside a dialog.</p>
+      <form method="dialog" class="space-y-3">
+        <div class="form-group-paper">
+          <label for="modal-name">Name</label>
+          <input id="modal-name" class="input-paper" name="name" placeholder="Jane Doe" autofocus />
+        </div>
+        <div class="form-group-paper">
+          <label for="modal-email">Email</label>
+          <input
+            id="modal-email"
+            class="input-paper"
+            type="email"
+            name="email"
+            placeholder="jane@example.com"
+          />
+        </div>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <button type="submit" class="btn-paper btn-paper-sm btn-paper-primary" value="subscribe">
+            Subscribe
+          </button>
+          <button type="submit" class="btn-paper btn-paper-sm btn-paper-muted" value="cancel">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@utility font-paper {
+  font-family: var(--font-paper);
+}
+
+@utility font-paper-heading {
+  font-family: var(--font-paper-heading);
+  font-weight: normal;
+}
+
+@utility text-paper-base {
+  font-size: 20px;
+  color: var(--color-primary);
+  font-family: var(--font-paper);
+}

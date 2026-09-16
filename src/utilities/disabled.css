@@ -1,0 +1,4 @@
+@utility disabled-paper {
+  cursor: not-allowed;
+  opacity: var(--paper-disabled-opacity);
+}

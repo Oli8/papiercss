@@ -1,0 +1,160 @@
+/* Hand-drawn border radii + paper border shortcuts */
+
+@utility rounded-paper {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+@utility rounded-paper-1 {
+  @apply rounded-paper;
+}
+
+@utility rounded-paper-2 {
+  border-bottom-left-radius: 185px 25px;
+  border-bottom-right-radius: 20px 205px;
+  border-top-left-radius: 125px 25px;
+  border-top-right-radius: 10px 205px;
+}
+
+@utility rounded-paper-3 {
+  border-bottom-left-radius: 225px 15px;
+  border-bottom-right-radius: 15px 255px;
+  border-top-left-radius: 15px 225px;
+  border-top-right-radius: 255px 15px;
+}
+
+@utility rounded-paper-4 {
+  border-bottom-left-radius: 25px 115px;
+  border-bottom-right-radius: 155px 25px;
+  border-top-left-radius: 15px 225px;
+  border-top-right-radius: 25px 150px;
+}
+
+@utility rounded-paper-5 {
+  border-bottom-left-radius: 20px 115px;
+  border-bottom-right-radius: 15px 105px;
+  border-top-left-radius: 250px 15px;
+  border-top-right-radius: 25px 80px;
+}
+
+@utility rounded-paper-6 {
+  border-bottom-left-radius: 15px 225px;
+  border-bottom-right-radius: 20px 205px;
+  border-top-left-radius: 28px 125px;
+  border-top-right-radius: 100px 30px;
+}
+
+/* Softer irregular radius (radios, round switches, slider thumbs) */
+@utility rounded-paper-soft {
+  border-bottom-left-radius: 0.7rem 1rem;
+  border-bottom-right-radius: 1rem 0.9rem;
+  border-top-left-radius: 1rem 1rem;
+  border-top-right-radius: 1rem 0.6rem;
+}
+
+/* Imperfect circles — wobbly blobs (square elements + equal width/height) */
+@utility rounded-paper-circle {
+  border-radius: var(--paper-circle-radius);
+}
+
+@utility rounded-paper-circle-1 {
+  border-radius: var(--paper-circle-1-radius);
+}
+
+@utility rounded-paper-circle-2 {
+  border-radius: var(--paper-circle-2-radius);
+}
+
+@utility rounded-paper-circle-3 {
+  border-radius: var(--paper-circle-3-radius);
+}
+
+@utility rounded-paper-circle-4 {
+  border-radius: var(--paper-circle-4-radius);
+}
+
+@utility rounded-paper-circle-5 {
+  border-radius: var(--paper-circle-5-radius);
+}
+
+@utility rounded-paper-circle-6 {
+  border-radius: var(--paper-circle-6-radius);
+}
+
+@utility border-paper {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper;
+}
+
+@utility border-paper-1 {
+  @apply border-paper;
+}
+
+@utility border-paper-2 {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper-2;
+}
+
+@utility border-paper-3 {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper-3;
+}
+
+@utility border-paper-4 {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper-4;
+}
+
+@utility border-paper-5 {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper-5;
+}
+
+@utility border-paper-6 {
+  border-width: 2px;
+  border-style: solid;
+  @apply rounded-paper-6;
+}
+
+@utility border-paper-thick {
+  border-width: 5px;
+}
+
+@utility child-borders-paper {
+  & > * {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-primary);
+  }
+
+  & > *:nth-child(6n + 1) {
+    @apply rounded-paper;
+  }
+
+  & > *:nth-child(6n + 2) {
+    @apply rounded-paper-2;
+  }
+
+  & > *:nth-child(6n + 3) {
+    @apply rounded-paper-3;
+  }
+
+  & > *:nth-child(6n + 4) {
+    @apply rounded-paper-4;
+  }
+
+  & > *:nth-child(6n + 5) {
+    @apply rounded-paper-5;
+  }
+
+  & > *:nth-child(6n + 6) {
+    @apply rounded-paper-6;
+  }
+}

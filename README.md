@@ -1,109 +1,192 @@
-<p align="center">
-  <a href="https://getpapercss.com">
-    <img src="https://raw.githubusercontent.com/papercss/papercss/master/docs/static/favicon.ico?raw=true" alt="PaperCSS logo">
-  </a>
+# PapierCSS
 
-  <h3 align="center">PaperCSS</h3>
+The less formal CSS framework, rebuilt with Tailwind v4.
 
-  <p align="center">The less formal CSS framework, with a quick and easy integration.</p>
-</p>
+Nothing is styled until you add classes. Layout, spacing, and colors use Tailwind; the paper look comes from Paper utilities (`border-paper`, `btn-paper`, …).
 
-## Table of contents
+## Install
 
-- [Table of contents](#table-of-contents)
-- [Quick-start](#quick-start)
-- [Content of the framework](#content-of-the-framework)
-- [Documentation](#documentation)
-- [Customizing](#customizing)
-- [Contributing](#contributing)
-- [About](#about)
-- [Resources](#resources)
-- [Credits and license](#credits-and-license)
+```bash
+npm install papiercss tailwindcss
+```
 
-## Quick-start
+In your CSS entry:
 
-There are several options available:
+```css
+@import "papercss/fonts.css"; /* must be first if used */
+@import "tailwindcss";
+@import "papercss";
+```
 
-- You can [download the latest release](https://github.com/papercss/papercss/releases).
-- Clone the repo: `git clone https://github.com/papercss/papercss.git`
-- Install with npm: `npm install papercss`
-- Install with yarn: `yarn add papercss`
-- Import it using a CDN (it will automatically download the latest version):
-  - `https://unpkg.com/papercss/dist/paper.min.css`
-  - `https://unpkg.com/papercss/dist/paper.css`
+Or import only what you need:
 
-## Content of the framework
+```css
+@import "papercss/fonts.css";
+@import "tailwindcss";
+@import "papercss/theme.css";
+@import "papercss/utilities.css";
+@import "papercss/components.css";
+```
 
-We provide compiled CSS (`paper.css`) as well as minified CSS (`paper.min.css`).
+You can also skip `fonts.css` and load Neucha + Patrick Hand SC with a `<link>` tag.
 
-You can choose which components you may want to use. Only the components that get imported into `src/styles.scss` will be compiled into `dist/paper.css`.
+## Theme
 
-You can also play with original, source files, written in SCSS, in `src/`.
+Semantic colors use Tailwind-style scales (`50`–`950`) plus a default alias:
 
-## Documentation
+`bg-primary`, `text-secondary-600`, `border-danger`, `bg-success-100`, …
 
-You can view the docs at [getpapercss.com](https://www.getpapercss.com). Those are directly from the `master` branch; this means those features are stable and ready to be used in your project.
+Default aliases (light → dark):
 
-You can also view the develop branch at [develop.getpapercss.com](https://develop.getpapercss.com), this includes new features that are coming soon in the master branch. Be warned, a feature in develop can be removed without any prevention.
+| Token | Light | Dark |
+| --- | --- | --- |
+| `primary` | 700 | 50 |
+| `secondary` | 800 | 500 |
+| `success` | 400 | 400 |
+| `warning` | 400 | 400 |
+| `danger` | 700 | 500 |
+| `muted` | 400 | 400 |
 
-## Customizing
+### Component tokens
 
-You can customize PaperCSS easily, clone the repo, run `npm install` and make any changes to `.scss` files in `src/`.
+Buttons, alerts, tables, and progress read `--paper-*` component variables
+(not in `@theme`).  override to
+tweak one component without changing the whole palette:
 
-The main place you might want to make changes would be `core/_config.scss`, where you can specify new colors or fonts for your CSS build.
+```css
+:root {
+  --paper-btn-primary-bg: #ffe4e1;
+  --paper-btn-primary-fg: #7f1d1d;
+  --paper-btn-primary-border-color: #b91c1c;
 
-After you make changes, be sure to build the new CSS files. Do so by running `npm run css:build` and get them from the `dist/` folder.
+  --paper-table-stripe-fg: var(--paper-muted-500);
+  --paper-table-hover-fg: var(--paper-secondary-700);
 
-## Contributing
+  --paper-progress-secondary-bg: #cceeff;
+  --paper-progress-secondary-fg: #0c4a6e;
+  --paper-progress-secondary-stripe-color: #66c2ff;
 
-This project is open source and contributions are very welcomed. It is also as beginner friendly as possible, so don't be afraid to jump in if you've never contributed to any Git project before! Feel free to reach out if you are new and need help with the process.
+  --paper-skeleton-from: var(--paper-muted-500);
+  --paper-skeleton-via: var(--paper-muted-300);
 
-Please before sending a PR, make sure you are properly using the `.editorconfig` file with your IDE. If your IDE doesn't natively support `editorconfig` files, you can use an extension/package/module. For example in Atom there is the [editorconfig package](https://atom.io/packages/editorconfig), as well for [Sublime Text](https://github.com/sindresorhus/editorconfig-sublime), [VS Code](https://github.com/editorconfig/editorconfig-vscode), [Vim](https://github.com/editorconfig/editorconfig-vim), ...
+  --paper-spinner-secondary-color: #e85d04;
+  --paper-spinner-success-color: #16a34a;
 
-Once you are ready to contribute, here the workflow you should follow:
+  --paper-avatar-secondary-bg: #d6f3ff;
+  --paper-avatar-secondary-fg: #0c4a6e;
+}
 
-- Fork the repo then clone it: `git clone git@github.com:[your_username]/papercss.git`
-- `cd papercss` then install dependencies: `npm install`
-- Change your current branch to `develop`: `git checkout develop`
-- Create your new branch where you will write your code: `git checkout -b feature-thing develop`. Please be sure to prepend your new feature branch with "feature-"
-- Write some code!
-- To build the scss (in `src/`) to css (in `dist/`), run `npm run css:build`. Note: you will need to re-run this command to include the latest changes in `src/`.
-- To preview your changes, you can run `npm start`. This will start a `localhost` server.
-- Check to make sure your code is following style rules with `npm run stylelint`
-- Once done commit and push your changes to your fork. The linter is also run as a pre-commit hook.
-- Open a pull request on the origin papercss repo. Be sure to include any pictures and/or details on what you have done; it will help reviewers **a lot**!
-- When your changes are approved, they will be merged into the `develop` branch, which will finally be merged into the `master` branch when we reach a milestone regarding features and bug fixes. Check out [Vincent Driessen's blog post](http://nvie.com/posts/a-successful-git-branching-model/), [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html), or [#27](https://github.com/rhyneav/papercss/issues/27) for more details on how this works.
+.dark {
+  --paper-btn-primary-bg: #3f1d1d;
+  --paper-btn-primary-fg: #fecaca;
+}
+```
 
-Note: If you have a hotfix (usually typos and minor documentation tweaks), create your hotfix branch off of the master branch instead of develop: `git checkout -b hotfix-thing master`. The changes will be merged into both the master and develop to keep the branches consistent.
+Override tokens in your app:
 
-## About
+```css
+@import "tailwindcss";
+@import "papercss";
 
-PaperCSS was originally made by [@rhyneav](https://github.com/rhyneav) to be something different than the typical mODerN STylEs and clean pages found in every other CSS framework. It was built with LESS and deployed on a single index.html page before being open sourced. It has since evolved; The CSS source has been rewritten in SCSS and the documentation is now built with Hugo (all thanks to some [wonderful contributors](https://github.com/papercss/papercss/graphs/contributors)). It is currently maintained by the [PaperCSS team](https://github.com/orgs/papercss/people).
+@theme {
+  --color-primary: #2a2a2a;
+  --color-secondary: #e85d04;
+}
+```
 
-The goal of PaperCSS is to be as minimal as possible when adding classes. For example, a button should just look like a paper button. There shouldn't be a need to add a class such as `paper-button`. Because of this, adding PaperCSS to a markdown generated page should instantly paper-ize it.
+Or override the underlying CSS variables (also switches dark mode cleanly):
 
-Feel free to use it for wireframes, web apps, blogs, or whatever else you can think of!
+```css
+:root {
+  --paper-primary-700: #2a2a2a;
+  --paper-primary: var(--paper-primary-700);
+  --paper-secondary-800: #e85d04;
+  --paper-secondary: var(--paper-secondary-800);
+}
 
-If you are new to Git or SCSS, this would be a great project to get your feet wet with. I'd be happy to help walk you through the pull request process.
+.dark {
+  --paper-primary-50: #ffffff;
+  --paper-primary: var(--paper-primary-50);
+}
+```
 
-## Resources
+Dark mode: add class `dark` on a parent (usually `<html class="dark">`).
 
-Components:
+## Paper utilities
 
-- [react-papercss-design](https://hacker0limbo.github.io/react-papercss-design/en-US) a React component library based on PaperCSS
-- [Spaper](https://oli8.github.io/spaper/) PaperCSS components for Svelte
-- [vue-papercss](https://github.com/papercss/vue-papercss) A vue-plugin for the less formal CSS framework
-- [RailsPapercss](https://github.com/papercss/rails_papercss_gem) Rails gem for Papercss framework
-- [react-native-paper-css](https://github.com/papercss/react-native-paper-css) PaperCSS for react-native
-- [React PaperCSS](https://papercss.github.io/React-Paper-CSS-Page/) Another react component library implementation for PaperCSS
+| Class | Role |
+| --- | --- |
+| `border-paper` / `border-paper-{1-6}` | 2px solid + hand-drawn radius |
+| `rounded-paper` / `rounded-paper-{1-6}` | radius only |
+| `rounded-paper-soft` | softer irregular radius (radios, thumbs, …) |
+| `rounded-paper-circle` / `rounded-paper-circle-{1-6}` | imperfect circle/blob radius |
+| `border-paper-thick` | 5px width |
+| `child-borders-paper` | cycle border styles 1–6 on children |
+| `shadow-paper` / `shadow-paper-sm` / `lg` / `hover` | paper shadows (theme) |
+| `shadow-paper-lift` | hover lift + shadow |
+| `font-paper` / `font-paper-heading` | Neucha / Patrick Hand SC |
+| `text-paper-base` | base body look |
+| `link-paper` | scribble underline link |
+| `disabled-paper` | `cursor: not-allowed` + `--paper-disabled-opacity` |
+| `field-paper` | shared text-field base (`input` / `select` / `textarea`) |
 
-Icons:
+Example:
 
-- [handdrawn.css](https://fxaeberhard.github.io/handdrawn.css/) Another hand-drawn css library with rich icons included
-- [hand-drawn-icons](https://github.com/nikhilol/hand-drawn-icons) Icon pack with a hand-drawn style
+```html
+<div class="border-paper-2 border-primary shadow-paper p-4 rounded-none">
+  Hello
+</div>
+```
 
-## Credits and license
+## Components (opt-in)
 
-Code and documentation under [ISC license](https://github.com/papercss/papercss/blob/master/license).
+- Alert
+- Article
+- Avatar
+- Breadcrumb
+- Button
+- Card
+- Checkbox
+- Collapsible
+- Divider
+- Input
+- List
+- Modal
+- Navbar
+- Popover
+- Progress
+- Radio
+- Select
+- Skeleton
+- Slider
+- Spinner
+- Switch
+- Table
+- Tabs
+- Tag
 
-Shout out to Tiffany Rayside for creating Imperfect Buttons, which was an inspiration for this project. https://codepen.io/tmrDevelops/pen/VeRvKX
+Example:
+
+```html
+<button class="btn-paper btn-paper-secondary shadow-paper">Save</button>
+```
+
+## Demo
+
+```bash
+npm install
+npm run demo:build
+npx serve demo
+```
+
+## Migrating from papiercss
+
+- Drop-in `paper.css` auto-styling is gone (`button`, `a`, `input`, headings are no longer global).
+- Old spacing utils (`margin-top-large`, …) → Tailwind (`mt-4`, …).
+- `.border` → `border-paper` (plus `border-primary` if you want the color).
+- `.paper-btn` / `button` styles → `btn-paper`.
+
+## License
+
+ISC — based on [PaperCSS](https://github.com/papercss/papercss) by [@rhyneav](https://github.com/rhyneav).
+See [LICENSE.md](LICENSE.md)

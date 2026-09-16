@@ -1,0 +1,38 @@
+@utility tag-paper {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  color: var(--color-tag-text);
+  background-color: var(--color-tag-muted-bg);
+  border: 2px solid transparent;
+  @apply rounded-paper;
+}
+
+@utility tag-paper-primary {
+  background-color: var(--color-tag-primary-bg);
+}
+
+@utility tag-paper-secondary {
+  background-color: var(--color-tag-secondary-bg);
+}
+
+@utility tag-paper-success {
+  background-color: var(--color-tag-success-bg);
+}
+
+@utility tag-paper-warning {
+  background-color: var(--color-tag-warning-bg);
+}
+
+@utility tag-paper-danger {
+  background-color: var(--color-tag-danger-bg);
+}
+
+@utility tag-paper-muted {
+  background-color: var(--color-tag-muted-bg);
+}

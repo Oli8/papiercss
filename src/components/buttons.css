@@ -1,0 +1,156 @@
+@utility btn-paper {
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+  background-image: none;
+  background-color: var(--paper-btn-bg);
+  color: var(--paper-btn-fg);
+  @apply border-paper;
+  border-color: var(--paper-btn-border-color);
+  box-shadow: var(--shadow-paper);
+  font-size: 1.125rem;
+  font-family: var(--font-paper);
+  padding: 0.875rem;
+  transition: all 235ms ease;
+  text-decoration: none;
+
+  &:hover {
+    transform: translate3d(0, 2px, 0);
+    box-shadow: var(--shadow-paper-hover);
+  }
+
+  &:focus {
+    border-color: var(--paper-btn-focus-border-color);
+    box-shadow: 2px 8px 4px -6px hsl(0 0% 0% / 0.3);
+  }
+
+  &:active {
+    border-color: hsl(0 0% 0% / 0.2);
+    transition: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    @apply disabled-paper;
+  }
+}
+
+@utility btn-paper-sm {
+  box-shadow: var(--shadow-paper-sm);
+  font-size: 0.875rem;
+  padding: 0.625rem;
+}
+
+@utility btn-paper-lg {
+  box-shadow: var(--shadow-paper-lg);
+  font-size: 2.125rem;
+  padding: 1.125rem;
+}
+
+@utility btn-paper-block {
+  display: block;
+  width: 100%;
+}
+
+@utility btn-paper-primary {
+  color: var(--paper-btn-primary-fg);
+  background-color: var(--paper-btn-primary-bg);
+  border-color: var(--paper-btn-primary-border-color);
+}
+
+@utility btn-paper-secondary {
+  color: var(--paper-btn-secondary-fg);
+  background-color: var(--paper-btn-secondary-bg);
+  border-color: var(--paper-btn-secondary-border-color);
+}
+
+@utility btn-paper-success {
+  color: var(--paper-btn-success-fg);
+  background-color: var(--paper-btn-success-bg);
+  border-color: var(--paper-btn-success-border-color);
+}
+
+@utility btn-paper-warning {
+  color: var(--paper-btn-warning-fg);
+  background-color: var(--paper-btn-warning-bg);
+  border-color: var(--paper-btn-warning-border-color);
+}
+
+@utility btn-paper-danger {
+  color: var(--paper-btn-danger-fg);
+  background-color: var(--paper-btn-danger-bg);
+  border-color: var(--paper-btn-danger-border-color);
+}
+
+@utility btn-paper-muted {
+  color: var(--paper-btn-muted-fg);
+  background-color: var(--paper-btn-muted-bg);
+  border-color: var(--paper-btn-muted-border-color);
+}
+
+@utility btn-paper-primary-outline {
+  color: var(--paper-btn-fg);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-btn-border-color);
+
+  &:hover {
+    color: var(--paper-btn-primary-fg);
+    background-color: var(--paper-btn-primary-bg);
+  }
+}
+
+@utility btn-paper-secondary-outline {
+  color: var(--paper-secondary);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-secondary);
+
+  &:hover {
+    color: var(--paper-btn-secondary-fg);
+    background-color: var(--paper-btn-secondary-bg);
+  }
+}
+
+@utility btn-paper-success-outline {
+  color: var(--paper-success);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-success);
+
+  &:hover {
+    color: var(--paper-btn-success-fg);
+    background-color: var(--paper-btn-success-bg);
+  }
+}
+
+@utility btn-paper-warning-outline {
+  color: var(--paper-warning);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-warning);
+
+  &:hover {
+    color: var(--paper-btn-warning-fg);
+    background-color: var(--paper-btn-warning-bg);
+  }
+}
+
+@utility btn-paper-danger-outline {
+  color: var(--paper-danger);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-danger);
+
+  &:hover {
+    color: var(--paper-btn-danger-fg);
+    background-color: var(--paper-btn-danger-bg);
+  }
+}
+
+@utility btn-paper-muted-outline {
+  color: var(--paper-muted);
+  background-color: var(--paper-btn-bg);
+  border-color: var(--paper-muted);
+
+  &:hover {
+    color: var(--paper-btn-muted-fg);
+    background-color: var(--paper-btn-muted-bg);
+  }
+}

@@ -1,0 +1,63 @@
+@utility alert-paper {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem;
+  @apply border-paper;
+  border-color: var(--paper-alert-border-color);
+  color: var(--paper-alert-fg);
+  background-color: var(--paper-alert-bg);
+}
+
+@utility alert-paper-dismissible {
+  display: flex;
+  justify-content: space-between;
+  max-height: 48rem;
+  overflow: hidden;
+  transition: all 235ms ease-in-out;
+}
+
+@utility alert-paper-primary {
+  color: var(--paper-alert-primary-fg);
+  background-color: var(--paper-alert-primary-bg);
+  border-color: var(--paper-alert-primary-border-color);
+}
+
+@utility alert-paper-secondary {
+  color: var(--paper-alert-secondary-fg);
+  background-color: var(--paper-alert-secondary-bg);
+  border-color: var(--paper-alert-secondary-border-color);
+}
+
+@utility alert-paper-success {
+  color: var(--paper-alert-success-fg);
+  background-color: var(--paper-alert-success-bg);
+  border-color: var(--paper-alert-success-border-color);
+}
+
+@utility alert-paper-warning {
+  color: var(--paper-alert-warning-fg);
+  background-color: var(--paper-alert-warning-bg);
+  border-color: var(--paper-alert-warning-border-color);
+}
+
+@utility alert-paper-danger {
+  color: var(--paper-alert-danger-fg);
+  background-color: var(--paper-alert-danger-bg);
+  border-color: var(--paper-alert-danger-border-color);
+}
+
+@utility alert-paper-muted {
+  color: var(--paper-alert-muted-fg);
+  background-color: var(--paper-alert-muted-bg);
+  border-color: var(--paper-alert-muted-border-color);
+}
+
+@utility alert-paper-close {
+  cursor: pointer;
+  margin-left: 0.75rem;
+  transition: all 235ms ease-in-out;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+}
