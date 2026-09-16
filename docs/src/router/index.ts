@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomePage from "../pages/HomePage.vue";
 import GettingStartedPage from "../pages/GettingStartedPage.vue";
 import ColorsPage from "../pages/ColorsPage.vue";
@@ -38,7 +38,7 @@ declare module "vue-router" {
 }
 
 export const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", name: "home", component: HomePage },
     {
