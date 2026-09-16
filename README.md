@@ -13,19 +13,19 @@ npm install papiercss tailwindcss
 In your CSS entry:
 
 ```css
-@import "papercss/fonts.css"; /* must be first if used */
+@import "papiercss/fonts.css"; /* must be first if used */
 @import "tailwindcss";
-@import "papercss";
+@import "papiercss";
 ```
 
 Or import only what you need:
 
 ```css
-@import "papercss/fonts.css";
+@import "papiercss/fonts.css";
 @import "tailwindcss";
-@import "papercss/theme.css";
-@import "papercss/utilities.css";
-@import "papercss/components.css";
+@import "papiercss/theme.css";
+@import "papiercss/utilities.css";
+@import "papiercss/components.css";
 ```
 
 You can also skip `fonts.css` and load Neucha + Patrick Hand SC with a `<link>` tag.
@@ -50,8 +50,8 @@ Default aliases (light → dark):
 ### Component tokens
 
 Buttons, alerts, tables, and progress read `--paper-*` component variables
-(not in `@theme`).  override to
-tweak one component without changing the whole palette:
+(not in `@theme`).
+override to tweak one component without changing the whole palette:
 
 ```css
 :root {
@@ -86,7 +86,7 @@ Override tokens in your app:
 
 ```css
 @import "tailwindcss";
-@import "papercss";
+@import "papiercss";
 
 @theme {
   --color-primary: #2a2a2a;
