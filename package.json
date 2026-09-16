@@ -41,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/Oli8/papiercss/issues"
   },
-  "homepage": "https://www.getpapercss.com",
+  "homepage": "https://oli8.github.io/papiercss/",
   "peerDependencies": {
     "tailwindcss": "^4.0.0"
   },
