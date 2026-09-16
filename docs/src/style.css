@@ -1,0 +1,7 @@
+@import "../../src/fonts.css";
+@import "tailwindcss";
+@import "../../src/index.css";
+
+#app {
+  min-height: 100vh;
+}

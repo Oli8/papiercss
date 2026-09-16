@@ -27,7 +27,10 @@
     "demo:build": "tailwindcss -i ./demo/style.css -o ./demo/dist.css",
     "demo:watch": "tailwindcss -i ./demo/style.css -o ./demo/dist.css --watch",
     "demo": "npx --yes serve demo -p 5173",
-    "dev": "npm run demo:watch"
+    "dev": "npm run demo:watch",
+    "docs:dev": "npm run dev --prefix docs",
+    "docs:build": "npm run build --prefix docs",
+    "docs:preview": "npm run preview --prefix docs"
   },
   "repository": {
     "type": "git",
