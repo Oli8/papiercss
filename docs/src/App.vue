@@ -5,6 +5,8 @@ import DocsSidebar from "./components/DocsSidebar.vue";
 import DocsSearch from "./components/DocsSearch.vue";
 
 const GITHUB_URL = "https://github.com/Oli8/papiercss";
+const RELEASES_URL = `${GITHUB_URL}/releases`;
+const version = __PAPIERCSS_VERSION__;
 const THEME_KEY = "papiercss-docs-theme";
 
 const topNav = [
@@ -73,8 +75,19 @@ onBeforeUnmount(() => {
     <nav
       class="nav-paper nav-paper-split sticky top-0 border-b-2 border-muted-border backdrop-blur-md"
     >
-      <div class="font-paper-heading text-2xl">
-        <RouterLink to="/">PapierCSS</RouterLink>
+      <div class="flex min-w-0 items-baseline gap-2">
+        <RouterLink to="/" class="font-paper-heading text-2xl">
+          PapierCSS
+        </RouterLink>
+        <a
+          :href="RELEASES_URL"
+          class="shrink-0 text-sm text-muted-600! [border-bottom:none]! dark:text-muted-400!"
+          target="_blank"
+          rel="noopener noreferrer"
+          :aria-label="`Changelog for PapierCSS v${version}`"
+        >
+          v{{ version }}
+        </a>
       </div>
 
       <div class="nav-paper-end">
