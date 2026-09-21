@@ -6,6 +6,7 @@
     position: absolute;
     left: 50%;
     top: -6px;
+    z-index: 20;
     min-width: 6rem;
     max-width: 16rem;
     padding: 0.5rem 0.75rem;
@@ -23,6 +24,10 @@
       opacity 235ms ease-in-out,
       visibility 0s linear 235ms;
     content: attr(data-popover);
+  }
+
+  &:hover {
+    z-index: 20;
   }
 
   &:hover::after {
