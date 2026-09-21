@@ -535,22 +535,22 @@
 
   /* Soft fills: darker surfaces + light foreground */
   --paper-primary-soft: var(--paper-primary-900);
-  --paper-primary-soft-fg: var(--paper-primary-100);
+  --paper-primary-soft-fg: var(--paper-primary-200);
   --paper-primary-soft-border-color: var(--paper-primary-400);
   --paper-secondary-soft: var(--paper-secondary-900);
-  --paper-secondary-soft-fg: var(--paper-secondary-100);
+  --paper-secondary-soft-fg: var(--paper-secondary-200);
   --paper-secondary-soft-border-color: var(--paper-secondary-400);
   --paper-success-soft: var(--paper-success-900);
-  --paper-success-soft-fg: var(--paper-success-100);
+  --paper-success-soft-fg: var(--paper-success-200);
   --paper-success-soft-border-color: var(--paper-success-400);
   --paper-warning-soft: var(--paper-warning-900);
-  --paper-warning-soft-fg: var(--paper-warning-100);
+  --paper-warning-soft-fg: var(--paper-warning-200);
   --paper-warning-soft-border-color: var(--paper-warning-400);
   --paper-danger-soft: var(--paper-danger-900);
-  --paper-danger-soft-fg: var(--paper-danger-100);
+  --paper-danger-soft-fg: var(--paper-danger-200);
   --paper-danger-soft-border-color: var(--paper-danger-400);
   --paper-muted-soft: var(--paper-muted-800);
-  --paper-muted-soft-fg: var(--paper-muted-100);
+  --paper-muted-soft-fg: var(--paper-muted-200);
   --paper-muted-soft-border-color: var(--paper-muted-400);
   --paper-muted-border-color: var(--paper-muted-600);
 
