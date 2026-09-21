@@ -185,6 +185,37 @@
   --paper-alert-muted-fg: var(--paper-muted-soft-fg);
   --paper-alert-muted-border-color: var(--paper-muted-soft-border-color);
 
+  --paper-hero-bg: var(--paper-hero-primary-bg);
+  --paper-hero-fg: var(--paper-hero-primary-fg);
+  --paper-hero-border-color: var(--paper-hero-primary-border-color);
+  --paper-hero-padding-y: 3rem;
+  --paper-hero-padding-x: 4rem;
+  --paper-hero-margin-bottom: 2.5rem;
+  --paper-hero-sm-padding-y: 1.25rem;
+  --paper-hero-sm-padding-x: 2rem;
+  --paper-hero-lg-padding: 6.5rem;
+  --paper-hero-gap: 1.75rem;
+  --paper-hero-title-size: 4rem;
+  --paper-hero-lead-size: 1.25rem;
+  --paper-hero-primary-bg: var(--paper-primary-soft);
+  --paper-hero-primary-fg: var(--paper-primary-soft-fg);
+  --paper-hero-primary-border-color: var(--paper-primary-soft-border-color);
+  --paper-hero-secondary-bg: var(--paper-secondary-soft);
+  --paper-hero-secondary-fg: var(--paper-secondary-soft-fg);
+  --paper-hero-secondary-border-color: var(--paper-secondary-soft-border-color);
+  --paper-hero-success-bg: var(--paper-success-soft);
+  --paper-hero-success-fg: var(--paper-success-soft-fg);
+  --paper-hero-success-border-color: var(--paper-success-soft-border-color);
+  --paper-hero-warning-bg: var(--paper-warning-soft);
+  --paper-hero-warning-fg: var(--paper-warning-soft-fg);
+  --paper-hero-warning-border-color: var(--paper-warning-soft-border-color);
+  --paper-hero-danger-bg: var(--paper-danger-soft);
+  --paper-hero-danger-fg: var(--paper-danger-soft-fg);
+  --paper-hero-danger-border-color: var(--paper-danger-soft-border-color);
+  --paper-hero-muted-bg: var(--paper-muted-soft);
+  --paper-hero-muted-fg: var(--paper-muted-soft-fg);
+  --paper-hero-muted-border-color: var(--paper-muted-soft-border-color);
+
   --paper-table-stripe-fg: var(--paper-primary);
   --paper-table-stripe-bg: var(--paper-primary-100);
   --paper-table-row-border-color: var(--paper-primary-300);

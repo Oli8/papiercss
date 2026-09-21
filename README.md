@@ -146,6 +146,7 @@ Example:
 - Breadcrumb
 - Button
 - Card
+- Hero
 - Checkbox
 - Collapsible
 - Divider

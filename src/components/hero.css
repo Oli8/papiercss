@@ -1,0 +1,78 @@
+@utility hero-paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--paper-hero-padding-y) var(--paper-hero-padding-x);
+  margin-bottom: var(--paper-hero-margin-bottom);
+  color: var(--paper-hero-fg);
+  background-color: var(--paper-hero-bg);
+  @apply border-paper;
+  border-color: var(--paper-hero-border-color);
+}
+
+@utility hero-paper-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--paper-hero-gap);
+  width: 100%;
+}
+
+@utility hero-paper-title {
+  margin: 0;
+  font-size: var(--paper-hero-title-size);
+  line-height: 1.1;
+  font-family: var(--font-paper-heading);
+}
+
+@utility hero-paper-lead {
+  margin: 0;
+  font-size: var(--paper-hero-lead-size);
+}
+
+@utility hero-paper-sm {
+  padding: var(--paper-hero-sm-padding-y) var(--paper-hero-sm-padding-x);
+}
+
+@utility hero-paper-lg {
+  padding: var(--paper-hero-lg-padding);
+}
+
+@utility hero-paper-fullheight {
+  min-height: 100vh;
+}
+
+@utility hero-paper-primary {
+  color: var(--paper-hero-primary-fg);
+  background-color: var(--paper-hero-primary-bg);
+  border-color: var(--paper-hero-primary-border-color);
+}
+
+@utility hero-paper-secondary {
+  color: var(--paper-hero-secondary-fg);
+  background-color: var(--paper-hero-secondary-bg);
+  border-color: var(--paper-hero-secondary-border-color);
+}
+
+@utility hero-paper-success {
+  color: var(--paper-hero-success-fg);
+  background-color: var(--paper-hero-success-bg);
+  border-color: var(--paper-hero-success-border-color);
+}
+
+@utility hero-paper-warning {
+  color: var(--paper-hero-warning-fg);
+  background-color: var(--paper-hero-warning-bg);
+  border-color: var(--paper-hero-warning-border-color);
+}
+
+@utility hero-paper-danger {
+  color: var(--paper-hero-danger-fg);
+  background-color: var(--paper-hero-danger-bg);
+  border-color: var(--paper-hero-danger-border-color);
+}
+
+@utility hero-paper-muted {
+  color: var(--paper-hero-muted-fg);
+  background-color: var(--paper-hero-muted-bg);
+  border-color: var(--paper-hero-muted-border-color);
+}
