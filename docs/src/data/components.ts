@@ -1,8 +1,11 @@
+export type ComponentBadge = "new" | "updated";
+
 export type ComponentEntry = {
   label: string;
   description: string;
   to: string;
   keywords?: string;
+  badge?: ComponentBadge;
 };
 
 export type ComponentGroup = {
@@ -155,6 +158,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Show extra context or actions next to a trigger.",
         to: "/components/popover",
         keywords: "tooltip tip overlay",
+        badge: "updated",
       },
     ],
   },
@@ -166,6 +170,13 @@ export const componentGroups: ComponentGroup[] = [
         description: "Group related content into a self-contained block.",
         to: "/components/card",
         keywords: "panel surface card",
+      },
+      {
+        label: "Hero",
+        description: "Introduce a page with a title, lead, and call to action.",
+        to: "/components/hero",
+        keywords: "banner hero landing jumbotron",
+        badge: "new",
       },
       {
         label: "Collapsible",

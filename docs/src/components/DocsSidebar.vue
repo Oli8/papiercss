@@ -27,7 +27,7 @@ const sections = [
 
 <template>
   <aside
-    class="hidden w-56 shrink-0 border-r-2 border-muted-border bg-surface md:block"
+    class="hidden w-64 shrink-0 border-r-2 border-muted-border bg-surface md:block"
   >
     <div class="sticky top-0 max-h-screen overflow-y-auto px-4 py-8">
       <nav class="space-y-6">
@@ -78,11 +78,22 @@ const sections = [
               <li v-for="item in group.items" :key="item.to">
                 <RouterLink
                   :to="item.to"
-                  class="block rounded-paper px-2 py-1.5 text-primary no-underline hover:bg-surface-sunken"
+                  class="flex items-center gap-1.5 rounded-paper px-2 py-1.5 text-primary no-underline hover:bg-surface-sunken"
                   :class="group.title ? 'pl-4' : undefined"
                   active-class="bg-secondary-soft text-secondary-soft-fg"
                 >
-                  {{ item.label }}
+                  <span>{{ item.label }}</span>
+                  <span
+                    v-if="item.badge"
+                    class="tag-paper shrink-0 px-1.5 py-0.5 text-[0.6rem] leading-none"
+                    :class="
+                      item.badge === 'new'
+                        ? 'tag-paper-success'
+                        : 'tag-paper-secondary'
+                    "
+                  >
+                    {{ item.badge === "new" ? "NEW" : "Updated" }}
+                  </span>
                 </RouterLink>
               </li>
             </ul>

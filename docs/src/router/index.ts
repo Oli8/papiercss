@@ -11,6 +11,7 @@ import AvatarPage from "../pages/AvatarPage.vue";
 import BreadcrumbPage from "../pages/BreadcrumbPage.vue";
 import ButtonsPage from "../pages/ButtonsPage.vue";
 import CardsPage from "../pages/CardsPage.vue";
+import HeroPage from "../pages/HeroPage.vue";
 import CheckboxesPage from "../pages/CheckboxesPage.vue";
 import CollapsiblePage from "../pages/CollapsiblePage.vue";
 import DividersPage from "../pages/DividersPage.vue";
@@ -106,6 +107,12 @@ export const router = createRouter({
       name: "card",
       component: CardsPage,
       meta: { title: "Card" },
+    },
+    {
+      path: "/components/hero",
+      name: "hero",
+      component: HeroPage,
+      meta: { title: "Hero" },
     },
     {
       path: "/components/checkbox",
