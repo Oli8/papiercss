@@ -1,5 +1,7 @@
 # PapierCSS
 
+![version](https://img.shields.io/npm/v/papiercss)
+
 The less formal CSS framework, rebuilt with Tailwind v4.
 
 Nothing is styled until you add classes. Layout, spacing, and colors use Tailwind; the paper look comes from Paper utilities (`border-paper`, `btn-paper`, …).
