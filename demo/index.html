@@ -320,15 +320,15 @@
           <h3 class="font-paper-heading text-2xl">Forms</h3>
           <div class="form-group-paper max-w-md">
             <label for="name">Name</label>
-            <input id="name" class="input-paper" placeholder="Type here" />
+            <input id="name" class="input-paper w-full" placeholder="Type here" />
           </div>
           <div class="form-group-paper max-w-md">
             <label for="name-disabled">Name (disabled)</label>
-            <input id="name-disabled" class="input-paper" disabled value="Disabled input" />
+            <input id="name-disabled" class="input-paper w-full" disabled value="Disabled input" />
           </div>
           <div class="form-group-paper max-w-md">
             <label for="role">Role</label>
-            <select id="role" class="select-paper">
+            <select id="role" class="select-paper w-full">
               <option>Designer</option>
               <option>Developer</option>
               <option>Writer</option>
@@ -336,7 +336,7 @@
           </div>
           <div class="form-group-paper max-w-md">
             <label for="role-disabled">Role (disabled)</label>
-            <select id="role-disabled" class="select-paper" disabled>
+            <select id="role-disabled" class="select-paper w-full" disabled>
               <option>Designer</option>
               <option selected>Developer</option>
               <option>Writer</option>
@@ -344,11 +344,11 @@
           </div>
           <div class="form-group-paper max-w-md">
             <label for="bio">Bio</label>
-            <textarea id="bio" class="textarea-paper" rows="3" placeholder="Say something…"></textarea>
+            <textarea id="bio" class="textarea-paper w-full" rows="3" placeholder="Say something…"></textarea>
           </div>
           <div class="form-group-paper max-w-md">
             <label for="bio-disabled">Bio (disabled)</label>
-            <textarea id="bio-disabled" class="textarea-paper" rows="3" disabled>Disabled textarea</textarea>
+            <textarea id="bio-disabled" class="textarea-paper w-full" rows="3" disabled>Disabled textarea</textarea>
           </div>
 
           <h4 class="font-paper-heading text-xl mt-6 mb-2">Checks & radios</h4>
@@ -1177,13 +1177,13 @@
       <form method="dialog" class="space-y-3">
         <div class="form-group-paper">
           <label for="modal-name">Name</label>
-          <input id="modal-name" class="input-paper" name="name" placeholder="Jane Doe" autofocus />
+          <input id="modal-name" class="input-paper w-full" name="name" placeholder="Jane Doe" autofocus />
         </div>
         <div class="form-group-paper">
           <label for="modal-email">Email</label>
           <input
             id="modal-email"
-            class="input-paper"
+            class="input-paper w-full"
             type="email"
             name="email"
             placeholder="jane@example.com"

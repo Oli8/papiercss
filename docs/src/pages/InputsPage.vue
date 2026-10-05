@@ -15,6 +15,9 @@ const textarea = `<form class="form-group-paper">
 const disabled = `<input class="input-paper" disabled value="Disabled input" />
 <textarea class="textarea-paper" rows="2" disabled>Disabled textarea</textarea>`;
 
+const width = `<input class="input-paper w-64" placeholder="w-64" />
+<input class="input-paper w-full" placeholder="w-full" />`;
+
 const variables = [
   { name: "--paper-input-fg", value: "var(--paper-field-fg)" },
   {
@@ -83,6 +86,15 @@ const variables = [
     >
       <input class="input-paper" disabled value="Disabled input" />
       <textarea class="textarea-paper" rows="2" disabled>Disabled textarea</textarea>
+    </DocsSection>
+
+    <DocsSection
+      title="Width"
+      :code="width"
+      demo-class="max-w-md space-y-4 rounded-paper border-paper border-muted-border bg-surface-raised p-6"
+    >
+      <input class="input-paper w-64" placeholder="w-64" />
+      <input class="input-paper w-full" placeholder="w-full" />
     </DocsSection>
 
     <DocsVariables :variables="variables" />

@@ -1,7 +1,6 @@
 /* Shared text-field look (input / select / textarea) */
 @utility field-paper {
   display: block;
-  width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-paper);

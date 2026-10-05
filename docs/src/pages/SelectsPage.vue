@@ -15,6 +15,13 @@ const disabled = `<select class="select-paper" disabled>
   <option>Disabled select</option>
 </select>`;
 
+const width = `<select class="select-paper w-64">
+  <option>w-64</option>
+</select>
+<select class="select-paper w-full">
+  <option>w-full</option>
+</select>`;
+
 const variables = [
   { name: "--paper-select-border-color", value: "var(--paper-primary)" },
   { name: "--paper-select-option-bg", value: "var(--paper-surface-raised)" },
@@ -56,6 +63,19 @@ const variables = [
     >
       <select class="select-paper" disabled>
         <option>Disabled select</option>
+      </select>
+    </DocsSection>
+
+    <DocsSection
+      title="Width"
+      :code="width"
+      demo-class="max-w-md space-y-4 rounded-paper border-paper border-muted-border bg-surface-raised p-6"
+    >
+      <select class="select-paper w-64">
+        <option>w-64</option>
+      </select>
+      <select class="select-paper w-full">
+        <option>w-full</option>
       </select>
     </DocsSection>
 
