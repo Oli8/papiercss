@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import DocsSection from "../components/DocsSection.vue";
 import DocsVariables from "../components/DocsVariables.vue";
 
@@ -10,6 +11,13 @@ function syncSlider(event: Event) {
   el.style.setProperty("--value", `${value}%`);
 }
 
+const labeledValue = ref(42);
+
+function syncLabeledSlider(event: Event) {
+  syncSlider(event);
+  labeledValue.value = Number((event.target as HTMLInputElement).value);
+}
+
 const usage = `<input
   class="slider-paper"
   type="range"
@@ -19,6 +27,21 @@ const usage = `<input
   style="--value:42%"
   oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%')"
 />`;
+
+const withLabel = `<div class="form-group-paper">
+  <label for="volume">Volume</label>
+  <input
+    id="volume"
+    class="slider-paper w-full"
+    type="range"
+    min="0"
+    max="100"
+    value="42"
+    style="--value:42%"
+    oninput="this.style.setProperty('--value', (this.value - this.min) / (this.max - this.min) * 100 + '%'); volumeOut.value = this.value"
+  />
+  <output id="volumeOut" class="text-sm text-muted-600 dark:text-muted-400" for="volume">42</output>
+</div>`;
 
 const colors = `<input class="slider-paper slider-paper-primary" type="range" min="0" max="100" value="60" style="--value:60%" />
 <input class="slider-paper slider-paper-secondary" type="range" min="0" max="100" value="70" style="--value:70%" />
@@ -85,6 +108,31 @@ const variables = [
         style="--value: 42%"
         @input="syncSlider"
       />
+    </DocsSection>
+
+    <DocsSection
+      title="With label"
+      :code="withLabel"
+      demo-class="max-w-md space-y-3 rounded-paper border-paper border-muted-border bg-surface-raised p-6"
+    >
+      <div class="form-group-paper">
+        <label for="docs-slider-volume">Volume</label>
+        <input
+          id="docs-slider-volume"
+          class="slider-paper w-full"
+          type="range"
+          min="0"
+          max="100"
+          :value="labeledValue"
+          :style="{ '--value': `${labeledValue}%` }"
+          @input="syncLabeledSlider"
+        />
+        <output
+          id="docs-slider-volume-out"
+          class="text-sm text-muted-600 dark:text-muted-400"
+          for="docs-slider-volume"
+        >{{ labeledValue }}</output>
+      </div>
     </DocsSection>
 
     <DocsSection
