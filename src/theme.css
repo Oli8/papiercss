@@ -371,7 +371,7 @@
 
   --paper-switch-border-color: var(--paper-primary);
   --paper-switch-knob-color: var(--paper-secondary);
-  --paper-switch-checked-bg: var(--paper-success-soft);
+  --paper-switch-checked-bg: var(--paper-success-300);
   --paper-switch-focus-color: var(--paper-secondary);
   --paper-switch-tile-border-color: var(--paper-primary);
 
@@ -580,6 +580,8 @@
 
   --paper-slider-track-color: var(--paper-muted-700);
   --paper-slider-thumb-color: var(--paper-muted-300);
+
+  --paper-switch-checked-bg: var(--paper-success-700);
 
   --paper-article-meta-color: var(--paper-muted-400);
 

@@ -95,7 +95,7 @@ const disabled = `<div class="flex items-center">
 const variables = [
   { name: "--paper-switch-border-color", value: "var(--paper-primary)" },
   { name: "--paper-switch-knob-color", value: "var(--paper-secondary)" },
-  { name: "--paper-switch-checked-bg", value: "var(--paper-success-soft)" },
+  { name: "--paper-switch-checked-bg", value: "var(--paper-success-300)" },
   { name: "--paper-switch-focus-color", value: "var(--paper-secondary)" },
   { name: "--paper-switch-tile-border-color", value: "var(--paper-primary)" },
 ];
