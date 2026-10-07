@@ -202,7 +202,7 @@
   display: inline-block;
   position: relative;
   width: 60px;
-  height: 12px;
+  height: 20px;
   margin: 0 10px 0 0;
   vertical-align: middle;
 
@@ -226,7 +226,10 @@
 
   & .paper-switch-slider {
     position: absolute;
-    inset: 0;
+    left: 0;
+    right: 0;
+    top: 4px;
+    height: 12px;
     cursor: pointer;
     @apply border-paper;
     border-color: var(--paper-switch-border-color);
@@ -334,7 +337,7 @@
 @utility paper-switch-label {
   cursor: pointer;
   display: inline-block;
-  margin: -6px 10px 0 0;
+  margin: 0 10px 0 0;
   vertical-align: middle;
 }
 
