@@ -21,7 +21,7 @@ const darkUtility = `<div class="bg-surface text-primary dark:bg-surface-sunken"
 <template>
   <section class="space-y-8">
     <div class="space-y-3">
-      <h1 class="font-paper-heading text-4xl">Dark Mode</h1>
+      <h1 class="tag-paper tag-paper-secondary text-4xl">Dark Mode</h1>
       <p class="max-w-2xl text-muted-600 dark:text-muted-400">
         PapierCSS uses a class-based dark theme. Add
         <code class="text-sm">dark</code> on a parent (usually

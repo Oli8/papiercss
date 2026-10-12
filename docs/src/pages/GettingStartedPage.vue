@@ -10,7 +10,7 @@ const docsDev = `npm run docs:dev`;
 
 <template>
   <section class="space-y-6">
-    <h1 class="font-paper-heading text-4xl">Getting Started</h1>
+    <h1 class="tag-paper tag-paper-secondary text-4xl">Getting Started</h1>
 
     <div class="space-y-2">
       <h2 class="font-paper-heading text-2xl">Install</h2>

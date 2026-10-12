@@ -10,7 +10,7 @@ const quickStart = `@import "papiercss/fonts.css";
 <template>
   <section class="space-y-8">
     <div class="space-y-3">
-      <h1 class="font-paper-heading text-5xl text-primary">PapierCSS</h1>
+      <h1 class="tag-paper tag-paper-secondary text-4xl">PapierCSS</h1>
       <p class="max-w-2xl text-xl text-muted-600 dark:text-muted-400">
         The less formal CSS framework, rebuilt with Tailwind v4.
       </p>

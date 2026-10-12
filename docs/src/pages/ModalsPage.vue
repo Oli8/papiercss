@@ -48,7 +48,7 @@ const variables = [
 
 <template>
   <section class="space-y-12">
-    <h1 class="font-paper-heading text-4xl">Modal</h1>
+    <h1 class="tag-paper tag-paper-secondary text-4xl">Modal</h1>
 
     <DocsSection title="Usage" :code="usage">
       <button type="button" class="btn-paper btn-paper-secondary" @click="open">

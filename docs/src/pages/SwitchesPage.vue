@@ -103,7 +103,7 @@ const variables = [
 
 <template>
   <section class="space-y-12">
-    <h1 class="font-paper-heading text-4xl">Switch</h1>
+    <h1 class="tag-paper tag-paper-secondary text-4xl">Switch</h1>
 
     <DocsSection
       title="Usage"

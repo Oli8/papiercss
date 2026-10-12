@@ -30,7 +30,7 @@ const filteredGroups = computed(() => {
 <template>
   <section class="space-y-8">
     <div class="space-y-3">
-      <h1 class="font-paper-heading text-4xl">Components</h1>
+      <h1 class="tag-paper tag-paper-secondary text-4xl">Components</h1>
       <label class="form-group-paper block max-w-md">
         <span class="sr-only">Filter components</span>
         <input

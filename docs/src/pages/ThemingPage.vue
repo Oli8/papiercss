@@ -41,7 +41,7 @@ const scoped = `.product-hero {
 <template>
   <section class="space-y-8">
     <div class="space-y-3">
-      <h1 class="font-paper-heading text-4xl">Theming</h1>
+      <h1 class="tag-paper tag-paper-secondary text-4xl">Theming</h1>
       <p class="max-w-2xl text-muted-600 dark:text-muted-400">
         Most of PapierCSS is driven by CSS variables. You may override a
         token after importing the library.

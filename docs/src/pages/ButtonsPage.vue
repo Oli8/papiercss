@@ -80,7 +80,7 @@ const variables = [
 
 <template>
   <section class="space-y-12">
-    <h1 class="font-paper-heading text-4xl">Button</h1>
+    <h1 class="tag-paper tag-paper-secondary text-4xl">Button</h1>
 
     <div class="space-y-4">
       <h2 class="font-paper-heading text-2xl">Usage</h2>

@@ -45,7 +45,7 @@ function scaleBorder(name: string, step: number) {
 <template>
   <section class="space-y-12">
     <div class="space-y-3">
-      <h1 class="font-paper-heading text-4xl">Colors</h1>
+      <h1 class="tag-paper tag-paper-secondary text-4xl">Colors</h1>
       <p class="max-w-2xl text-muted-600 dark:text-muted-400">
         Tailwind-style 50–950 scales. Toggle dark mode in the header to switch
         palettes.
