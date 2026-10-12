@@ -9,6 +9,7 @@
   min-height: 1rem;
   width: var(--paper-skeleton-width, auto);
   height: var(--paper-skeleton-height, 100%);
+  margin-block: var(--paper-skeleton-margin-y, 0.5rem);
   cursor: progress;
   @apply border-paper;
   border-color: transparent;

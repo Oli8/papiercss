@@ -251,6 +251,7 @@
   --paper-skeleton-from: var(--paper-muted-300);
   --paper-skeleton-via: var(--paper-muted-100);
   --paper-skeleton-to: var(--paper-muted-300);
+  --paper-skeleton-margin-y: 0.5rem;
   --paper-skeleton-gradient: linear-gradient(
     95deg,
     var(--paper-skeleton-from) 5%,

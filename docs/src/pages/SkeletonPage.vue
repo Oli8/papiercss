@@ -2,7 +2,7 @@
 import DocsSection from "../components/DocsSection.vue";
 import DocsVariables from "../components/DocsVariables.vue";
 
-const usage = `<div class="skeleton-paper-group space-y-2" aria-busy="true">
+const usage = `<div class="skeleton-paper-group" aria-busy="true">
   <div class="skeleton-paper h-8 w-full" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
   <div class="skeleton-paper h-8 w-3/4" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
   <div class="skeleton-paper h-8 w-1/2" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
@@ -15,7 +15,7 @@ const circles = `<div class="skeleton-paper skeleton-paper-circle size-16 shrink
 
 const group = `<div class="flex items-center gap-4">
   <div class="skeleton-paper skeleton-paper-circle-3 size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
-  <div class="flex-1 space-y-2">
+  <div class="flex-1">
     <div class="skeleton-paper skeleton-paper-3 h-6 w-full" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
     <div class="skeleton-paper skeleton-paper-5 h-4 w-2/3" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
   </div>
@@ -25,6 +25,7 @@ const variables = [
   { name: "--paper-skeleton-from", value: "var(--paper-muted-300)" },
   { name: "--paper-skeleton-via", value: "var(--paper-muted-100)" },
   { name: "--paper-skeleton-to", value: "var(--paper-muted-300)" },
+  { name: "--paper-skeleton-margin-y", value: "0.5rem" },
   {
     name: "--paper-skeleton-gradient",
     value:
@@ -66,7 +67,7 @@ const variables = [
     <h1 class="tag-paper tag-paper-secondary text-4xl">Skeleton</h1>
 
     <DocsSection title="Usage" :code="usage" demo-class="space-y-3">
-      <div class="skeleton-paper-group space-y-2" aria-busy="true">
+      <div class="skeleton-paper-group" aria-busy="true">
         <div
           class="skeleton-paper h-8 w-full"
           aria-hidden="true"
@@ -127,7 +128,7 @@ const variables = [
           role="progressbar"
           aria-valuetext="Loading..."
         ></div>
-        <div class="flex-1 space-y-2">
+        <div class="flex-1">
           <div
             class="skeleton-paper skeleton-paper-3 h-6 w-full"
             aria-hidden="true"
