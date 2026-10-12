@@ -13,14 +13,14 @@ const sections = [
     ],
   },
   {
-    title: "Components",
-    to: "/components",
-    groups: componentGroups,
-  },
-  {
     title: "Utilities",
     to: "/utilities",
     groups: [],
+  },
+  {
+    title: "Components",
+    to: "/components",
+    groups: componentGroups,
   },
 ];
 </script>
