@@ -8,13 +8,21 @@ const usage = `<div class="skeleton-paper-group" aria-busy="true">
   <div class="skeleton-paper h-8 w-1/2" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
 </div>`;
 
-const circles = `<div class="skeleton-paper skeleton-paper-circle size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
-<div class="skeleton-paper skeleton-paper-circle-2 size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
-<div class="skeleton-paper skeleton-paper-circle-4 size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
-<div class="skeleton-paper skeleton-paper-circle-6 size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>`;
+const shapes = `<div class="flex flex-wrap items-center gap-4">
+  <div class="skeleton-paper skeleton-paper-circle size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-circle-2 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-circle-4 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-circle-6 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+  <div class="skeleton-paper size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-2 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-4 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-6 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+</div>`;
 
 const group = `<div class="flex items-center gap-4">
-  <div class="skeleton-paper skeleton-paper-circle-3 size-16 shrink-0" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
+  <div class="skeleton-paper skeleton-paper-circle-3 size-16" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
   <div class="flex-1">
     <div class="skeleton-paper skeleton-paper-3 h-6 w-full" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
     <div class="skeleton-paper skeleton-paper-5 h-4 w-2/3" aria-hidden="true" role="progressbar" aria-valuetext="Loading..."></div>
@@ -90,40 +98,68 @@ const variables = [
     </DocsSection>
 
     <DocsSection
-      title="Circles"
-      :code="circles"
-      demo-class="flex flex-wrap items-center gap-4 rounded-paper border-paper border-muted-border bg-surface-raised p-6"
+      title="Shapes"
+      :code="shapes"
+      demo-class="space-y-2 rounded-paper border-paper border-muted-border bg-surface-raised p-6"
     >
-      <div
-        class="skeleton-paper skeleton-paper-circle size-16 shrink-0"
-        aria-hidden="true"
-        role="progressbar"
-        aria-valuetext="Loading..."
-      ></div>
-      <div
-        class="skeleton-paper skeleton-paper-circle-2 size-16 shrink-0"
-        aria-hidden="true"
-        role="progressbar"
-        aria-valuetext="Loading..."
-      ></div>
-      <div
-        class="skeleton-paper skeleton-paper-circle-4 size-16 shrink-0"
-        aria-hidden="true"
-        role="progressbar"
-        aria-valuetext="Loading..."
-      ></div>
-      <div
-        class="skeleton-paper skeleton-paper-circle-6 size-16 shrink-0"
-        aria-hidden="true"
-        role="progressbar"
-        aria-valuetext="Loading..."
-      ></div>
+      <div class="flex flex-wrap items-center gap-4">
+        <div
+          class="skeleton-paper skeleton-paper-circle size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-circle-2 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-circle-4 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-circle-6 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <div
+          class="skeleton-paper size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-2 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-4 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+        <div
+          class="skeleton-paper skeleton-paper-6 size-16"
+          aria-hidden="true"
+          role="progressbar"
+          aria-valuetext="Loading..."
+        ></div>
+      </div>
     </DocsSection>
 
     <DocsSection title="Group" :code="group">
       <div class="flex items-center gap-4">
         <div
-          class="skeleton-paper skeleton-paper-circle-3 size-16 shrink-0"
+          class="skeleton-paper skeleton-paper-circle-3 size-16"
           aria-hidden="true"
           role="progressbar"
           aria-valuetext="Loading..."
