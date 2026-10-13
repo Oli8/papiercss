@@ -100,6 +100,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Placeholder shapes while content is loading.",
         to: "/components/skeleton",
         keywords: "loading placeholder shimmer",
+        badge: "updated",
       },
       {
         label: "Spinner",
@@ -135,6 +136,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Display related items in a vertical sequence.",
         to: "/components/list",
         keywords: "ul ol list",
+        badge: "updated",
       },
       {
         label: "Table",
@@ -158,7 +160,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Show extra context or actions next to a trigger.",
         to: "/components/popover",
         keywords: "tooltip tip overlay",
-        badge: "updated",
       },
     ],
   },
@@ -176,7 +177,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Introduce a page with a title, lead, and call to action.",
         to: "/components/hero",
         keywords: "banner hero landing jumbotron",
-        badge: "new",
       },
       {
         label: "Collapsible",
