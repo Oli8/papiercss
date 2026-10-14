@@ -100,7 +100,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Placeholder shapes while content is loading.",
         to: "/components/skeleton",
         keywords: "loading placeholder shimmer",
-        badge: "updated",
       },
       {
         label: "Spinner",
@@ -124,6 +123,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Present long-form reading with title and supporting text.",
         to: "/components/article",
         keywords: "article content typography",
+        badge: "updated",
       },
       {
         label: "Divider",
@@ -136,7 +136,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Display related items in a vertical sequence.",
         to: "/components/list",
         keywords: "ul ol list",
-        badge: "updated",
       },
       {
         label: "Table",
