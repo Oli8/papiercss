@@ -16,6 +16,7 @@ const usage = `<article class="article-paper border-paper border-muted-border">
 
 const variables = [
   { name: "--paper-article-meta-color", value: "var(--paper-muted-600)" },
+  { name: "--paper-article-meta-margin-y", value: "1rem" },
   { name: "--paper-article-padding", value: "1.5rem" },
 ];
 </script>

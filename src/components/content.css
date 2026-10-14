@@ -16,6 +16,7 @@
 @utility article-paper-meta {
   font-size: 15px;
   color: var(--paper-article-meta-color);
+  margin-block: var(--paper-article-meta-margin-y, 1rem);
 }
 
 @utility article-paper-lead {

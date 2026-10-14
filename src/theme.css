@@ -417,6 +417,7 @@
   --paper-divider-content: "~~~";
 
   --paper-article-meta-color: var(--paper-muted-600);
+  --paper-article-meta-margin-y: 1rem;
   --paper-article-padding: 1.5rem;
   --paper-subtitle-color: var(--paper-secondary);
   --paper-card-subtitle-color: var(--paper-subtitle-color);
