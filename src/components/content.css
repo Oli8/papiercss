@@ -16,15 +16,6 @@
 @utility article-paper-meta {
   font-size: 15px;
   color: var(--paper-article-meta-color);
-
-  & a {
-    color: var(--paper-article-meta-color);
-    background-image: none;
-
-    &:hover {
-      color: var(--color-light-dark);
-    }
-  }
 }
 
 @utility article-paper-lead {

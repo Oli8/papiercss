@@ -5,7 +5,7 @@ import DocsVariables from "../components/DocsVariables.vue";
 const usage = `<article class="article-paper border-paper border-muted-border">
   <h4 class="article-paper-title">Handwritten headlines</h4>
   <p class="article-paper-meta">
-    By <a href="#">Author</a> · Aug 6, 2026
+    By <a class="link-paper" href="#">Author</a> · Aug 6, 2026
   </p>
   <p class="article-paper-lead">A short lead that sets the tone of the piece.</p>
   <p>
@@ -33,7 +33,7 @@ const variables = [
         <h4 class="article-paper-title">Handwritten headlines</h4>
         <p class="article-paper-meta">
           By
-          <a href="#" @click.prevent>Author</a>
+          <a href="#" class="link-paper" @click.prevent>Author</a>
           · Aug 6, 2026
         </p>
         <p class="article-paper-lead">A short lead that sets the tone of the piece.</p>
