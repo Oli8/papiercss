@@ -90,9 +90,9 @@
 }
 
 @utility btn-paper-primary-outline {
-  color: var(--paper-btn-fg);
+  color: var(--paper-btn-primary-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-btn-border-color);
+  border-color: var(--paper-btn-primary-outline-color);
 
   &:hover {
     color: var(--paper-btn-primary-fg);
@@ -101,9 +101,9 @@
 }
 
 @utility btn-paper-secondary-outline {
-  color: var(--paper-secondary);
+  color: var(--paper-btn-secondary-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-secondary);
+  border-color: var(--paper-btn-secondary-outline-color);
 
   &:hover {
     color: var(--paper-btn-secondary-fg);
@@ -112,9 +112,9 @@
 }
 
 @utility btn-paper-success-outline {
-  color: var(--paper-success);
+  color: var(--paper-btn-success-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-success);
+  border-color: var(--paper-btn-success-outline-color);
 
   &:hover {
     color: var(--paper-btn-success-fg);
@@ -123,9 +123,9 @@
 }
 
 @utility btn-paper-warning-outline {
-  color: var(--paper-warning);
+  color: var(--paper-btn-warning-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-warning);
+  border-color: var(--paper-btn-warning-outline-color);
 
   &:hover {
     color: var(--paper-btn-warning-fg);
@@ -134,9 +134,9 @@
 }
 
 @utility btn-paper-danger-outline {
-  color: var(--paper-danger);
+  color: var(--paper-btn-danger-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-danger);
+  border-color: var(--paper-btn-danger-outline-color);
 
   &:hover {
     color: var(--paper-btn-danger-fg);
@@ -145,9 +145,9 @@
 }
 
 @utility btn-paper-muted-outline {
-  color: var(--paper-muted);
+  color: var(--paper-btn-muted-outline-color);
   background-color: var(--paper-btn-bg);
-  border-color: var(--paper-muted);
+  border-color: var(--paper-btn-muted-outline-color);
 
   &:hover {
     color: var(--paper-btn-muted-fg);

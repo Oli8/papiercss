@@ -75,6 +75,12 @@ const variables = [
   { name: "--paper-btn-muted-bg", value: "var(--paper-muted-soft)" },
   { name: "--paper-btn-muted-fg", value: "var(--paper-muted-soft-fg)" },
   { name: "--paper-btn-muted-border-color", value: "var(--paper-muted-soft-border-color)" },
+  { name: "--paper-btn-primary-outline-color", value: "var(--paper-primary)" },
+  { name: "--paper-btn-secondary-outline-color", value: "var(--paper-secondary)" },
+  { name: "--paper-btn-success-outline-color", value: "var(--paper-success-600)" },
+  { name: "--paper-btn-warning-outline-color", value: "var(--paper-warning-700)" },
+  { name: "--paper-btn-danger-outline-color", value: "var(--paper-danger)" },
+  { name: "--paper-btn-muted-outline-color", value: "var(--paper-muted-500)" },
 ];
 </script>
 
