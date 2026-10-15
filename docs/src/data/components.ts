@@ -82,6 +82,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Trigger an action or navigate somewhere.",
         to: "/components/button",
         keywords: "btn action",
+        badge: "updated",
       },
       {
         label: "Navbar",
@@ -123,7 +124,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Present long-form reading with title and supporting text.",
         to: "/components/article",
         keywords: "article content typography",
-        badge: "updated",
       },
       {
         label: "Divider",
