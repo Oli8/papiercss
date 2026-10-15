@@ -110,7 +110,7 @@
   --paper-primary-inverse: #fff;
 
   /* Soft fills for buttons / alerts (remapped in .dark) */
-  --paper-primary-soft: var(--paper-primary-100);
+  --paper-primary-soft: var(--paper-primary-200);
   --paper-primary-soft-fg: var(--paper-primary-800);
   --paper-primary-soft-border-color: var(--paper-primary);
   --paper-secondary-soft: var(--paper-secondary-100);
