@@ -562,6 +562,13 @@
   --paper-muted-soft-border-color: var(--paper-muted-400);
   --paper-muted-border-color: var(--paper-muted-600);
 
+  --paper-btn-primary-outline-color: var(--paper-primary);
+  --paper-btn-secondary-outline-color: var(--paper-secondary-400);
+  --paper-btn-success-outline-color: var(--paper-success-400);
+  --paper-btn-warning-outline-color: var(--paper-warning-400);
+  --paper-btn-danger-outline-color: var(--paper-danger-300);
+  --paper-btn-muted-outline-color: var(--paper-muted-300);
+
   --paper-tag-text-color: var(--paper-white);
   --paper-tag-primary-bg: var(--paper-primary-800);
   --paper-tag-secondary-bg: var(--paper-secondary-600);
