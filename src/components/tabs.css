@@ -10,11 +10,11 @@
     padding: 0.75rem 0 0;
   }
 
-  & input {
+  & > input {
     display: none;
   }
 
-  & input:checked + label {
+  & > input:checked + label {
     color: var(--paper-tabs-active-color);
     border-bottom: 3px solid var(--paper-tabs-underline-color);
   }
