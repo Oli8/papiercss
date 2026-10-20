@@ -82,7 +82,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Trigger an action or navigate somewhere.",
         to: "/components/button",
         keywords: "btn action",
-        badge: "updated",
       },
       {
         label: "Navbar",
@@ -188,6 +187,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Switch between related views in the same place.",
         to: "/components/tabs",
         keywords: "tab panel",
+        badge: "updated",
       },
     ],
   },
