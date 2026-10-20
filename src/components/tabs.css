@@ -14,11 +14,6 @@
     display: none;
   }
 
-  & > input:checked + label {
-    color: var(--paper-tabs-active-color);
-    border-bottom: 3px solid var(--paper-tabs-underline-color);
-  }
-
   & input[id$="tab1"]:checked ~ [id$="content1"],
   & input[id$="tab2"]:checked ~ [id$="content2"],
   & input[id$="tab3"]:checked ~ [id$="content3"],
@@ -27,7 +22,8 @@
     display: block;
   }
 
-  & > label {
+  & > label,
+  & > .tabs-paper-header {
     display: inline-block;
     margin: 0 0 -1px;
     padding: 0.75rem;
@@ -35,10 +31,17 @@
     text-align: center;
     color: var(--paper-tabs-inactive-color);
     cursor: pointer;
+  }
 
-    &:hover {
-      color: var(--paper-tabs-inactive-hover-color);
-    }
+  & > label:hover,
+  & > .tabs-paper-header:hover:not(.tabs-paper-header-active) {
+    color: var(--paper-tabs-inactive-hover-color);
+  }
+
+  & > input:checked + label,
+  & > .tabs-paper-header-active {
+    color: var(--paper-tabs-active-color);
+    border-bottom: 3px solid var(--paper-tabs-underline-color);
   }
 }
 

@@ -30,7 +30,8 @@
     z-index: 20;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &.active::after {
     opacity: 1;
     visibility: visible;
     transition:
