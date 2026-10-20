@@ -75,10 +75,10 @@ const around = `<div class="tabs-paper tabs-paper-around border-paper border-mut
 </div>`;
 
 const variables = [
-  { name: "--paper-tabs-inactive-color", value: "var(--paper-primary-400)" },
+  { name: "--paper-tabs-inactive-color", value: "var(--paper-muted)" },
   {
     name: "--paper-tabs-inactive-hover-color",
-    value: "var(--paper-muted)",
+    value: "var(--paper-muted-600)",
   },
   { name: "--paper-tabs-active-color", value: "var(--paper-primary)" },
   {

@@ -430,8 +430,8 @@
   --paper-card-title-size: 1.5rem;
   --paper-modal-subtitle-color: var(--paper-subtitle-color);
 
-  --paper-tabs-inactive-color: var(--paper-primary-400);
-  --paper-tabs-inactive-hover-color: var(--paper-muted);
+  --paper-tabs-inactive-color: var(--paper-muted);
+  --paper-tabs-inactive-hover-color: var(--paper-muted-600);
   --paper-tabs-active-color: var(--paper-primary);
   --paper-tabs-underline-color: var(--paper-secondary);
 
@@ -568,6 +568,8 @@
   --paper-btn-warning-outline-color: var(--paper-warning-400);
   --paper-btn-danger-outline-color: var(--paper-danger-300);
   --paper-btn-muted-outline-color: var(--paper-muted-300);
+
+  --paper-tabs-inactive-hover-color: var(--paper-muted-300);
 
   --paper-tag-text-color: var(--paper-white);
   --paper-tag-primary-bg: var(--paper-primary-800);
