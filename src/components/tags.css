@@ -7,32 +7,32 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  color: var(--color-tag-text);
-  background-color: var(--color-tag-muted-bg);
+  color: var(--paper-tag-text-color);
+  background-color: var(--paper-tag-muted-bg);
   border: 2px solid transparent;
   @apply rounded-paper;
 }
 
 @utility tag-paper-primary {
-  background-color: var(--color-tag-primary-bg);
+  background-color: var(--paper-tag-primary-bg);
 }
 
 @utility tag-paper-secondary {
-  background-color: var(--color-tag-secondary-bg);
+  background-color: var(--paper-tag-secondary-bg);
 }
 
 @utility tag-paper-success {
-  background-color: var(--color-tag-success-bg);
+  background-color: var(--paper-tag-success-bg);
 }
 
 @utility tag-paper-warning {
-  background-color: var(--color-tag-warning-bg);
+  background-color: var(--paper-tag-warning-bg);
 }
 
 @utility tag-paper-danger {
-  background-color: var(--color-tag-danger-bg);
+  background-color: var(--paper-tag-danger-bg);
 }
 
 @utility tag-paper-muted {
-  background-color: var(--color-tag-muted-bg);
+  background-color: var(--paper-tag-muted-bg);
 }

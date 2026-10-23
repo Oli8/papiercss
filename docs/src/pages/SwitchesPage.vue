@@ -38,7 +38,7 @@ const tiles = `<label class="paper-switch-tile">
     <div class="paper-switch-tile-card-front bg-surface text-primary">
       Front
     </div>
-    <div class="paper-switch-tile-card-back bg-tag-primary-bg text-tag-text border-tag-primary-bg">
+    <div class="paper-switch-tile-card-back bg-primary-800 text-white border-primary-800">
       Back
     </div>
   </div>
@@ -49,7 +49,7 @@ const tiles = `<label class="paper-switch-tile">
     <div class="paper-switch-tile-card-front bg-warning-soft text-warning-soft-fg border-warning">
       Off
     </div>
-    <div class="paper-switch-tile-card-back bg-secondary text-tag-text border-secondary">
+    <div class="paper-switch-tile-card-back bg-secondary text-white border-secondary">
       On
     </div>
   </div>
@@ -86,7 +86,7 @@ const disabled = `<div class="flex items-center">
     <div class="paper-switch-tile-card-front bg-surface text-primary">
       Off
     </div>
-    <div class="paper-switch-tile-card-back bg-tag-primary-bg text-tag-text border-tag-primary-bg">
+    <div class="paper-switch-tile-card-back bg-primary-700 text-white border-primary-700">
       On
     </div>
   </div>
@@ -157,7 +157,7 @@ const variables = [
         <div class="paper-switch-tile-card">
           <div class="paper-switch-tile-card-front bg-surface text-primary">Front</div>
           <div
-            class="paper-switch-tile-card-back bg-tag-primary-bg text-tag-text border-tag-primary-bg"
+            class="paper-switch-tile-card-back bg-primary-800 text-white border-primary-800"
           >
             Back
           </div>
@@ -171,7 +171,7 @@ const variables = [
           >
             Off
           </div>
-          <div class="paper-switch-tile-card-back bg-secondary text-tag-text border-secondary">
+          <div class="paper-switch-tile-card-back bg-secondary text-white border-secondary">
             On
           </div>
         </div>
@@ -217,7 +217,7 @@ const variables = [
         <div class="paper-switch-tile-card">
           <div class="paper-switch-tile-card-front bg-surface text-primary">Off</div>
           <div
-            class="paper-switch-tile-card-back bg-tag-primary-bg text-tag-text border-tag-primary-bg"
+            class="paper-switch-tile-card-back bg-primary-700 text-white border-primary-700"
           >
             On
           </div>
