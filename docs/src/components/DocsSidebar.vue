@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
-import { componentGroups } from "../data/components";
+import { componentGroups, type ComponentGroup } from "../data/components";
+
+function byLabel(a: { label: string }, b: { label: string }) {
+  return a.label.localeCompare(b.label);
+}
+
+const sidebarGroups: ComponentGroup[] = [
+  ...componentGroups
+    .filter((group) => group.title === "Form")
+    .map((group) => ({ ...group, items: [...group.items].sort(byLabel) })),
+  {
+    items: componentGroups
+      .filter((group) => group.title !== "Form")
+      .flatMap((group) => group.items)
+      .sort(byLabel),
+  },
+];
 
 const sections = [
   {
@@ -20,7 +36,7 @@ const sections = [
   {
     title: "Components",
     to: "/components",
-    groups: componentGroups,
+    groups: sidebarGroups,
   },
 ];
 </script>
