@@ -94,6 +94,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Show how far a task or process has gone.",
         to: "/components/progress",
         keywords: "bar meter indeterminate",
+        badge: "updated",
       },
       {
         label: "Skeleton",
@@ -187,7 +188,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Switch between related views in the same place.",
         to: "/components/tabs",
         keywords: "tab panel",
-        badge: "updated",
       },
     ],
   },
