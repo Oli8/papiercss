@@ -93,7 +93,7 @@ export const componentGroups: ComponentGroup[] = [
         label: "Progress",
         description: "Show how far a task or process has gone.",
         to: "/components/progress",
-        keywords: "bar meter",
+        keywords: "bar meter indeterminate",
       },
       {
         label: "Skeleton",

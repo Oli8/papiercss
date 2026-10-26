@@ -9,6 +9,13 @@ const usage = `<div class="progress-paper">
   <div class="progress-paper-bar progress-paper-striped w-2/3">66%</div>
 </div>`;
 
+const indeterminate = `<div class="progress-paper progress-paper-indeterminate">
+  <div class="progress-paper-bar"></div>
+</div>
+<div class="progress-paper progress-paper-indeterminate">
+  <div class="progress-paper-bar progress-paper-striped-secondary"></div>
+</div>`;
+
 const colors = `<div class="progress-paper">
   <div class="progress-paper-bar progress-paper-bar-secondary w-[80%]">80%</div>
 </div>
@@ -43,6 +50,8 @@ const colors = `<div class="progress-paper">
 const variables = [
   { name: "--paper-progress-track-border-color", value: "var(--paper-primary)" },
   { name: "--paper-progress-bar-stripe-size", value: "0.25rem" },
+  { name: "--paper-progress-indeterminate-size", value: "35%" },
+  { name: "--paper-progress-indeterminate-duration", value: "3s" },
   { name: "--paper-progress-primary-bg", value: "var(--paper-primary-soft)" },
   { name: "--paper-progress-secondary-bg", value: "var(--paper-secondary-soft)" },
   { name: "--paper-progress-success-bg", value: "var(--paper-success-soft)" },
@@ -123,6 +132,15 @@ const variables = [
       </div>
       <div class="progress-paper">
         <div class="progress-paper-bar progress-paper-striped-muted w-[40%]">40%</div>
+      </div>
+    </DocsSection>
+
+    <DocsSection title="Indeterminate" :code="indeterminate" demo-class="space-y-3">
+      <div class="progress-paper progress-paper-indeterminate">
+        <div class="progress-paper-bar"></div>
+      </div>
+      <div class="progress-paper progress-paper-indeterminate">
+        <div class="progress-paper-bar progress-paper-striped-secondary"></div>
       </div>
     </DocsSection>
 

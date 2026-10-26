@@ -229,6 +229,8 @@
 
   --paper-progress-track-border-color: var(--paper-primary);
   --paper-progress-bar-stripe-size: 0.25rem;
+  --paper-progress-indeterminate-size: 35%;
+  --paper-progress-indeterminate-duration: 3s;
 
   --paper-progress-primary-bg: var(--paper-primary-soft);
   --paper-progress-secondary-bg: var(--paper-secondary-soft);
