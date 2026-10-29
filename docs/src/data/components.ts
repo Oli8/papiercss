@@ -94,7 +94,6 @@ export const componentGroups: ComponentGroup[] = [
         description: "Show how far a task or process has gone.",
         to: "/components/progress",
         keywords: "bar meter indeterminate",
-        badge: "updated",
       },
       {
         label: "Skeleton",
@@ -142,6 +141,7 @@ export const componentGroups: ComponentGroup[] = [
         description: "Compare and scan structured data in rows and columns.",
         to: "/components/table",
         keywords: "table grid data",
+        badge: "updated",
       },
     ],
   },
