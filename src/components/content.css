@@ -51,6 +51,7 @@
 @utility table-paper-hover {
   & tbody tr:hover {
     color: var(--paper-table-hover-fg);
+    background-color: var(--paper-table-hover-bg);
   }
 }
 

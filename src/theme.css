@@ -226,6 +226,7 @@
   --paper-table-stripe-bg: var(--paper-primary-100);
   --paper-table-row-border-color: var(--paper-primary-300);
   --paper-table-hover-fg: var(--paper-secondary);
+  --paper-table-hover-bg: var(--paper-primary-100);
 
   --paper-progress-track-border-color: var(--paper-primary);
   --paper-progress-bar-stripe-size: 0.25rem;
@@ -583,6 +584,7 @@
 
   --paper-table-stripe-bg: var(--paper-primary-600);
   --paper-table-row-border-color: var(--paper-primary-500);
+  --paper-table-hover-bg: var(--paper-primary-600);
 
   --paper-progress-primary-stripe-color: var(--paper-primary-950);
   --paper-progress-secondary-stripe-color: var(--paper-secondary-950);

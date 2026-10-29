@@ -21,7 +21,6 @@ const ranking: Player[] = [
 ];
 
 const usagePlayers = ranking.slice(0, 5);
-const hoverPlayers = ranking;
 
 function flagImg(code: string, country: string) {
   return `<img
@@ -56,10 +55,8 @@ function tableMarkup(className: string, players: Player[]) {
 }
 
 const usage = tableMarkup("table-paper", usagePlayers);
-const hoverAlternating = tableMarkup(
-  "table-paper table-paper-hover table-paper-alternating",
-  hoverPlayers,
-);
+const hover = tableMarkup("table-paper table-paper-hover", ranking);
+const alternating = tableMarkup("table-paper table-paper-alternating", ranking);
 
 const variables = [
   { name: "--paper-table-stripe-fg", value: "var(--paper-primary)" },
@@ -69,6 +66,7 @@ const variables = [
     value: "var(--paper-primary-300)",
   },
   { name: "--paper-table-hover-fg", value: "var(--paper-secondary)" },
+  { name: "--paper-table-hover-bg", value: "var(--paper-primary-100)" },
 ];
 </script>
 
@@ -107,11 +105,11 @@ const variables = [
     </DocsSection>
 
     <DocsSection
-      title="Hover & alternating"
-      :code="hoverAlternating"
+      title="Hover"
+      :code="hover"
       demo-class="space-y-3 overflow-x-auto rounded-paper border-paper border-muted-border bg-surface p-6"
     >
-      <table class="table-paper table-paper-hover table-paper-alternating">
+      <table class="table-paper table-paper-hover">
         <thead>
           <tr>
             <th>Rank</th>
@@ -120,7 +118,37 @@ const variables = [
           </tr>
         </thead>
         <tbody>
-          <tr v-for="player in hoverPlayers" :key="player.rank">
+          <tr v-for="player in ranking" :key="player.rank">
+            <td>{{ player.rank }}</td>
+            <td>{{ player.name }}</td>
+            <td>
+              <img
+                class="border-paper border-primary"
+                :src="`https://flagcdn.com/w40/${player.code}.png`"
+                width="40"
+                :alt="player.country"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </DocsSection>
+
+    <DocsSection
+      title="Alternating"
+      :code="alternating"
+      demo-class="space-y-3 overflow-x-auto rounded-paper border-paper border-muted-border bg-surface p-6"
+    >
+      <table class="table-paper table-paper-alternating">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="player in ranking" :key="`alt-${player.rank}`">
             <td>{{ player.rank }}</td>
             <td>{{ player.name }}</td>
             <td>
